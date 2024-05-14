@@ -1,0 +1,8 @@
+INSERT INTO Tenant (ID_number_tenant, Full_name, Sex, Roles, Date_of_birth, ID_vehicle, Phone_number_tenant, Home_address)
+VALUES
+('123456789012', 'Lê Minh Quân', 1, 1, '1990-05-15', '66PA03115', '01234567890', '123 Main St'),
+('234567890123', 'Jane Smith', 0, 1, '1985-09-20', 'DEF456', '09876543210', '456 Elm St'),
+-- Thêm dữ liệu cho 28 dòng còn lại tương tự như trên
+('345678901234', 'Michael Johnson', 1, 1, '1982-07-10', 'GHI789', '07654321987', '789 Oak St'),
+-- Thêm dữ liệu cho 27 dòng còn lại tương tự như trên
+('456789012345', 'Emily Williams', 0, 1, '1995-03-25', 'JKL012', '09123456789', '321 Pine St');

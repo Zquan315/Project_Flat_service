@@ -1,0 +1,180 @@
+create database Flat_Service_Application3
+use Flat_Service_Application3
+
+create table Tenant (
+	ID_number_tenant varchar(20) primary key not null,
+	Full_name nvarchar(30) not null,
+	Sex bit,
+	Roles bit,
+	Date_of_birth smalldatetime,
+	ID_vehical varchar(20),
+	Phone_number_tenant varchar(11),
+	Home_address nvarchar(100)
+)
+
+create table Roomate (
+	ID_number_roomate varchar(20) primary key not null,
+	Full_name nvarchar(30) not null,
+	Sex bit,
+	Roles bit,
+	Date_of_birth smalldatetime,
+	ID_vehical varchar(20),
+	Home_address nvarchar(100),
+	Phone_number_roomate varchar(11),
+	ID_number_tenant varchar(20)
+)
+ 
+create table Room (
+	ID_room varchar(10) primary key not null,
+	Counts int,
+	ID_flat varchar(20),
+	Room_money_const int,
+	Room_status bit,
+	Room_payment_status bit
+)
+
+
+create table Detail_Rent (
+	ID_number_tenant varchar(20), 
+	ID_room varchar(10),
+	constraint pk_detail_rent primary key (ID_number_tenant, ID_room)
+)
+
+create table Monthly (
+	ID_month varchar(2),
+	ID_year varchar(4),
+	constraint pk_monthly primary key (ID_month, ID_year)
+)
+
+create table Room_Bill (
+	ID_room_bill varchar(10) primary key not null,
+	ID_number_lessor varchar(20), 
+	ID_room varchar(10),
+	Total int,
+	Debit int,
+	Content nvarchar(100),
+	Payment_date_bill smalldatetime
+)
+
+create table Detail_Room_Bill (
+	ID_room_bill varchar(10),
+	ID_month varchar(2),
+	ID_year varchar(4),  
+	Amount_month int,
+	constraint pk_detail_room_bill primary key (ID_room_bill, ID_month, ID_year)
+)
+
+create table Services_Supplication (
+	ID_service varchar(5) primary key not null,
+	Name_service nvarchar(20),
+	Enrol_date smalldatetime,
+	Enrol_time int,
+	Time_amount int,
+	Service_fee int
+)
+
+create table Services_Bill (
+	ID_services_bill varchar(10) primary key not null,
+	ID_number_lessor varchar(20),
+	ID_room varchar(10),
+	Total int,
+	Content nvarchar(100),
+	Payment_date_services smalldatetime
+)
+
+create table Detail_Services_Bill (
+	ID_services_bill varchar(10),
+	ID_service varchar(5), 
+	Amount_services int,
+	constraint pk_detail_room_bills primary key (ID_services_bill, ID_service)
+)
+
+create table Living (
+	ID_living varchar(5) primary key not null,
+	Name_living nvarchar(20),
+	Living_fee int,
+	Unit nvarchar(10),
+	Supplier nvarchar(10)
+)
+	
+create table Living_Bill (
+	ID_living_bill varchar(10) primary key not null,
+	ID_number_lessor varchar(20),
+	ID_room varchar(10),
+	Total int,
+	Content nvarchar(100),
+	Payment_date_living smalldatetime
+)
+
+create table Detail_Living_Bill (
+	ID_living_bill varchar(10),
+	ID_living varchar(5), 
+	Amount_living int,
+	constraint pk_detail_living_bill primary key (ID_living_bill, ID_living)
+)
+
+create table Flat (
+	ID_flat varchar(20) primary key,
+	Name_flat nvarchar(30),
+	Room_amount int,
+	Floor_amount int,
+	Flat_address nvarchar(100),
+)
+
+create table Lessor (
+	ID_number_lessor varchar(20) primary key not null, 
+	Full_name nvarchar(30),
+	Sex bit,
+	Date_of_birth smalldatetime,
+	Phone_number_lessor varchar(11)
+)
+
+create table Ownerr (
+	ID_number_lessor varchar(20), 
+	ID_flat varchar(20), 
+	constraint pk_ownn primary key (ID_number_lessor, ID_flat)
+)
+
+alter table Roomate add constraint fk_romate foreign key (ID_number_tenant) references Tenant (ID_number_tenant)
+
+alter table Detail_Rent add constraint fk_rdt2 foreign key (ID_room) references Room (ID_room)
+
+alter table Detail_Rent add constraint fk_rdt1 foreign key (ID_number_tenant) references Tenant (ID_number_tenant)
+
+alter table Ownerr add constraint fk_own foreign key (ID_number_lessor) references Lessor (ID_number_lessor)
+
+alter table Ownerr add constraint fk_own2 foreign key (ID_flat) references Flat (ID_flat)
+
+alter table Room add constraint fk_room foreign key (ID_flat) references Flat (ID_flat)
+
+alter table Services_Bill add constraint fk_sv_bill1 foreign key (ID_room) references Room (ID_room)
+
+alter table Services_Bill add constraint fk_sv_bill2 foreign key (ID_number_lessor) references Lessor (ID_number_lessor)
+
+alter table Detail_Services_Bill add constraint fk_dt_sv_bill1 foreign key (ID_services_bill) references Services_Bill (ID_services_bill)
+
+alter table Detail_Services_Bill add constraint fk_dt_sv_bill2 foreign key (ID_service) references Services_Supplication (ID_service)
+
+/*
+alter table Services_Supplication add constraint fk_sv_sp foreign key (ID_service) references Detail_Services_Bill (ID_service)
+*/
+
+alter table  Living_Bill add constraint fk_lv_bill1 foreign key (ID_room) references Room (ID_room) 
+
+alter table Living_Bill add constraint fk_lv_bill foreign key (ID_number_lessor) references Lessor (ID_number_lessor)
+
+alter table Detail_Living_Bill add constraint fk_dt_lv_bill1 foreign key (ID_living_bill) references Living_Bill (ID_living_bill)
+
+alter table Detail_Living_Bill add constraint fk_dt_lv_bill2 foreign key (ID_living) references Living (ID_living)
+
+/*
+alter table Living add constraint fk_lv1 foreign key (ID_living) references Detail_Living_Bill (ID_living)
+*/
+
+alter table Room_Bill add constraint fk_room_bill1 foreign key (ID_room) references Room (ID_room)
+
+alter table Room_Bill add constraint fk_room_bill2 foreign key (ID_number_lessor) references Lessor (ID_number_lessor)
+
+alter table Detail_Room_Bill add constraint fk_dt_room_bill foreign key (ID_room_bill) references Room_Bill (ID_room_bill)
+
+alter table Detail_Room_Bill add constraint fk_dt_room_bill2 foreign key (ID_month, ID_year) references Monthly(ID_month, ID_year)
