@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\changepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\to_cong_quan\\university_documents\\nam 2\\hk2\\laptrinhmang\\project\\flat_services\\flat_services_application\\flat_services_application\\selectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\flat_services_application\\selectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\selectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -164,7 +164,7 @@
               "RelativeDocumentMoniker": "Flat_Services_Application\\ChangePass.cs",
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\ChangePass.cs",
               "RelativeToolTip": "Flat_Services_Application\\ChangePass.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAmwH0AAAASAAAA",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAmwH4AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T11:17:47.496Z",
               "EditorCaption": ""
@@ -190,8 +190,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\SelectRoom.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:55:40.331Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-14T14:55:40.331Z"
             },
             {
               "$type": "Document",
@@ -505,8 +504,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\ChangePass.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\ChangePass.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T06:59:09.1Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-12T06:59:09.1Z"
             },
             {
               "$type": "Document",
