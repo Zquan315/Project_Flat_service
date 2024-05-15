@@ -102,6 +102,7 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(476, 360);
             this.bunifuPanel1.TabIndex = 0;
+            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // lb3
             // 
@@ -283,7 +284,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbConfirmNew.OnIdleState = stateProperties4;
-            this.tbConfirmNew.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbConfirmNew.Padding = new System.Windows.Forms.Padding(3);
             this.tbConfirmNew.PasswordChar = '*';
             this.tbConfirmNew.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbConfirmNew.PlaceholderText = "Enter text";
@@ -360,7 +361,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbNewPass.OnIdleState = stateProperties8;
-            this.tbNewPass.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbNewPass.Padding = new System.Windows.Forms.Padding(3);
             this.tbNewPass.PasswordChar = '*';
             this.tbNewPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbNewPass.PlaceholderText = "Enter text";
@@ -437,7 +438,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbCurrPass.OnIdleState = stateProperties12;
-            this.tbCurrPass.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbCurrPass.Padding = new System.Windows.Forms.Padding(3);
             this.tbCurrPass.PasswordChar = '*';
             this.tbCurrPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbCurrPass.PlaceholderText = "Enter text";
