@@ -126,5 +126,15 @@ namespace Flat_Services_Application
             //test
             // test lan 2
         }
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("You must log out!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    this.Hide();
+                    Login l = new Login();
+                    l.Show();
+                }
+        }
     }
 }
