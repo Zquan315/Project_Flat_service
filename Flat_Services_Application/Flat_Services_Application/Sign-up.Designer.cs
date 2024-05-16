@@ -358,6 +358,7 @@
             this.llbTerm.TabIndex = 23;
             this.llbTerm.TabStop = true;
             this.llbTerm.Text = "terms";
+            this.llbTerm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTerm_LinkClicked);
             // 
             // cbTerm
             // 
@@ -442,7 +443,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbDate.OnIdleState = stateProperties4;
-            this.tbDate.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbDate.Padding = new System.Windows.Forms.Padding(3);
             this.tbDate.PasswordChar = '\0';
             this.tbDate.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbDate.PlaceholderText = "mm/dd/yyyy";
@@ -519,7 +520,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbID.OnIdleState = stateProperties8;
-            this.tbID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbID.Padding = new System.Windows.Forms.Padding(3);
             this.tbID.PasswordChar = '\0';
             this.tbID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbID.PlaceholderText = "ID";
@@ -596,7 +597,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbPhone.OnIdleState = stateProperties12;
-            this.tbPhone.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbPhone.Padding = new System.Windows.Forms.Padding(3);
             this.tbPhone.PasswordChar = '\0';
             this.tbPhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbPhone.PlaceholderText = "Phone";
@@ -673,7 +674,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbconfirmPass.OnIdleState = stateProperties16;
-            this.tbconfirmPass.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbconfirmPass.Padding = new System.Windows.Forms.Padding(3);
             this.tbconfirmPass.PasswordChar = '*';
             this.tbconfirmPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbconfirmPass.PlaceholderText = "password";
@@ -750,7 +751,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbPass.OnIdleState = stateProperties20;
-            this.tbPass.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbPass.Padding = new System.Windows.Forms.Padding(3);
             this.tbPass.PasswordChar = '*';
             this.tbPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbPass.PlaceholderText = "password";
@@ -872,7 +873,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbEmail.OnIdleState = stateProperties24;
-            this.tbEmail.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbEmail.Padding = new System.Windows.Forms.Padding(3);
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbEmail.PlaceholderText = "Email";
@@ -949,7 +950,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbName.OnIdleState = stateProperties28;
-            this.tbName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbName.Padding = new System.Windows.Forms.Padding(3);
             this.tbName.PasswordChar = '\0';
             this.tbName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbName.PlaceholderText = "Name";

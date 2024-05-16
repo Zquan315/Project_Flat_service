@@ -615,3 +615,4 @@ Q:\TO_CONG_QUAN\University_Documents\Nam 2\HK2\LapTrinhMang\Project\Flat_Service
 Q:\TO_CONG_QUAN\University_Documents\Nam 2\HK2\LapTrinhMang\Project\Flat_Services\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Ser.BB17834D.Up2Date
 Q:\TO_CONG_QUAN\University_Documents\Nam 2\HK2\LapTrinhMang\Project\Flat_Services\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Services_Application.exe
 Q:\TO_CONG_QUAN\University_Documents\Nam 2\HK2\LapTrinhMang\Project\Flat_Services\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Services_Application.pdb
+Q:\TO_CONG_QUAN\University_Documents\Nam 2\HK2\LapTrinhMang\Project\Flat_Services\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Services_Application.term.resources

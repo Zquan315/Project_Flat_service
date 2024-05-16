@@ -407,5 +407,12 @@ namespace Flat_Services_Application
         {
 
         }
+
+        private void llbTerm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            term t = new term();    
+            t.Show();
+        }
     }
 }

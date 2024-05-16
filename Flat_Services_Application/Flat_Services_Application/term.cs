@@ -16,5 +16,12 @@ namespace Flat_Services_Application
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Sign_up l = new Sign_up();
+            l.Show();
+        }
     }
 }

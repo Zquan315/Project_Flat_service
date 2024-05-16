@@ -120,7 +120,6 @@
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>                                                                                    Policy of the Flat service Application
 The Apartment Management Application is designed to streamline operations and enhance the living experience within residential complexes. Below is an overview of the key policies that govern the use and functionality of the application:
-
 1. Data Privacy and Security:
 Confidentiality: All resident information, including personal details and financial records, will be stored securely and accessed only by authorized personnel.
 Data Encryption: Sensitive data will be encrypted to ensure privacy and protection against unauthorized access.
@@ -134,20 +133,9 @@ Authentication: Secure login methods, including two-factor authentication, will 
 Request Handling: All maintenance and service requests submitted through the application will be tracked and managed efficiently, with regular updates provided to residents.
 Response Time: The management team is committed to responding to and addressing all requests within a specified time frame to ensure prompt service.
 
-4. Financial Transactions:
-Transparency: All financial transactions, including payment of fees and issuance of invoices, will be transparent and accessible to residents.
-Multiple Payment Options: Residents will have access to various secure payment methods to facilitate ease of transaction.
-
-5. Communication and Notifications:
+4. Communication and Notifications:
 Timely Updates: Important notifications, including community announcements and policy changes, will be communicated promptly through the application.
 Feedback Mechanism: Residents can provide feedback and suggestions directly through the app, fostering a collaborative community environment.
-
-6. Use of Amenities:
-Booking System: The application will manage bookings for common areas and amenities, ensuring fair and organized usage.
-Maintenance Schedule: Regular maintenance schedules for shared amenities will be available to residents, minimizing inconvenience.
-
-Conclusion:
-The policies of the Apartment Management Application are crafted to enhance efficiency, security, and resident satisfaction. By adhering to these policies, the application ensures a smooth and secure experience for all users, fostering a harmonious living environment within the residential community.
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
