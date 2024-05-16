@@ -263,6 +263,12 @@
     <Compile Include="lessor\Home_Lessor.Designer.cs">
       <DependentUpon>Home_Lessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="term.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="term.Designer.cs">
+      <DependentUpon>term.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tenant\homeservices.resx">
       <DependentUpon>homeservices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="term.resx">
+      <DependentUpon>term.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
