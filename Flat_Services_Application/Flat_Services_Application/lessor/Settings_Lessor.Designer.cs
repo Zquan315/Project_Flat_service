@@ -102,7 +102,7 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 659);
             this.panel3.TabIndex = 14;
@@ -764,7 +764,7 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 102);
             this.panel5.TabIndex = 0;
@@ -789,7 +789,7 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(240, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(943, 102);
             this.panel4.TabIndex = 15;
@@ -1228,10 +1228,10 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Phone_tb.OnIdleState = stateProperties4;
-            this.Phone_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Phone_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Phone_tb.PasswordChar = '\0';
             this.Phone_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.Phone_tb.PlaceholderText = "";
+            this.Phone_tb.PlaceholderText = "Phone";
             this.Phone_tb.ReadOnly = false;
             this.Phone_tb.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.Phone_tb.SelectedText = "";
@@ -1245,7 +1245,7 @@
             this.Phone_tb.TextMarginBottom = 0;
             this.Phone_tb.TextMarginLeft = 3;
             this.Phone_tb.TextMarginTop = 1;
-            this.Phone_tb.TextPlaceholder = "";
+            this.Phone_tb.TextPlaceholder = "Phone";
             this.Phone_tb.UseSystemPasswordChar = false;
             this.Phone_tb.WordWrap = true;
             // 
@@ -1320,7 +1320,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Name_tb.OnIdleState = stateProperties8;
-            this.Name_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Name_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Name_tb.PasswordChar = '\0';
             this.Name_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Name_tb.PlaceholderText = "Name";
@@ -1397,7 +1397,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Address_tb.OnIdleState = stateProperties12;
-            this.Address_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Address_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Address_tb.PasswordChar = '\0';
             this.Address_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Address_tb.PlaceholderText = "ID";
@@ -1505,7 +1505,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Email_tb.OnIdleState = stateProperties16;
-            this.Email_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Email_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Email_tb.PasswordChar = '\0';
             this.Email_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Email_tb.PlaceholderText = "Email";
