@@ -612,7 +612,7 @@
             this.Phone_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Phone_tb.PasswordChar = '\0';
             this.Phone_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.Phone_tb.PlaceholderText = "";
+            this.Phone_tb.PlaceholderText = "Phone";
             this.Phone_tb.ReadOnly = false;
             this.Phone_tb.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.Phone_tb.SelectedText = "";
@@ -626,7 +626,7 @@
             this.Phone_tb.TextMarginBottom = 0;
             this.Phone_tb.TextMarginLeft = 3;
             this.Phone_tb.TextMarginTop = 1;
-            this.Phone_tb.TextPlaceholder = "";
+            this.Phone_tb.TextPlaceholder = "Phone";
             this.Phone_tb.UseSystemPasswordChar = false;
             this.Phone_tb.WordWrap = true;
             // 

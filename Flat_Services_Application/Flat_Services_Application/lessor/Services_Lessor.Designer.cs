@@ -101,7 +101,7 @@
             this.Services_btn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.Services_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Services_btn.BackgroundImage")));
             this.Services_btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Services_btn.ButtonText = "Services";
+            this.Services_btn.ButtonText = "Service";
             this.Services_btn.ButtonTextMarginLeft = 0;
             this.Services_btn.ColorContrastOnClick = 45;
             this.Services_btn.ColorContrastOnHover = 45;

@@ -218,7 +218,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 29);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Return";
+            this.button5.Text = "Delete";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -288,9 +288,9 @@
             this.label9.Location = new System.Drawing.Point(4, 24);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 19);
+            this.label9.Size = new System.Drawing.Size(150, 19);
             this.label9.TabIndex = 2;
-            this.label9.Text = "AccountNumber";
+            this.label9.Text = "Account Number";
             // 
             // panel6
             // 
@@ -324,7 +324,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(179, 22);
             this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "LE MINH QUAN";
             // 
             // label8
             // 
@@ -346,7 +345,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(179, 22);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "VIETCOMBANK";
             // 
             // label7
             // 
@@ -368,7 +366,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(179, 22);
             this.textBox2.TabIndex = 11;
-            this.textBox2.Text = "QUANLENE";
             // 
             // label6
             // 
@@ -463,9 +460,9 @@
             this.label3.Location = new System.Drawing.Point(2, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 19);
+            this.label3.Size = new System.Drawing.Size(96, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "ID_Services";
+            this.label3.Text = "ID_Service";
             // 
             // textBox1
             // 
@@ -687,7 +684,7 @@
             this.servicesBtn.Name = "servicesBtn";
             this.servicesBtn.Size = new System.Drawing.Size(240, 77);
             this.servicesBtn.TabIndex = 4;
-            this.servicesBtn.Text = "Services";
+            this.servicesBtn.Text = "Service";
             this.servicesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.servicesBtn.UseVisualStyleBackColor = true;
             this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);
