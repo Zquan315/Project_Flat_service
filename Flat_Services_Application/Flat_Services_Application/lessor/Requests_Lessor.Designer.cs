@@ -55,8 +55,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.clmPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmRoom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmRoom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnBrowse = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnNoBrowse = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel3.SuspendLayout();
@@ -849,17 +849,17 @@
             this.clmPhone.Text = "Account Phone Number";
             this.clmPhone.Width = 247;
             // 
-            // clmRoom
-            // 
-            this.clmRoom.Text = "Room";
-            this.clmRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmRoom.Width = 200;
-            // 
             // clmName
             // 
             this.clmName.Text = "Name";
             this.clmName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.clmName.Width = 264;
+            // 
+            // clmRoom
+            // 
+            this.clmRoom.Text = "Room";
+            this.clmRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clmRoom.Width = 200;
             // 
             // btnBrowse
             // 
@@ -1057,7 +1057,7 @@
             this.MaximizeBox = false;
             this.Name = "Requests_Lessor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -95,7 +95,7 @@
             this.panelCenter.Controls.Add(this.panelCenterDifferFee);
             this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCenter.Location = new System.Drawing.Point(0, 0);
-            this.panelCenter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCenter.Margin = new System.Windows.Forms.Padding(2);
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(1183, 659);
             this.panelCenter.TabIndex = 7;
@@ -112,7 +112,7 @@
             this.panel1.Controls.Add(this.homeBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 557);
             this.panel1.TabIndex = 7;
@@ -122,7 +122,7 @@
             this.differBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.differBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.differBtn.Location = new System.Drawing.Point(0, 385);
-            this.differBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.differBtn.Margin = new System.Windows.Forms.Padding(2);
             this.differBtn.Name = "differBtn";
             this.differBtn.Size = new System.Drawing.Size(240, 77);
             this.differBtn.TabIndex = 7;
@@ -136,7 +136,7 @@
             this.logoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.logoutBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.Location = new System.Drawing.Point(0, 480);
-            this.logoutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(2);
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.Size = new System.Drawing.Size(240, 77);
             this.logoutBtn.TabIndex = 6;
@@ -149,7 +149,7 @@
             this.chatBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.chatBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chatBtn.Location = new System.Drawing.Point(0, 308);
-            this.chatBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chatBtn.Margin = new System.Windows.Forms.Padding(2);
             this.chatBtn.Name = "chatBtn";
             this.chatBtn.Size = new System.Drawing.Size(240, 77);
             this.chatBtn.TabIndex = 5;
@@ -163,7 +163,7 @@
             this.servicesBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.servicesBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.servicesBtn.Location = new System.Drawing.Point(0, 231);
-            this.servicesBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.servicesBtn.Margin = new System.Windows.Forms.Padding(2);
             this.servicesBtn.Name = "servicesBtn";
             this.servicesBtn.Size = new System.Drawing.Size(240, 77);
             this.servicesBtn.TabIndex = 4;
@@ -177,7 +177,7 @@
             this.infoBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.infoBtn.Font = new System.Drawing.Font("Century", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoBtn.Location = new System.Drawing.Point(0, 154);
-            this.infoBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.infoBtn.Margin = new System.Windows.Forms.Padding(2);
             this.infoBtn.Name = "infoBtn";
             this.infoBtn.Size = new System.Drawing.Size(240, 77);
             this.infoBtn.TabIndex = 3;
@@ -191,7 +191,7 @@
             this.costsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.costsBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costsBtn.Location = new System.Drawing.Point(0, 77);
-            this.costsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.costsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.costsBtn.Name = "costsBtn";
             this.costsBtn.Size = new System.Drawing.Size(240, 77);
             this.costsBtn.TabIndex = 2;
@@ -206,7 +206,7 @@
             this.homeBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.homeBtn.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.Location = new System.Drawing.Point(0, 0);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(240, 77);
             this.homeBtn.TabIndex = 1;
@@ -220,7 +220,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1183, 102);
             this.panel2.TabIndex = 8;
@@ -232,7 +232,7 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1183, 102);
             this.panel4.TabIndex = 0;
@@ -246,7 +246,7 @@
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1183, 102);
             this.panel6.TabIndex = 1;
@@ -255,7 +255,7 @@
             // 
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(851, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(322, 97);
             this.panel9.TabIndex = 7;
@@ -276,7 +276,7 @@
             this.panel3.BackgroundImage = global::Flat_Services_Application.Properties.Resources.Icon1;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(2, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 102);
             this.panel3.TabIndex = 4;
@@ -325,7 +325,7 @@
             this.panelCenterDifferFee.Controls.Add(this.groupBox2);
             this.panelCenterDifferFee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCenterDifferFee.Location = new System.Drawing.Point(0, 0);
-            this.panelCenterDifferFee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCenterDifferFee.Margin = new System.Windows.Forms.Padding(2);
             this.panelCenterDifferFee.Name = "panelCenterDifferFee";
             this.panelCenterDifferFee.Size = new System.Drawing.Size(1183, 659);
             this.panelCenterDifferFee.TabIndex = 9;
@@ -346,9 +346,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(244, 106);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(929, 546);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -608,7 +608,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Phone_tb.OnIdleState = stateProperties4;
-            this.Phone_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Phone_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Phone_tb.PasswordChar = '\0';
             this.Phone_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Phone_tb.PlaceholderText = "";
@@ -618,7 +618,7 @@
             this.Phone_tb.SelectionLength = 0;
             this.Phone_tb.SelectionStart = 0;
             this.Phone_tb.ShortcutsEnabled = true;
-            this.Phone_tb.Size = new System.Drawing.Size(618, 31);
+            this.Phone_tb.Size = new System.Drawing.Size(618, 43);
             this.Phone_tb.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Phone_tb.TabIndex = 22;
             this.Phone_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -701,7 +701,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Name_tb.OnIdleState = stateProperties8;
-            this.Name_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Name_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Name_tb.PasswordChar = '\0';
             this.Name_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Name_tb.PlaceholderText = "Name";
@@ -711,7 +711,7 @@
             this.Name_tb.SelectionLength = 0;
             this.Name_tb.SelectionStart = 0;
             this.Name_tb.ShortcutsEnabled = true;
-            this.Name_tb.Size = new System.Drawing.Size(618, 31);
+            this.Name_tb.Size = new System.Drawing.Size(618, 43);
             this.Name_tb.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Name_tb.TabIndex = 23;
             this.Name_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -778,7 +778,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Address_tb.OnIdleState = stateProperties12;
-            this.Address_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Address_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Address_tb.PasswordChar = '\0';
             this.Address_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Address_tb.PlaceholderText = "ID";
@@ -788,7 +788,7 @@
             this.Address_tb.SelectionLength = 0;
             this.Address_tb.SelectionStart = 0;
             this.Address_tb.ShortcutsEnabled = true;
-            this.Address_tb.Size = new System.Drawing.Size(618, 31);
+            this.Address_tb.Size = new System.Drawing.Size(618, 43);
             this.Address_tb.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Address_tb.TabIndex = 25;
             this.Address_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -888,7 +888,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Email_tb.OnIdleState = stateProperties16;
-            this.Email_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Email_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Email_tb.PasswordChar = '\0';
             this.Email_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Email_tb.PlaceholderText = "Email";
@@ -898,7 +898,7 @@
             this.Email_tb.SelectionLength = 0;
             this.Email_tb.SelectionStart = 0;
             this.Email_tb.ShortcutsEnabled = true;
-            this.Email_tb.Size = new System.Drawing.Size(618, 31);
+            this.Email_tb.Size = new System.Drawing.Size(618, 43);
             this.Email_tb.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Email_tb.TabIndex = 24;
             this.Email_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -916,11 +916,11 @@
             this.ClientSize = new System.Drawing.Size(1183, 659);
             this.Controls.Add(this.panelCenter);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Setting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.Load += new System.EventHandler(this.differencesfee_Load);
             this.panelCenter.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

@@ -59,12 +59,12 @@
             this.ChangeColorBtn = new System.Windows.Forms.Button();
             this.DelBtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbChat = new System.Windows.Forms.TextBox();
-            this.lvMess = new System.Windows.Forms.ListView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lvMess = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tbChat = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,8 +73,8 @@
             this.panelCenterOption.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -948,6 +948,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Message";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(249, 204);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(2, 30);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(251, 21);
+            this.textBox1.TabIndex = 2;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -964,17 +983,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "View Chat";
             // 
-            // tbChat
-            // 
-            this.tbChat.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbChat.Location = new System.Drawing.Point(5, 499);
-            this.tbChat.Margin = new System.Windows.Forms.Padding(2);
-            this.tbChat.Multiline = true;
-            this.tbChat.Name = "tbChat";
-            this.tbChat.Size = new System.Drawing.Size(637, 35);
-            this.tbChat.TabIndex = 1;
-            // 
             // lvMess
             // 
             this.lvMess.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -987,29 +995,21 @@
             this.lvMess.UseCompatibleStateImageBehavior = false;
             this.lvMess.View = System.Windows.Forms.View.Details;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(2, 30);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(251, 21);
-            this.textBox1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 204);
-            this.dataGridView1.TabIndex = 3;
-            // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "";
             this.columnHeader1.Width = 625;
+            // 
+            // tbChat
+            // 
+            this.tbChat.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tbChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbChat.Location = new System.Drawing.Point(5, 499);
+            this.tbChat.Margin = new System.Windows.Forms.Padding(2);
+            this.tbChat.Multiline = true;
+            this.tbChat.Name = "tbChat";
+            this.tbChat.Size = new System.Drawing.Size(637, 35);
+            this.tbChat.TabIndex = 1;
             // 
             // Chat_Lessor
             // 
@@ -1022,7 +1022,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Chat_Lessor";
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1033,9 +1033,9 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

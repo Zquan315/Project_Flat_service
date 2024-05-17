@@ -31,7 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homechating));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lvMess = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tbChat = new System.Windows.Forms.TextBox();
             this.panelCenterOption = new System.Windows.Forms.Panel();
+            this.panelCenterChat = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.FindBtn = new System.Windows.Forms.Button();
+            this.SendBtn = new System.Windows.Forms.Button();
+            this.ChangeColorBtn = new System.Windows.Forms.Button();
+            this.DelBtn = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -62,23 +77,14 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panelCenterChat = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.lvMess = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tbChat = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.FindBtn = new System.Windows.Forms.Button();
-            this.SendBtn = new System.Windows.Forms.Button();
-            this.ChangeColorBtn = new System.Windows.Forms.Button();
-            this.DelBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.panelCenterOption.SuspendLayout();
+            this.panelCenterChat.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panelCenter.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -86,12 +92,6 @@
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panelCenterChat.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,6 +106,72 @@
             this.panel1.Size = new System.Drawing.Size(943, 557);
             this.panel1.TabIndex = 9;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.panel10);
+            this.panel8.Controls.Add(this.groupBox5);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(676, 557);
+            this.panel8.TabIndex = 16;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(663, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(13, 557);
+            this.panel10.TabIndex = 1;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.groupBox5.Controls.Add(this.lvMess);
+            this.groupBox5.Controls.Add(this.tbChat);
+            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(12, 13);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(647, 536);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "View Chat";
+            // 
+            // lvMess
+            // 
+            this.lvMess.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lvMess.HideSelection = false;
+            this.lvMess.Location = new System.Drawing.Point(5, 30);
+            this.lvMess.Name = "lvMess";
+            this.lvMess.Size = new System.Drawing.Size(637, 464);
+            this.lvMess.TabIndex = 2;
+            this.lvMess.UseCompatibleStateImageBehavior = false;
+            this.lvMess.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 625;
+            // 
+            // tbChat
+            // 
+            this.tbChat.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tbChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbChat.Location = new System.Drawing.Point(5, 499);
+            this.tbChat.Margin = new System.Windows.Forms.Padding(2);
+            this.tbChat.Multiline = true;
+            this.tbChat.Name = "tbChat";
+            this.tbChat.Size = new System.Drawing.Size(637, 35);
+            this.tbChat.TabIndex = 1;
+            // 
             // panelCenterOption
             // 
             this.panelCenterOption.BackColor = System.Drawing.Color.White;
@@ -118,6 +184,119 @@
             this.panelCenterOption.Name = "panelCenterOption";
             this.panelCenterOption.Size = new System.Drawing.Size(267, 557);
             this.panelCenterOption.TabIndex = 0;
+            // 
+            // panelCenterChat
+            // 
+            this.panelCenterChat.BackColor = System.Drawing.Color.White;
+            this.panelCenterChat.Controls.Add(this.groupBox1);
+            this.panelCenterChat.Controls.Add(this.groupBox4);
+            this.panelCenterChat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenterChat.Location = new System.Drawing.Point(0, 0);
+            this.panelCenterChat.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCenterChat.Name = "panelCenterChat";
+            this.panelCenterChat.Size = new System.Drawing.Size(267, 557);
+            this.panelCenterChat.TabIndex = 16;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.groupBox1.Controls.Add(this.FindBtn);
+            this.groupBox1.Controls.Add(this.SendBtn);
+            this.groupBox1.Controls.Add(this.ChangeColorBtn);
+            this.groupBox1.Controls.Add(this.DelBtn);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(4, 281);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(255, 257);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Settings";
+            // 
+            // FindBtn
+            // 
+            this.FindBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FindBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.FindBtn.Location = new System.Drawing.Point(2, 31);
+            this.FindBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.FindBtn.Name = "FindBtn";
+            this.FindBtn.Size = new System.Drawing.Size(251, 56);
+            this.FindBtn.TabIndex = 4;
+            this.FindBtn.Text = "Find";
+            this.FindBtn.UseVisualStyleBackColor = true;
+            // 
+            // SendBtn
+            // 
+            this.SendBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.SendBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.SendBtn.Location = new System.Drawing.Point(2, 87);
+            this.SendBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SendBtn.Name = "SendBtn";
+            this.SendBtn.Size = new System.Drawing.Size(251, 56);
+            this.SendBtn.TabIndex = 3;
+            this.SendBtn.Text = "Send";
+            this.SendBtn.UseVisualStyleBackColor = true;
+            // 
+            // ChangeColorBtn
+            // 
+            this.ChangeColorBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ChangeColorBtn.ForeColor = System.Drawing.Color.Black;
+            this.ChangeColorBtn.Location = new System.Drawing.Point(2, 143);
+            this.ChangeColorBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ChangeColorBtn.Name = "ChangeColorBtn";
+            this.ChangeColorBtn.Size = new System.Drawing.Size(251, 56);
+            this.ChangeColorBtn.TabIndex = 1;
+            this.ChangeColorBtn.Text = "Change Color";
+            this.ChangeColorBtn.UseVisualStyleBackColor = true;
+            // 
+            // DelBtn
+            // 
+            this.DelBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DelBtn.ForeColor = System.Drawing.Color.Black;
+            this.DelBtn.Location = new System.Drawing.Point(2, 199);
+            this.DelBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DelBtn.Name = "DelBtn";
+            this.DelBtn.Size = new System.Drawing.Size(251, 56);
+            this.DelBtn.TabIndex = 0;
+            this.DelBtn.Text = "Delete";
+            this.DelBtn.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(2, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(255, 273);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Message";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(249, 204);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(2, 30);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(251, 21);
+            this.textBox1.TabIndex = 2;
             // 
             // groupBox3
             // 
@@ -493,185 +672,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // panelCenterChat
-            // 
-            this.panelCenterChat.BackColor = System.Drawing.Color.White;
-            this.panelCenterChat.Controls.Add(this.groupBox1);
-            this.panelCenterChat.Controls.Add(this.groupBox4);
-            this.panelCenterChat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenterChat.Location = new System.Drawing.Point(0, 0);
-            this.panelCenterChat.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCenterChat.Name = "panelCenterChat";
-            this.panelCenterChat.Size = new System.Drawing.Size(267, 557);
-            this.panelCenterChat.TabIndex = 16;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.panel10);
-            this.panel8.Controls.Add(this.groupBox5);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(676, 557);
-            this.panel8.TabIndex = 16;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(663, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(13, 557);
-            this.panel10.TabIndex = 1;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox5.Controls.Add(this.lvMess);
-            this.groupBox5.Controls.Add(this.tbChat);
-            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(12, 13);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(647, 536);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "View Chat";
-            // 
-            // lvMess
-            // 
-            this.lvMess.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.lvMess.HideSelection = false;
-            this.lvMess.Location = new System.Drawing.Point(5, 30);
-            this.lvMess.Name = "lvMess";
-            this.lvMess.Size = new System.Drawing.Size(637, 464);
-            this.lvMess.TabIndex = 2;
-            this.lvMess.UseCompatibleStateImageBehavior = false;
-            this.lvMess.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "";
-            this.columnHeader1.Width = 625;
-            // 
-            // tbChat
-            // 
-            this.tbChat.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbChat.Location = new System.Drawing.Point(5, 499);
-            this.tbChat.Margin = new System.Windows.Forms.Padding(2);
-            this.tbChat.Multiline = true;
-            this.tbChat.Name = "tbChat";
-            this.tbChat.Size = new System.Drawing.Size(637, 35);
-            this.tbChat.TabIndex = 1;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(2, 4);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(255, 273);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Message";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 204);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(2, 30);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(251, 21);
-            this.textBox1.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox1.Controls.Add(this.FindBtn);
-            this.groupBox1.Controls.Add(this.SendBtn);
-            this.groupBox1.Controls.Add(this.ChangeColorBtn);
-            this.groupBox1.Controls.Add(this.DelBtn);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(4, 281);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(255, 257);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Settings";
-            // 
-            // FindBtn
-            // 
-            this.FindBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.FindBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.FindBtn.Location = new System.Drawing.Point(2, 31);
-            this.FindBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.FindBtn.Name = "FindBtn";
-            this.FindBtn.Size = new System.Drawing.Size(251, 56);
-            this.FindBtn.TabIndex = 4;
-            this.FindBtn.Text = "Find";
-            this.FindBtn.UseVisualStyleBackColor = true;
-            // 
-            // SendBtn
-            // 
-            this.SendBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SendBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.SendBtn.Location = new System.Drawing.Point(2, 87);
-            this.SendBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.SendBtn.Name = "SendBtn";
-            this.SendBtn.Size = new System.Drawing.Size(251, 56);
-            this.SendBtn.TabIndex = 3;
-            this.SendBtn.Text = "Send";
-            this.SendBtn.UseVisualStyleBackColor = true;
-            // 
-            // ChangeColorBtn
-            // 
-            this.ChangeColorBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ChangeColorBtn.ForeColor = System.Drawing.Color.Black;
-            this.ChangeColorBtn.Location = new System.Drawing.Point(2, 143);
-            this.ChangeColorBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.ChangeColorBtn.Name = "ChangeColorBtn";
-            this.ChangeColorBtn.Size = new System.Drawing.Size(251, 56);
-            this.ChangeColorBtn.TabIndex = 1;
-            this.ChangeColorBtn.Text = "Change Color";
-            this.ChangeColorBtn.UseVisualStyleBackColor = true;
-            // 
-            // DelBtn
-            // 
-            this.DelBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DelBtn.ForeColor = System.Drawing.Color.Black;
-            this.DelBtn.Location = new System.Drawing.Point(2, 199);
-            this.DelBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.DelBtn.Name = "DelBtn";
-            this.DelBtn.Size = new System.Drawing.Size(251, 56);
-            this.DelBtn.TabIndex = 0;
-            this.DelBtn.Text = "Delete";
-            this.DelBtn.UseVisualStyleBackColor = true;
-            // 
             // homechating
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -682,10 +682,18 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "homechating";
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.Load += new System.EventHandler(this.homechating_Load);
             this.panel1.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.panelCenterOption.ResumeLayout(false);
+            this.panelCenterChat.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.panelCenter.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -695,14 +703,6 @@
             this.panel7.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panelCenterChat.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

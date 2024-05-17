@@ -2210,7 +2210,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Flat_Management_2";
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.bunifuPanel6.ResumeLayout(false);

@@ -543,7 +543,7 @@
             this.Controls.Add(this.panel4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Add_Service_Lessor";
-            this.Text = "Flat Services";
+            this.Text = "Flat Service";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);
