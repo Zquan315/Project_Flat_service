@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\to_cong_quan\\university_documents\\nam 2\\hk2\\laptrinhmang\\project\\flat_services\\flat_services_application\\flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\add_service_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\to_cong_quan\\university_documents\\nam 2\\hk2\\laptrinhmang\\project\\flat_services\\flat_services_application\\flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -207,8 +207,7 @@
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homechating.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAuwCcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:11:43.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T13:11:43.461Z"
             },
             {
               "$type": "Document",
@@ -335,8 +334,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homechating.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:14:10.282Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T06:14:10.282Z"
             },
             {
               "$type": "Document",
@@ -347,8 +345,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:15:38.603Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T06:15:38.603Z"
             },
             {
               "$type": "Document",
@@ -370,8 +367,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Charge_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Charge_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:44:05.313Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-11T12:44:05.313Z"
             },
             {
               "$type": "Document",
@@ -382,8 +378,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Chat_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Chat_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T05:57:34.471Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T05:57:34.471Z"
             },
             {
               "$type": "Document",
@@ -394,8 +389,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Payment_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:15:28.259Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T06:15:28.259Z"
             },
             {
               "$type": "Document",
@@ -406,8 +400,7 @@
               "ToolTip": "Q:\\TO_CONG_QUAN\\University_Documents\\Nam 2\\HK2\\LapTrinhMang\\Project\\Flat_Services\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Add_Service_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Add_Service_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:54:10.871Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-11T12:54:10.871Z"
             },
             {
               "$type": "Document",
