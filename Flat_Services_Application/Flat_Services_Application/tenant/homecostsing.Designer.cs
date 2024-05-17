@@ -258,7 +258,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 29);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Return";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -365,7 +365,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(179, 22);
             this.textBox5.TabIndex = 9;
-            this.textBox5.Text = "LE MINH QUAN";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox4
             // 
@@ -376,7 +376,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(179, 22);
             this.textBox4.TabIndex = 8;
-            this.textBox4.Text = "VIETCOMBANK";
             // 
             // textBox3
             // 
@@ -387,7 +386,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(179, 22);
             this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "QUANLENE";
             // 
             // label6
             // 
@@ -424,6 +422,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(143, 76);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;

@@ -96,5 +96,10 @@ namespace Flat_Services_Application.tenant
                 this.Show();
             }
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
