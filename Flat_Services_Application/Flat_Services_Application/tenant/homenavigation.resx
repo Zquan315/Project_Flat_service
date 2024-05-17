@@ -120,11 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAVcAAAAgCAYAAACmYTvVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACsSURBVHhe7dSxDcMwAANB7T+VDI2RMTJADAFqUtvf3QFs
+        iVBORw0KGgoAAAANSUhEUgAAAVcAAAArCAYAAADMpssWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADRSURBVHhe7dSxDcMwAANB7T+VDI2RMTJADAFqUtvf3QFs
         OMAPACJrrc+c82dmZs+2e3rSOsY+AHhu9/SkVVwB3iKuAAFxBQiIK0BAXAEC4goQEFeAgLgCBMQVICCu
-        AAFxBQiIK0BAXAEC4goQEFeAgLgCBMQVICCuAAFxBQiIK0BAXAEC4goQEFeAgLgCBMQVICCuAAFxBQj8
-        xfW6ru8+zMzs2XZPT1oBeNcYN2jbIDqGVshtAAAAAElFTkSuQmCC
+        AAFxBQiIK0BAXAEC4goQEFeAgLgCBMQVICCuAAFxBQiIK0BAXAEC4goQEFeAgLgCBMQVICCuAAFxBQiI
+        K0BAXAEC4goQEFeAgLgCBMQVICCuAAFxBQiIK0BAXAEC4goQ+IvrdV3ffZiZ2bPtnp60AvCuMW4PiHTG
+        tcs4EwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="directorySearcher1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

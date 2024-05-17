@@ -602,7 +602,7 @@
             this.button4.Location = new System.Drawing.Point(0, 487);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 77);
+            this.button4.Size = new System.Drawing.Size(240, 80);
             this.button4.TabIndex = 7;
             this.button4.Text = "Setting";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -613,12 +613,13 @@
             // 
             this.logoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.logoutBtn.Font = new System.Drawing.Font("Century Gothic", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutBtn.Location = new System.Drawing.Point(0, 582);
+            this.logoutBtn.Location = new System.Drawing.Point(0, 571);
             this.logoutBtn.Margin = new System.Windows.Forms.Padding(2);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(240, 77);
+            this.logoutBtn.Size = new System.Drawing.Size(240, 88);
             this.logoutBtn.TabIndex = 6;
             this.logoutBtn.Text = "Log Out";
+            this.logoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logoutBtn.UseVisualStyleBackColor = true;
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
