@@ -199,10 +199,5 @@ namespace Flat_Services_Application.lessor
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
-
-        private void Flat_btn_Click(object sender, EventArgs e)
-        {
-            //comment
-        }
     }
 }
