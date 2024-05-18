@@ -887,6 +887,7 @@
             this.Flat_btn.TextMarginLeft = 0;
             this.Flat_btn.TextPadding = new System.Windows.Forms.Padding(0);
             this.Flat_btn.UseDefaultRadiusAndThickness = true;
+            this.Flat_btn.Click += new System.EventHandler(this.Flat_btn_Click);
             // 
             // Pay_btn
             // 
