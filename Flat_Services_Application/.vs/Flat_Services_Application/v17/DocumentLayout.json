@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\selectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\selectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,20 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SelectRoom.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\SelectRoom.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs",
               "RelativeToolTip": "Flat_Services_Application\\SelectRoom.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBUAAAAdAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T09:38:01.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Flat_Management_2.Designer.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.Designer.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.Designer.cs",
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Flat_Management_2.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.cs",
@@ -187,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Services_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Services_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Services_Lessor.cs",
@@ -209,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SelectRoom.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\SelectRoom.cs",
@@ -220,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Flat_Management_2.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.cs",
@@ -242,15 +242,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "homeinformation.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homeinformation.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAIAwwIsAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:11:18.642Z"
+              "WhenOpened": "2024-05-14T13:11:18.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -266,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "homecostsing.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
@@ -310,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "homecostsing.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
@@ -368,13 +369,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "homeinformation.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
-              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs [Design]",
+              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs [Design]",
+              "RelativeToolTip": "Flat_Services_Application\\tenant\\homeinformation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:14:33.515Z"
+              "WhenOpened": "2024-05-04T06:14:33.515Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -388,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "homeservices.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeservices.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeservices.cs",
@@ -398,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "homechating.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homechating.cs",
@@ -468,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Setting.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\Setting.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\Setting.cs",

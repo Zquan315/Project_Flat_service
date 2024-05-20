@@ -1,4 +1,4 @@
-﻿using Flat_Services_Application.connectDB;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,8 +22,7 @@ namespace Flat_Services_Application.tenant
             InitializeComponent();
             tbAccount.Text = s;
         }
-        Modify modify;
-        roomate rooMate;
+       
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -35,15 +34,7 @@ namespace Flat_Services_Application.tenant
             this.infoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)41))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.infoBtn.ForeColor = Color.White;
 
-            modify = new Modify();
-            try
-            {
-                dataGridView1.DataSource = modify.getAllRoomate();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
