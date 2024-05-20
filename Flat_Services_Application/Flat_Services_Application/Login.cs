@@ -179,15 +179,26 @@ namespace Flat_Services_Application
                         objects = dt.objects,
                         status = dt.status,
                         remember = 1,
+                        room = dt.room,
                     };
                     FirebaseResponse ud = await client.UpdateAsync("Account Tenant/" + tbPhoneNumber.Text, data);
                     Data result = ud.ResultAs<Data>();
                 }
-                this.Hide();
-                homenavigation h = new homenavigation(tbPhoneNumber.Text);
-                h.StartPosition = FormStartPosition.CenterScreen;
-                h.Show();
-
+                if (dt.status == 0)
+                {
+                    this.Hide();
+                    SelectRoom s = new SelectRoom();
+                    s.Show();
+                }
+                else if (dt.status == 1)
+                    MessageBox.Show("Please wait to be browsed by lessor!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                {
+                    this.Hide();
+                    homenavigation h = new homenavigation(tbPhoneNumber.Text);
+                    h.StartPosition = FormStartPosition.CenterScreen;
+                    h.Show();
+                }
                 //them luong hien thi form login
 
             }
@@ -232,6 +243,7 @@ namespace Flat_Services_Application
                         objects = obj.objects,
                         status = obj.status,
                         remember = 1,
+                        room = obj.room,
                     };
                     FirebaseResponse ud = await client.UpdateAsync("Account Lessor/" + tbPhoneNumber.Text, data);
                     Data result = ud.ResultAs<Data>();
