@@ -16,5 +16,10 @@ namespace Flat_Services_Application
         {
             InitializeComponent();
         }
+
+        private void SelectRoom_Load(object sender, EventArgs e)
+        {
+            //tao rang buoc//
+        }
     }
 }

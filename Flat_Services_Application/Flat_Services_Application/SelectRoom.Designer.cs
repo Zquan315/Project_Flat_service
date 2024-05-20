@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdb305 = new System.Windows.Forms.RadioButton();
             this.rdb304 = new System.Windows.Forms.RadioButton();
@@ -485,11 +485,11 @@
             this.ConfirmBtn.ColorContrastOnClick = 45;
             this.ConfirmBtn.ColorContrastOnHover = 45;
             this.ConfirmBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.ConfirmBtn.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.ConfirmBtn.CustomizableEdges = borderEdges1;
             this.ConfirmBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ConfirmBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.ConfirmBtn.DisabledFillColor = System.Drawing.Color.Empty;
@@ -576,11 +576,11 @@
             this.returnBtn.ColorContrastOnClick = 45;
             this.returnBtn.ColorContrastOnHover = 45;
             this.returnBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.returnBtn.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.returnBtn.CustomizableEdges = borderEdges2;
             this.returnBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.returnBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.returnBtn.DisabledFillColor = System.Drawing.Color.Empty;
@@ -662,6 +662,7 @@
             this.Name = "SelectRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.SelectRoom_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
