@@ -102,6 +102,7 @@ namespace Flat_Services_Application
                 {
                     UpdateStatusRoom(room, IDroom);
                     MessageBox.Show("Please wait to be browsed by lessor!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                     this.Hide();
                     Login l = new Login();
                     l.Show();
@@ -115,6 +116,7 @@ namespace Flat_Services_Application
             }
         }
 
+        
         async void UpdateStatusRoom(int[] room, RadioButton[] IDroom)
         {
             for (int i = 0; i < IDroom.Length; i++)
@@ -152,8 +154,19 @@ namespace Flat_Services_Application
                         FirebaseResponse ud = await client.UpdateAsync("Account Tenant/" + sdt, data);
                         Data result = ud.ResultAs<Data>();
 
-
+                        // them list cho duyet boi lessor
+                        DocumentReference DOC = db.Collection("ListAwaitBrowse").Document(sdt);
+                        
+                        Dictionary<string, object> dta = new Dictionary<string, object>();
+                        {
+                            dta.Add("Name",dt.name );
+                            dta.Add("Room", room[i].ToString());
+                        };
+                        DOC.SetAsync(dta);
                     }
+
+                   
+                   
                     return;
                 }
             }
