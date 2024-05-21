@@ -756,3 +756,4 @@ Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Serv
 Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\System.Threading.Tasks.Extensions.xml
 Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\System.ValueTuple.xml
 Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Ser.BB17834D.Up2Date
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json

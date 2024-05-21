@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
+using Flat_Services_Application.Class;
 using Google.Cloud.Firestore;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Flat_Services_Application
 {
@@ -38,8 +40,42 @@ namespace Flat_Services_Application
                 MessageBox.Show("Connected isn't Successful!");
                 return;
             }
-               
 
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+                Get_a_Data(room, IDroom);
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!","Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                return; 
+            }
+
+        }
+
+        async void Get_a_Data(int[] room, RadioButton[] IDroom)
+        {
+           
+            for (int i = 0; i < room.Length; i++)
+            {
+                DocumentReference doc = db.Collection("SelectRoom").Document(room[i].ToString());
+                DocumentSnapshot snap = await doc.GetSnapshotAsync();
+                if (snap.Exists)
+                { 
+                    room1 t = snap.ConvertTo<room1>();
+                   if(t.Status == 1)
+                   {
+                        IDroom[i].Enabled = false;
+                        IDroom[i].Text = IDroom[i].Text + " - hired";
+                   }
+                   else
+                        IDroom[i].Enabled = true;
+
+                }
+            }
         }
     }
 }
