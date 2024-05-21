@@ -162,7 +162,7 @@ namespace Flat_Services_Application
                             dta.Add("Name",dt.name );
                             dta.Add("Room", room[i].ToString());
                         };
-                        DOC.SetAsync(dta);
+                        await DOC.SetAsync(dta);
                     }
 
                    
