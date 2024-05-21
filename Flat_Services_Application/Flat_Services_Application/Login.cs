@@ -30,7 +30,11 @@ namespace Flat_Services_Application
         {
             InitializeComponent();
         }
-        
+        public Login(string s)
+        {
+            InitializeComponent();
+            tbPhoneNumber.Text = s;
+        }
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
@@ -187,7 +191,7 @@ namespace Flat_Services_Application
                 if (dt.status == 0)
                 {
                     this.Hide();
-                    SelectRoom s = new SelectRoom();
+                    SelectRoom s = new SelectRoom(tbPhoneNumber.Text);
                     s.Show();
                 }
                 else if (dt.status == 1)

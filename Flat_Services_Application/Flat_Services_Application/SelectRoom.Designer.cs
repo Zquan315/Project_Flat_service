@@ -556,6 +556,7 @@
             this.ConfirmBtn.TextMarginLeft = 0;
             this.ConfirmBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.ConfirmBtn.UseDefaultRadiusAndThickness = true;
+            this.ConfirmBtn.Click += new System.EventHandler(this.ConfirmBtn_Click);
             // 
             // returnBtn
             // 
@@ -647,6 +648,7 @@
             this.returnBtn.TextMarginLeft = 0;
             this.returnBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.returnBtn.UseDefaultRadiusAndThickness = true;
+            this.returnBtn.Click += new System.EventHandler(this.returnBtn_Click);
             // 
             // SelectRoom
             // 
