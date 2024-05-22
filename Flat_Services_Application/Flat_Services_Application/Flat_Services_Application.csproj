@@ -199,6 +199,7 @@
     <Compile Include="changePass_forgot.Designer.cs">
       <DependentUpon>changePass_forgot.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\listRequest.cs" />
     <Compile Include="Class\room1.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="ForgotPass.cs">

@@ -53,7 +53,7 @@
             this.Setting_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvRequest = new System.Windows.Forms.ListView();
             this.clmPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmRoom = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -830,19 +830,20 @@
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listView1
+            // lvRequest
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvRequest.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmPhone,
             this.clmName,
             this.clmRoom});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(252, 227);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(919, 420);
-            this.listView1.TabIndex = 14;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvRequest.GridLines = true;
+            this.lvRequest.HideSelection = false;
+            this.lvRequest.Location = new System.Drawing.Point(264, 227);
+            this.lvRequest.Name = "lvRequest";
+            this.lvRequest.Size = new System.Drawing.Size(919, 420);
+            this.lvRequest.TabIndex = 14;
+            this.lvRequest.UseCompatibleStateImageBehavior = false;
+            this.lvRequest.View = System.Windows.Forms.View.Details;
             // 
             // clmPhone
             // 
@@ -853,13 +854,13 @@
             // 
             this.clmName.Text = "Name";
             this.clmName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmName.Width = 264;
+            this.clmName.Width = 291;
             // 
             // clmRoom
             // 
             this.clmRoom.Text = "Room";
             this.clmRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmRoom.Width = 200;
+            this.clmRoom.Width = 147;
             // 
             // btnBrowse
             // 
@@ -1050,7 +1051,7 @@
             this.ClientSize = new System.Drawing.Size(1183, 659);
             this.Controls.Add(this.btnNoBrowse);
             this.Controls.Add(this.btnBrowse);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvRequest);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1058,6 +1059,7 @@
             this.Name = "Requests_Lessor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Requests_Lessor_Load);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1081,7 +1083,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton Setting_btn;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvRequest;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton LogOut_btn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Services_btn;
         private System.Windows.Forms.ColumnHeader clmPhone;
