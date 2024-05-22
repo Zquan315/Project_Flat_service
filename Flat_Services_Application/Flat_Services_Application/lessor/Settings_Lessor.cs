@@ -67,7 +67,7 @@ namespace Flat_Services_Application.lessor
 
         private void LogOut_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to log out?", "Log out", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Hide();
                 Login l = new Login();
@@ -75,7 +75,7 @@ namespace Flat_Services_Application.lessor
             }
             else
             {
-                this.Show();
+                DialogResult = DialogResult.No;
             }
         }
 
