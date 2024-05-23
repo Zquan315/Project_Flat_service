@@ -87,6 +87,8 @@ namespace Flat_Services_Application.lessor
 
         private void Requests_Lessor_Load(object sender, EventArgs e)
         {
+
+            // ket noi firestore
             try
             {
                 string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
