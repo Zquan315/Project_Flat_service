@@ -12,12 +12,21 @@ using Google.Cloud.Firestore;
 using Flat_Services_Application.Class;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace Flat_Services_Application.lessor
 {
     public partial class Requests_Lessor : Form
     {
         FirestoreDb db;
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "KR5gPtgHXbYV0t9jMOeKDN3UvRaXulbgAD4aijeN",
+            BasePath = "https://account-ac0cc-default-rtdb.firebaseio.com/"
+        };
+        IFirebaseClient client;
         public Requests_Lessor()
         {
             InitializeComponent();
@@ -87,7 +96,14 @@ namespace Flat_Services_Application.lessor
 
         private void Requests_Lessor_Load(object sender, EventArgs e)
         {
+            client = new FireSharp.FirebaseClient(config);
 
+            if (client == null)
+            {
+                MessageBox.Show("Connected isn't Successful!");
+                return;
+            }
+               
             // ket noi firestore
             try
             {
@@ -121,6 +137,54 @@ namespace Flat_Services_Application.lessor
                     lvRequest.Items.Add(data);
                 }
               }
+        }
+
+        private async void btnBrowse_Click(object sender, EventArgs e)
+        {
+            while(lvRequest.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = lvRequest.SelectedItems[0];
+                string phone_num = selectedItem.SubItems[0].Text;  
+                string room = selectedItem.SubItems[2].Text;
+
+                // cap nhat lai status cua user
+                FirebaseResponse responds = await client.GetAsync("Account Tenant/" + phone_num);
+                if (responds.Body != "null")
+                {
+                    Data dt = responds.ResultAs<Data>();
+                    var data = new Data()
+                    {
+                        name = dt.name,
+                        email = dt.email,
+                        pass = dt.pass,
+                        phone = dt.phone,
+                        ID = dt.ID,
+                        date = dt.date,
+                        objects = dt.objects,
+                        status = 2,
+                        remember = dt.remember,
+                        room = dt.room,
+                    };
+
+                    FirebaseResponse ud = await client.UpdateAsync("Account Tenant/" + phone_num, data);
+                    Data result = ud.ResultAs<Data>();
+                }
+
+                // xoa 1 docment trong list
+                delete_Document(phone_num);
+                //xoa ra khoi listview
+                lvRequest.Items.RemoveAt(lvRequest.SelectedItems[0].Index);
+            }
+        }
+
+        void delete_Document(string s)
+        {
+            DocumentReference dr = db.Collection("ListAwaitBrowse").Document(s);
+            dr.DeleteAsync();
+        }
+        private void btnNoBrowse_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
