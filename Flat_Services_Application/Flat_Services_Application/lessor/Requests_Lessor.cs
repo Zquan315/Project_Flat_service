@@ -182,9 +182,58 @@ namespace Flat_Services_Application.lessor
             DocumentReference dr = db.Collection("ListAwaitBrowse").Document(s);
             dr.DeleteAsync();
         }
-        private void btnNoBrowse_Click(object sender, EventArgs e)
-        {
 
+        async void update_room_status(string s)
+        {
+            DocumentReference docref = db.Collection("SelectRoom").Document(s);
+            Dictionary<string, object> dict = new Dictionary<string, object>();
+            {
+                dict.Add("Status", 0);
+            }
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                await docref.UpdateAsync(dict);
+            }
+        }
+        private async void btnNoBrowse_Click(object sender, EventArgs e)
+        {
+            while (lvRequest.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = lvRequest.SelectedItems[0];
+                string phone_num = selectedItem.SubItems[0].Text;
+                string room = selectedItem.SubItems[2].Text;
+
+                // cap nhat lai status = 0, xoa phong cua user
+                FirebaseResponse responds = await client.GetAsync("Account Tenant/" + phone_num);
+                if (responds.Body != "null")
+                {
+                    Data dt = responds.ResultAs<Data>();
+                    var data = new Data()
+                    {
+                        name = dt.name,
+                        email = dt.email,
+                        pass = dt.pass,
+                        phone = dt.phone,
+                        ID = dt.ID,
+                        date = dt.date,
+                        objects = dt.objects,
+                        status = 0,
+                        remember = dt.remember,
+                        room = "",
+                    };
+
+                    FirebaseResponse ud = await client.UpdateAsync("Account Tenant/" + phone_num, data);
+                    Data result = ud.ResultAs<Data>();
+                }
+
+                // xoa 1 docment trong list
+                delete_Document(phone_num);
+                // cap nhat lai trang thai phong
+                update_room_status(room);
+                //xoa ra khoi listview
+                lvRequest.Items.RemoveAt(lvRequest.SelectedItems[0].Index);
+            }
         }
     }
 }
