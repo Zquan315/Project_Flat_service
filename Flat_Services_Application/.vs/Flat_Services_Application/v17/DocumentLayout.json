@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\lessor\\flat_info_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\flat_info_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,11 +31,7 @@
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\class\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\class\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -111,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\flat_info_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\lessor\\flat_info_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\flat_info_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\changepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\changepass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -137,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -206,7 +202,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 40,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Bookmark",
@@ -222,20 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomInfo.cs",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Class\\RoomInfo.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\Class\\RoomInfo.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Class\\RoomInfo.cs",
-              "RelativeToolTip": "Flat_Services_Application\\Class\\RoomInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T13:21:48.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Add_Service_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Add_Service_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Add_Service_Lessor.cs",
@@ -247,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Charge_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Charge_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Charge_Lessor.cs",
@@ -259,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Flat_Info_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs",
@@ -267,7 +250,8 @@
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:49:13.836Z"
+              "WhenOpened": "2024-05-24T09:49:13.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -282,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Login.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Login.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\Login.cs",
@@ -294,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "changePass_forgot.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\changePass_forgot.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\changePass_forgot.cs",
@@ -305,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Chat_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Chat_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Chat_Lessor.cs",
@@ -317,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Settings_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Settings_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Settings_Lessor.cs",
@@ -329,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Settings_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Settings_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Settings_Lessor.cs",
@@ -340,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "SelectRoom.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\SelectRoom.cs",
@@ -352,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Services_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Services_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Services_Lessor.cs",
@@ -364,19 +348,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Requests_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Requests_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Requests_Lessor.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Requests_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Requests_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:17:02.926Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-22T01:17:02.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Payment_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Payment_Lessor.cs",
@@ -388,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Home_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
@@ -396,12 +379,11 @@
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAkwDsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:16:07.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T01:16:07.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Setting.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\Setting.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\Setting.cs",
@@ -425,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "homenavigation.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homenavigation.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homenavigation.cs",
@@ -433,12 +415,11 @@
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homenavigation.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAA3wHoAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:13:15.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T01:13:15.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Flat_Management_2.Designer.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.Designer.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.Designer.cs",
@@ -450,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Flat_Management_2.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.cs",
@@ -462,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Services_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Services_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Services_Lessor.cs",
@@ -485,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "SelectRoom.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\SelectRoom.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\SelectRoom.cs",
@@ -496,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Flat_Management_2.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Management_2.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Management_2.cs",
@@ -507,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "homechating.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homechating.cs",
@@ -519,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "ForgotPass.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\ForgotPass.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\ForgotPass.cs",
@@ -531,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Requests_Lessor.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Requests_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Requests_Lessor.cs",
@@ -539,23 +520,23 @@
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Requests_Lessor.cs",
               "ViewState": "AQIAALoAAAAAAAAAAAAswM8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T01:17:04.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T01:17:04.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 0,
               "Title": "homecostsing.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:14:21.413Z"
+              "WhenOpened": "2024-05-04T06:14:21.413Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "term.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\term.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\term.cs",
@@ -565,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "term.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\term.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\term.cs",
@@ -577,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "Data.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Data.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\Data.cs",
@@ -597,11 +578,12 @@
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homecostsing.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAkwEkAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T15:32:41.595Z"
+              "WhenOpened": "2024-05-17T15:32:41.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "OTPSignUP.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\OTPSignUP.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\OTPSignUP.cs",
@@ -611,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "changePass_forgot.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\changePass_forgot.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\changePass_forgot.cs",
@@ -623,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "OTPSignUP.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\OTPSignUP.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\OTPSignUP.cs",
@@ -635,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "Sign-up.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Sign-up.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\Sign-up.cs",
@@ -647,20 +629,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "homeinformation.cs",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homeinformation.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAA6wE8AAABSAAAA",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAowDEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T13:11:18.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "homeinformation.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
@@ -679,8 +661,7 @@
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homenavigation.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homenavigation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:14:42.927Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T06:14:42.927Z"
             },
             {
               "$type": "Document",
@@ -695,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "homechating.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homechating.cs",
@@ -706,30 +687,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Home_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T06:15:38.603Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T06:15:38.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 1,
               "Title": "Flat_Info_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs",
               "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\lessor\\Flat_Info_Lessor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T04:47:47.76Z"
+              "WhenOpened": "2024-05-13T04:47:47.76Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Charge_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Charge_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Charge_Lessor.cs",
@@ -740,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Chat_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Chat_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Chat_Lessor.cs",
@@ -751,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Payment_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Payment_Lessor.cs",
@@ -762,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Add_Service_Lessor.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Add_Service_Lessor.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Add_Service_Lessor.cs",
@@ -773,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Setting.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\Setting.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\Setting.cs",
@@ -784,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Login.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\Login.cs",
