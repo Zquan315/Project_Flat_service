@@ -3,6 +3,7 @@ using FireSharp.Config;
 using FireSharp.Interfaces;
 using Flat_Services_Application.Class;
 using Google.Cloud.Firestore;
+using Google.Cloud.Firestore.V1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +13,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Google.Rpc.Context.AttributeContext.Types;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Flat_Services_Application.tenant
 {
@@ -67,9 +71,56 @@ namespace Flat_Services_Application.tenant
                 MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-        }
+            // load data len listview
+            get_Data();
 
-        private void homeBtn_Click(object sender, EventArgs e)
+        }
+        async void get_Data()
+        {
+            DocumentReference doc = db.Collection("RoomInfo").Document(tbroom.Text);
+            DocumentSnapshot snap = await doc.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> roomInfo = snap.ToDictionary();
+
+                foreach (var field in roomInfo)
+                {
+                    if (field.Value is List<object> arrayData)
+                    {
+                        // Convert List<object> to List<string>
+                        List<string> arrayValues = arrayData.ConvertAll(x => x.ToString());
+
+                        // Check if the array has exactly 5 elements
+                        if (arrayValues.Count == 5)
+                        {
+                            ListViewItem data = new ListViewItem(field.Key); // Phone number as the first column
+                            data.SubItems.Add(arrayValues[0]); // Name
+                            data.SubItems.Add(arrayValues[1]); // ID
+                            data.SubItems.Add(arrayValues[2]); // Sex
+                            data.SubItems.Add(arrayValues[3]); // Date of birth
+                            data.SubItems.Add(arrayValues[4]); // ID vehical
+                            lvData.Items.Add(data);
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Array {field.Key} does not have exactly 5 elements.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Field {field.Key} is not an array.");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Document does not exist");
+            }
+        }
+    
+
+
+private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             homenavigation homenavigation = new homenavigation(tbAccount.Text, tbroom.Text );
@@ -167,6 +218,11 @@ namespace Flat_Services_Application.tenant
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txbVehical_TextChanged(object sender, EventArgs e)
         {
 
         }

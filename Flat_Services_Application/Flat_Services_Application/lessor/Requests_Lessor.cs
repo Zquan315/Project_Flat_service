@@ -16,6 +16,7 @@ using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using System.Web.UI;
+using System.Collections;
 
 namespace Flat_Services_Application.lessor
 {
@@ -197,19 +198,14 @@ namespace Flat_Services_Application.lessor
         {
             DocumentReference DOC = db.Collection("RoomInfo").Document(r);
             Dictionary<string, object> maindt = new Dictionary<string, object>();
-            {
-                maindt.Add("Phone number",p);
-                
-            };
-            Dictionary<string, object> dt = new Dictionary<string, object>();
-            {
-                dt.Add("Name",n );
-                dt.Add("ID number", i);
-                dt.Add("Sex", "");
-                dt.Add("Date of birth", d);
-                dt.Add("ID vehical", "");
-            };
-            maindt.Add("Info", dt);
+            
+            ArrayList arr = new ArrayList();
+            arr.Add(n);
+            arr.Add(i);
+            arr.Add("");
+            arr.Add(d);
+            arr.Add("");
+            maindt.Add(p, arr);
             DOC.SetAsync(maindt);
         }
         void delete_Document(string s)

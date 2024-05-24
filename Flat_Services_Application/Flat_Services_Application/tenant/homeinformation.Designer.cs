@@ -44,8 +44,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.txbVehical = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txbRelative = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
@@ -222,8 +220,6 @@
             // 
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.txbVehical);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.txbRelative);
             this.panel8.Controls.Add(this.label6);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Controls.Add(this.tbID);
@@ -239,49 +235,29 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(104, 45);
+            this.label10.Location = new System.Drawing.Point(3, 89);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 17);
+            this.label10.Size = new System.Drawing.Size(105, 17);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Ex: 66PA-168.15";
+            this.label10.Text = "Ex: 66PA16815";
             // 
             // txbVehical
             // 
             this.txbVehical.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbVehical.Location = new System.Drawing.Point(107, 17);
+            this.txbVehical.Location = new System.Drawing.Point(6, 50);
             this.txbVehical.Margin = new System.Windows.Forms.Padding(2);
             this.txbVehical.Multiline = true;
             this.txbVehical.Name = "txbVehical";
             this.txbVehical.Size = new System.Drawing.Size(264, 26);
             this.txbVehical.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 140);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(220, 19);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Relatives\' phone numbers";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txbRelative
-            // 
-            this.txbRelative.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRelative.Location = new System.Drawing.Point(6, 169);
-            this.txbRelative.Margin = new System.Windows.Forms.Padding(2);
-            this.txbRelative.Name = "txbRelative";
-            this.txbRelative.Size = new System.Drawing.Size(224, 24);
-            this.txbRelative.TabIndex = 8;
+            this.txbVehical.TextChanged += new System.EventHandler(this.txbVehical_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(2, 72);
+            this.label6.Location = new System.Drawing.Point(2, 140);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 19);
@@ -304,7 +280,7 @@
             // tbID
             // 
             this.tbID.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbID.Location = new System.Drawing.Point(6, 102);
+            this.tbID.Location = new System.Drawing.Point(6, 170);
             this.tbID.Margin = new System.Windows.Forms.Padding(2);
             this.tbID.Multiline = true;
             this.tbID.Name = "tbID";
@@ -756,9 +732,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txbVehical;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txbRelative;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Panel panel7;
