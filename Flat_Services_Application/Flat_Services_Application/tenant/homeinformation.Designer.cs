@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homeinformation));
             this.panelCenterInformation = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.datetime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,19 +39,19 @@
             this.txbVehical = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txbAddress = new System.Windows.Forms.TextBox();
+            this.txbRelative = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txbPhoneNumber = new System.Windows.Forms.TextBox();
+            this.tbID = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.UpgradeBtn = new System.Windows.Forms.Button();
+            this.tbPhone = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.txbName = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -74,9 +73,15 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lvData = new System.Windows.Forms.ListView();
+            this.phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id_vehical = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelCenterInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -102,7 +107,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.lvData);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 265);
@@ -113,21 +118,7 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 26);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(889, 231);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // panel5
             // 
@@ -135,13 +126,13 @@
             this.panel5.Controls.Add(this.datetime);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.tbPhone);
             this.panel5.Controls.Add(this.rbFemale);
             this.panel5.Controls.Add(this.rbMale);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.txbName);
+            this.panel5.Controls.Add(this.tbName);
             this.panel5.Controls.Add(this.label2);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(12, 21);
@@ -178,10 +169,10 @@
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.txbVehical);
             this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.txbAddress);
+            this.panel8.Controls.Add(this.txbRelative);
+            this.panel8.Controls.Add(this.label6);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.txbPhoneNumber);
+            this.panel8.Controls.Add(this.tbID);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(387, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
@@ -215,19 +206,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 102);
+            this.label5.Location = new System.Drawing.Point(2, 140);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 19);
+            this.label5.Size = new System.Drawing.Size(220, 19);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Address:";
+            this.label5.Text = "Relatives\' phone numbers";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(2, 65);
+            this.label7.Location = new System.Drawing.Point(1, 13);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 19);
@@ -235,15 +226,14 @@
             this.label7.Text = "Phone number:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txbAddress
+            // txbRelative
             // 
-            this.txbAddress.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAddress.Location = new System.Drawing.Point(6, 127);
-            this.txbAddress.Margin = new System.Windows.Forms.Padding(2);
-            this.txbAddress.Multiline = true;
-            this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(365, 67);
-            this.txbAddress.TabIndex = 8;
+            this.txbRelative.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRelative.Location = new System.Drawing.Point(6, 169);
+            this.txbRelative.Margin = new System.Windows.Forms.Padding(2);
+            this.txbRelative.Name = "txbRelative";
+            this.txbRelative.Size = new System.Drawing.Size(224, 24);
+            this.txbRelative.TabIndex = 8;
             // 
             // label9
             // 
@@ -257,21 +247,21 @@
             this.label9.Text = "ID vehical:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txbPhoneNumber
+            // tbID
             // 
-            this.txbPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPhoneNumber.Location = new System.Drawing.Point(147, 65);
-            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
-            this.txbPhoneNumber.Multiline = true;
-            this.txbPhoneNumber.Name = "txbPhoneNumber";
-            this.txbPhoneNumber.Size = new System.Drawing.Size(224, 26);
-            this.txbPhoneNumber.TabIndex = 12;
+            this.tbID.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbID.Location = new System.Drawing.Point(6, 102);
+            this.tbID.Margin = new System.Windows.Forms.Padding(2);
+            this.tbID.Multiline = true;
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(224, 26);
+            this.tbID.TabIndex = 12;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button3);
-            this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.button2);
+            this.panel7.Controls.Add(this.DeleteBtn);
+            this.panel7.Controls.Add(this.AddBtn);
+            this.panel7.Controls.Add(this.UpgradeBtn);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(771, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
@@ -279,62 +269,62 @@
             this.panel7.Size = new System.Drawing.Size(137, 234);
             this.panel7.TabIndex = 13;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(7, 153);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 41);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Black;
+            this.DeleteBtn.Location = new System.Drawing.Point(7, 153);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(117, 41);
+            this.DeleteBtn.TabIndex = 2;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(7, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.AddBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddBtn.Location = new System.Drawing.Point(7, 18);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(117, 44);
+            this.AddBtn.TabIndex = 0;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // UpgradeBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(7, 89);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpgradeBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.UpgradeBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpgradeBtn.ForeColor = System.Drawing.Color.Black;
+            this.UpgradeBtn.Location = new System.Drawing.Point(7, 89);
+            this.UpgradeBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.UpgradeBtn.Name = "UpgradeBtn";
+            this.UpgradeBtn.Size = new System.Drawing.Size(117, 44);
+            this.UpgradeBtn.TabIndex = 1;
+            this.UpgradeBtn.Text = "Update";
+            this.UpgradeBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // tbPhone
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(111, 13);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 26);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.tbPhone.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPhone.Location = new System.Drawing.Point(166, 13);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPhone.Multiline = true;
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.Size = new System.Drawing.Size(206, 26);
+            this.tbPhone.TabIndex = 10;
+            this.tbPhone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(2, 17);
+            this.label6.Location = new System.Drawing.Point(2, 72);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 19);
@@ -380,15 +370,15 @@
             this.label4.Text = "Sex:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txbName
+            // tbName
             // 
-            this.txbName.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbName.Location = new System.Drawing.Point(74, 50);
-            this.txbName.Margin = new System.Windows.Forms.Padding(2);
-            this.txbName.Multiline = true;
-            this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(299, 26);
-            this.txbName.TabIndex = 1;
+            this.tbName.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.Location = new System.Drawing.Point(74, 50);
+            this.tbName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbName.Multiline = true;
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(299, 26);
+            this.tbName.TabIndex = 1;
             // 
             // label2
             // 
@@ -658,6 +648,58 @@
             this.panel6.TabIndex = 1;
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
+            // lvData
+            // 
+            this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.phone,
+            this.name,
+            this.id,
+            this.sex,
+            this.date,
+            this.id_vehical});
+            this.lvData.HideSelection = false;
+            this.lvData.Location = new System.Drawing.Point(6, 23);
+            this.lvData.Name = "lvData";
+            this.lvData.Size = new System.Drawing.Size(894, 246);
+            this.lvData.TabIndex = 0;
+            this.lvData.UseCompatibleStateImageBehavior = false;
+            this.lvData.View = System.Windows.Forms.View.Details;
+            this.lvData.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // phone
+            // 
+            this.phone.Text = "Phone number";
+            this.phone.Width = 147;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 143;
+            // 
+            // id
+            // 
+            this.id.Text = "ID number";
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.id.Width = 162;
+            // 
+            // sex
+            // 
+            this.sex.Text = "Sex";
+            this.sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sex.Width = 116;
+            // 
+            // date
+            // 
+            this.date.Text = "Date of birth";
+            this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.date.Width = 140;
+            // 
+            // id_vehical
+            // 
+            this.id_vehical.Text = "ID vehical";
+            this.id_vehical.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // homeinformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -674,7 +716,6 @@
             this.Load += new System.EventHandler(this.homeinformation_Load);
             this.panelCenterInformation.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -706,7 +747,6 @@
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DateTimePicker datetime;
         private System.Windows.Forms.Label label3;
@@ -715,19 +755,19 @@
         private System.Windows.Forms.TextBox txbVehical;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txbAddress;
+        private System.Windows.Forms.TextBox txbRelative;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txbPhoneNumber;
+        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button UpgradeBtn;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbName;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
@@ -738,5 +778,12 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox tbAccount;
+        private System.Windows.Forms.ListView lvData;
+        private System.Windows.Forms.ColumnHeader phone;
+        private System.Windows.Forms.ColumnHeader name;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader sex;
+        private System.Windows.Forms.ColumnHeader date;
+        private System.Windows.Forms.ColumnHeader id_vehical;
     }
 }

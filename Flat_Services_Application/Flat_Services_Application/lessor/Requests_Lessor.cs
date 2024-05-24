@@ -235,5 +235,10 @@ namespace Flat_Services_Application.lessor
                 lvRequest.Items.RemoveAt(lvRequest.SelectedItems[0].Index);
             }
         }
+
+        private void lvRequest_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
