@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homeinformation));
             this.panelCenterInformation = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lvData = new System.Windows.Forms.ListView();
+            this.phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id_vehical = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel5 = new System.Windows.Forms.Panel();
             this.datetime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,16 +45,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txbVehical = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.txbRelative = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.UpgradeBtn = new System.Windows.Forms.Button();
             this.tbPhone = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,13 +80,6 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lvData = new System.Windows.Forms.ListView();
-            this.phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.id_vehical = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelCenterInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -119,6 +119,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lvData
+            // 
+            this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.phone,
+            this.name,
+            this.id,
+            this.sex,
+            this.date,
+            this.id_vehical});
+            this.lvData.GridLines = true;
+            this.lvData.HideSelection = false;
+            this.lvData.Location = new System.Drawing.Point(6, 23);
+            this.lvData.Name = "lvData";
+            this.lvData.Size = new System.Drawing.Size(894, 246);
+            this.lvData.TabIndex = 0;
+            this.lvData.UseCompatibleStateImageBehavior = false;
+            this.lvData.View = System.Windows.Forms.View.Details;
+            this.lvData.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // phone
+            // 
+            this.phone.Text = "Phone number";
+            this.phone.Width = 147;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 143;
+            // 
+            // id
+            // 
+            this.id.Text = "ID number";
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.id.Width = 162;
+            // 
+            // sex
+            // 
+            this.sex.Text = "Sex";
+            this.sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sex.Width = 116;
+            // 
+            // date
+            // 
+            this.date.Text = "Date of birth";
+            this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.date.Width = 140;
+            // 
+            // id_vehical
+            // 
+            this.id_vehical.Text = "ID vehical";
+            this.id_vehical.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.id_vehical.Width = 127;
             // 
             // panel5
             // 
@@ -214,18 +268,6 @@
             this.label5.Text = "Relatives\' phone numbers";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1, 13);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 19);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Phone number:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txbRelative
             // 
             this.txbRelative.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -234,6 +276,18 @@
             this.txbRelative.Name = "txbRelative";
             this.txbRelative.Size = new System.Drawing.Size(224, 24);
             this.txbRelative.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(2, 72);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 19);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "ID number:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -256,6 +310,18 @@
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(224, 26);
             this.tbID.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1, 13);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 19);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Phone number:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -319,18 +385,6 @@
             this.tbPhone.Size = new System.Drawing.Size(206, 26);
             this.tbPhone.TabIndex = 10;
             this.tbPhone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(2, 72);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 19);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "ID number:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rbFemale
             // 
@@ -647,58 +701,6 @@
             this.panel6.Size = new System.Drawing.Size(240, 102);
             this.panel6.TabIndex = 1;
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
-            // 
-            // lvData
-            // 
-            this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.phone,
-            this.name,
-            this.id,
-            this.sex,
-            this.date,
-            this.id_vehical});
-            this.lvData.HideSelection = false;
-            this.lvData.Location = new System.Drawing.Point(6, 23);
-            this.lvData.Name = "lvData";
-            this.lvData.Size = new System.Drawing.Size(894, 246);
-            this.lvData.TabIndex = 0;
-            this.lvData.UseCompatibleStateImageBehavior = false;
-            this.lvData.View = System.Windows.Forms.View.Details;
-            this.lvData.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // phone
-            // 
-            this.phone.Text = "Phone number";
-            this.phone.Width = 147;
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name.Width = 143;
-            // 
-            // id
-            // 
-            this.id.Text = "ID number";
-            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.id.Width = 162;
-            // 
-            // sex
-            // 
-            this.sex.Text = "Sex";
-            this.sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.sex.Width = 116;
-            // 
-            // date
-            // 
-            this.date.Text = "Date of birth";
-            this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.date.Width = 140;
-            // 
-            // id_vehical
-            // 
-            this.id_vehical.Text = "ID vehical";
-            this.id_vehical.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // homeinformation
             // 
