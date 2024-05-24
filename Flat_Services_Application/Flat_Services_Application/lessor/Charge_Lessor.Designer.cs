@@ -368,7 +368,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Flat_tb.OnIdleState = stateProperties4;
-            this.Flat_tb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Flat_tb.Padding = new System.Windows.Forms.Padding(3);
             this.Flat_tb.PasswordChar = '\0';
             this.Flat_tb.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Flat_tb.PlaceholderText = "Enter text";
@@ -471,6 +471,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Charge_Lessor";
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Charge_Lessor_Load);
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);

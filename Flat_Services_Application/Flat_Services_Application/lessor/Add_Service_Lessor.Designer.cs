@@ -45,6 +45,8 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.tbIDService = new System.Windows.Forms.TextBox();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cbbType = new System.Windows.Forms.ComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tbPrice = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -53,8 +55,6 @@
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.tbIDService = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -309,6 +309,30 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(1168, 531);
             this.bunifuPanel1.TabIndex = 12;
             // 
+            // tbIDService
+            // 
+            this.tbIDService.Enabled = false;
+            this.tbIDService.Location = new System.Drawing.Point(220, 43);
+            this.tbIDService.Name = "tbIDService";
+            this.tbIDService.Size = new System.Drawing.Size(129, 22);
+            this.tbIDService.TabIndex = 10;
+            // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.Location = new System.Drawing.Point(33, 42);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(117, 23);
+            this.bunifuLabel6.TabIndex = 9;
+            this.bunifuLabel6.Text = "ID of service";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // cbbType
             // 
             this.cbbType.FormattingEnabled = true;
@@ -542,30 +566,6 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel6
-            // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel6.Location = new System.Drawing.Point(33, 42);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(117, 23);
-            this.bunifuLabel6.TabIndex = 9;
-            this.bunifuLabel6.Text = "ID of service";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // tbIDService
-            // 
-            this.tbIDService.Enabled = false;
-            this.tbIDService.Location = new System.Drawing.Point(220, 43);
-            this.tbIDService.Name = "tbIDService";
-            this.tbIDService.Size = new System.Drawing.Size(129, 22);
-            this.tbIDService.TabIndex = 10;
-            // 
             // Add_Service_Lessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -576,6 +576,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Add_Service_Lessor";
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Add_Service_Lessor_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);

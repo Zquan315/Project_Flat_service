@@ -16,6 +16,12 @@ namespace Flat_Services_Application.lessor
         {
             InitializeComponent();
         }
+        string sdt;
+        public Flat_Info_Lessor(string sdt)
+        {
+            InitializeComponent();
+            this.sdt = sdt;
+        }
 
         private void Close_btn_Click(object sender, EventArgs e)
         {
@@ -23,6 +29,11 @@ namespace Flat_Services_Application.lessor
             Flat_Management_2 flat_Management_2 = new Flat_Management_2();
             flat_Management_2.StartPosition = FormStartPosition.CenterScreen;
             flat_Management_2.Show();
+        }
+
+        private void Flat_Info_Lessor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

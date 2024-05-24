@@ -887,6 +887,7 @@
             this.Flat_btn.TextMarginLeft = 0;
             this.Flat_btn.TextPadding = new System.Windows.Forms.Padding(0);
             this.Flat_btn.UseDefaultRadiusAndThickness = true;
+            this.Flat_btn.Click += new System.EventHandler(this.Flat_btn_Click);
             // 
             // Pay_btn
             // 
@@ -2211,6 +2212,7 @@
             this.MaximizeBox = false;
             this.Name = "Flat_Management_2";
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Flat_Management_2_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.bunifuPanel6.ResumeLayout(false);

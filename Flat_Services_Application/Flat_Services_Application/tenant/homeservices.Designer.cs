@@ -67,7 +67,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbroom = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -524,7 +524,7 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.textBox11);
+            this.panel9.Controls.Add(this.tbroom);
             this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.label15);
             this.panel9.Controls.Add(this.label16);
@@ -535,15 +535,15 @@
             this.panel9.Size = new System.Drawing.Size(322, 96);
             this.panel9.TabIndex = 8;
             // 
-            // textBox11
+            // tbroom
             // 
-            this.textBox11.CausesValidation = false;
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(129, 29);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(157, 22);
-            this.textBox11.TabIndex = 17;
+            this.tbroom.CausesValidation = false;
+            this.tbroom.Enabled = false;
+            this.tbroom.Location = new System.Drawing.Point(129, 29);
+            this.tbroom.Margin = new System.Windows.Forms.Padding(2);
+            this.tbroom.Name = "tbroom";
+            this.tbroom.Size = new System.Drawing.Size(157, 22);
+            this.tbroom.TabIndex = 17;
             // 
             // label14
             // 
@@ -830,7 +830,7 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbroom;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;

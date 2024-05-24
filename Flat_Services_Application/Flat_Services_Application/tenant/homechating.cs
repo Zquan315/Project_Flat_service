@@ -16,10 +16,11 @@ namespace Flat_Services_Application.tenant
         {
             InitializeComponent();
         }
-        public homechating(string s)
+        public homechating(string s, string p)
         {
             InitializeComponent();
             tbAccount.Text = s;
+            tbroom.Text = p;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -40,7 +41,7 @@ namespace Flat_Services_Application.tenant
         private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homenavigation homenavigation = new homenavigation(tbAccount.Text);
+            homenavigation homenavigation = new homenavigation(tbAccount.Text, tbroom.Text);
             homenavigation.StartPosition = FormStartPosition.CenterScreen;
             homenavigation.Show();
         }
@@ -48,7 +49,7 @@ namespace Flat_Services_Application.tenant
         private void costsBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homecostsing homecostsing = new homecostsing(tbAccount.Text);
+            homecostsing homecostsing = new homecostsing(tbAccount.Text, tbroom.Text);
             homecostsing.StartPosition = FormStartPosition.CenterScreen;
             homecostsing.Show();
         }
@@ -56,7 +57,7 @@ namespace Flat_Services_Application.tenant
         private void infoBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homeinformation homeinformation = new homeinformation(tbAccount.Text);
+            homeinformation homeinformation = new homeinformation(tbAccount.Text, tbroom.Text);
             homeinformation.StartPosition = FormStartPosition.CenterScreen;
             homeinformation.Show();
         }
@@ -64,7 +65,7 @@ namespace Flat_Services_Application.tenant
         private void servicesBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homeservices homeservices = new homeservices(tbAccount.Text);
+            homeservices homeservices = new homeservices(tbAccount.Text, tbroom.Text);
             homeservices.StartPosition = FormStartPosition.CenterScreen;
             homeservices.Show();
         }
@@ -72,7 +73,7 @@ namespace Flat_Services_Application.tenant
         private void chatBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homechating homechating = new homechating(tbAccount.Text);
+            homechating homechating = new homechating(tbAccount.Text, tbroom.Text);
             homechating.StartPosition = FormStartPosition.CenterScreen;
             homechating.Show();
         }
@@ -80,7 +81,7 @@ namespace Flat_Services_Application.tenant
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homenavigation homenavigation = new homenavigation(tbAccount.Text);
+            Setting homenavigation = new Setting(tbAccount.Text, tbroom.Text);
             homenavigation.StartPosition = FormStartPosition.CenterScreen;
             homenavigation.Show();
         }

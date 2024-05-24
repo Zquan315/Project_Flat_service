@@ -1,4 +1,8 @@
 ﻿
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using Flat_Services_Application.Class;
+using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +17,22 @@ namespace Flat_Services_Application.tenant
 {
     public partial class homeinformation : Form
     {
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "KR5gPtgHXbYV0t9jMOeKDN3UvRaXulbgAD4aijeN",
+            BasePath = "https://account-ac0cc-default-rtdb.firebaseio.com/"
+        };
+        IFirebaseClient client;
+        FirestoreDb db;
         public homeinformation()
         {
             InitializeComponent();
         }
-        public homeinformation(string s)
+        public homeinformation(string s, string p)
         {
             InitializeComponent();
             tbAccount.Text = s;
+            tbroom.Text = p;
         }
        
 
@@ -34,13 +46,33 @@ namespace Flat_Services_Application.tenant
             this.infoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)41))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.infoBtn.ForeColor = Color.White;
 
-           
+            //ket noi firebase
+            client = new FireSharp.FirebaseClient(config);
+
+            if (client == null)
+            {
+                MessageBox.Show("Connected isn't Successful!");
+                return;
+            }
+
+            //ket noi firestore
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homenavigation homenavigation = new homenavigation(tbAccount.Text);
+            homenavigation homenavigation = new homenavigation(tbAccount.Text, tbroom.Text );
             homenavigation.StartPosition = FormStartPosition.CenterScreen;
             homenavigation.Show();
         }
@@ -48,7 +80,7 @@ namespace Flat_Services_Application.tenant
         private void costsBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homecostsing homecostsing = new homecostsing(tbAccount.Text);
+            homecostsing homecostsing = new homecostsing(tbAccount.Text, tbroom.Text);
             homecostsing.StartPosition = FormStartPosition.CenterScreen;
             homecostsing.Show();
         }
@@ -56,7 +88,7 @@ namespace Flat_Services_Application.tenant
         private void infoBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homeinformation homeinformation = new homeinformation(tbAccount.Text);
+            homeinformation homeinformation = new homeinformation(tbAccount.Text, tbroom.Text);
             homeinformation.StartPosition = FormStartPosition.CenterScreen;
             homeinformation.Show();
         }
@@ -64,7 +96,7 @@ namespace Flat_Services_Application.tenant
         private void servicesBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homeservices homeservices = new homeservices(tbAccount.Text); 
+            homeservices homeservices = new homeservices(tbAccount.Text, tbroom.Text); 
             homeservices.StartPosition = FormStartPosition.CenterScreen;
             homeservices.Show();
         }
@@ -72,7 +104,7 @@ namespace Flat_Services_Application.tenant
         private void chatBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homechating homechating = new homechating(tbAccount.Text);    
+            homechating homechating = new homechating(tbAccount.Text, tbroom.Text);    
             homechating.StartPosition = FormStartPosition.CenterScreen;
             homechating.Show();
         }
@@ -80,17 +112,14 @@ namespace Flat_Services_Application.tenant
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Setting differencesfee = new Setting(tbAccount.Text);
+            Setting differencesfee = new Setting(tbAccount.Text, tbroom.Text);
             differencesfee.StartPosition = FormStartPosition.CenterScreen;
             differencesfee.Show();
         }
 
         private void panel6_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            homeinformation homeinformation1 = new homeinformation();
-            homeinformation1.StartPosition = FormStartPosition.CenterScreen;
-            homeinformation1.Show();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -133,6 +162,11 @@ namespace Flat_Services_Application.tenant
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

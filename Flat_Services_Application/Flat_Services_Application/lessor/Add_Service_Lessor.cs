@@ -16,6 +16,12 @@ namespace Flat_Services_Application.lessor
         {
             InitializeComponent();
         }
+        string sdt;
+        public Add_Service_Lessor(string sdt)
+        {
+            InitializeComponent();
+            this.sdt = sdt;
+        }
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
@@ -23,6 +29,11 @@ namespace Flat_Services_Application.lessor
             Services_Lessor services_Lessor = new Services_Lessor();
             services_Lessor.StartPosition = FormStartPosition.CenterScreen;
             services_Lessor.Show();
+        }
+
+        private void Add_Service_Lessor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

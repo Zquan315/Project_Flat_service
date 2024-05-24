@@ -16,7 +16,12 @@ namespace Flat_Services_Application
         {
             InitializeComponent();
         }
-
+        string sdt;
+        public ChangePass(string sdt)
+        {
+            InitializeComponent();
+            this.sdt = sdt; 
+        }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             // dieu kien xet day phai la mat khau hien tai hay k -> kiem tra trong database, truy xuat bnag hien thi std

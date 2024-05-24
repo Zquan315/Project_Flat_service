@@ -372,6 +372,7 @@
             this.Chat_btn.TextMarginLeft = 0;
             this.Chat_btn.TextPadding = new System.Windows.Forms.Padding(0);
             this.Chat_btn.UseDefaultRadiusAndThickness = true;
+            this.Chat_btn.Click += new System.EventHandler(this.Chat_btn_Click);
             // 
             // Requests_btn
             // 
@@ -1023,6 +1024,7 @@
             this.MaximizeBox = false;
             this.Name = "Chat_Lessor";
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Chat_Lessor_Load);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

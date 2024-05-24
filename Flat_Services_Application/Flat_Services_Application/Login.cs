@@ -199,7 +199,7 @@ namespace Flat_Services_Application
                 else
                 {
                     this.Hide();
-                    homenavigation h = new homenavigation(tbPhoneNumber.Text);
+                    homenavigation h = new homenavigation(tbPhoneNumber.Text, dt.room);
                     h.StartPosition = FormStartPosition.CenterScreen;
                     h.Show();
                 }
@@ -253,7 +253,7 @@ namespace Flat_Services_Application
                     Data result = ud.ResultAs<Data>();
                 }
                 this.Hide();
-                Home_Lessor a = new Home_Lessor();
+                Home_Lessor a = new Home_Lessor(tbPhoneNumber.Text);
                 a.StartPosition = FormStartPosition.CenterScreen;
                 a.Show();
 

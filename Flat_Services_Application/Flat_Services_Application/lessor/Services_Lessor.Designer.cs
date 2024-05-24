@@ -178,6 +178,7 @@
             this.Services_btn.TextMarginLeft = 0;
             this.Services_btn.TextPadding = new System.Windows.Forms.Padding(0);
             this.Services_btn.UseDefaultRadiusAndThickness = true;
+            this.Services_btn.Click += new System.EventHandler(this.Services_btn_Click);
             // 
             // LogOut_btn
             // 
@@ -1121,6 +1122,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Services_Lessor";
             this.Text = "Flat Service";
+            this.Load += new System.EventHandler(this.Services_Lessor_Load);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

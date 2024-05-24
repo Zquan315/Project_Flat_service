@@ -16,10 +16,20 @@ namespace Flat_Services_Application.lessor
         {
             InitializeComponent();
         }
-
+        string sdt;
+        public Charge_Lessor(string sdt)
+        {
+            InitializeComponent();
+            this.sdt = sdt;
+        }
         private void Close_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void Charge_Lessor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

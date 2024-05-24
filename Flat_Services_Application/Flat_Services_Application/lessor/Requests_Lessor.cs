@@ -15,6 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using System.Web.UI;
 
 namespace Flat_Services_Application.lessor
 {
@@ -31,11 +32,16 @@ namespace Flat_Services_Application.lessor
         {
             InitializeComponent();
         }
-
+        string sdt;
+        public Requests_Lessor(string sdt)
+        {
+            InitializeComponent();
+            this.sdt = sdt;
+        }
         private void Home_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home_Lessor home_Lessor = new Home_Lessor();
+            Home_Lessor home_Lessor = new Home_Lessor(sdt);
             home_Lessor.StartPosition = FormStartPosition.CenterScreen;
             home_Lessor.Show();
         }
@@ -43,7 +49,7 @@ namespace Flat_Services_Application.lessor
         private void Flat_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Management_2 flat_Management_2 = new Flat_Management_2();
+            Flat_Management_2 flat_Management_2 = new Flat_Management_2(sdt);
             flat_Management_2.StartPosition = FormStartPosition.CenterScreen;
             flat_Management_2.Show();
         }
@@ -51,7 +57,7 @@ namespace Flat_Services_Application.lessor
         private void Pay_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Payment_Lessor payment_Lessor = new Payment_Lessor();
+            Payment_Lessor payment_Lessor = new Payment_Lessor(sdt);
             payment_Lessor.StartPosition = FormStartPosition.CenterScreen;
             payment_Lessor.Show();
         }
@@ -59,7 +65,7 @@ namespace Flat_Services_Application.lessor
         private void Chat_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Chat_Lessor chat_Lessor = new Chat_Lessor();
+            Chat_Lessor chat_Lessor = new Chat_Lessor(sdt);
             chat_Lessor.StartPosition = FormStartPosition.CenterScreen;
             chat_Lessor.Show();
         }
@@ -81,7 +87,7 @@ namespace Flat_Services_Application.lessor
         private void Setting_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Settings_Lessor settings_Lessor = new Settings_Lessor();
+            Settings_Lessor settings_Lessor = new Settings_Lessor(sdt);
             settings_Lessor.StartPosition=FormStartPosition.CenterScreen;
             settings_Lessor.Show();
         }
@@ -89,7 +95,7 @@ namespace Flat_Services_Application.lessor
         private void Services_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Services_Lessor services_Lessor = new Services_Lessor();
+            Services_Lessor services_Lessor = new Services_Lessor(sdt);
             services_Lessor.StartPosition = FormStartPosition.CenterScreen;
             services_Lessor.Show();
         }
@@ -131,10 +137,14 @@ namespace Flat_Services_Application.lessor
                     if (sn.Exists)
                     {
                     string id = sn.Id.ToString();
-                    ListViewItem data = new ListViewItem(id);
-                    data.SubItems.Add(t.Name);
-                    data.SubItems.Add(t.Room);
-                    lvRequest.Items.Add(data);
+                    if(id != "Y2ei5yHeMvo1vfa96Gfz")
+                    {
+                        ListViewItem data = new ListViewItem(id);
+                        data.SubItems.Add(t.Name);
+                        data.SubItems.Add(t.Room);
+                        lvRequest.Items.Add(data);
+                    }    
+                    
                 }
               }
         }
@@ -146,12 +156,15 @@ namespace Flat_Services_Application.lessor
                 ListViewItem selectedItem = lvRequest.SelectedItems[0];
                 string phone_num = selectedItem.SubItems[0].Text;  
                 string room = selectedItem.SubItems[2].Text;
-
+                string name = "" , id = "", date = "";
                 // cap nhat lai status cua user
                 FirebaseResponse responds = await client.GetAsync("Account Tenant/" + phone_num);
                 if (responds.Body != "null")
                 {
                     Data dt = responds.ResultAs<Data>();
+                    name = dt.name;
+                    id = dt.ID;
+                    date = dt.date;
                     var data = new Data()
                     {
                         name = dt.name,
@@ -172,11 +185,33 @@ namespace Flat_Services_Application.lessor
 
                 // xoa 1 docment trong list
                 delete_Document(phone_num);
+
+                // them vao room info
+                add_data_roomInfo(phone_num, room, name, id, date);
                 //xoa ra khoi listview
                 lvRequest.Items.RemoveAt(lvRequest.SelectedItems[0].Index);
             }
         }
 
+        void add_data_roomInfo(string p, string r, string n, string i, string d)
+        {
+            DocumentReference DOC = db.Collection("RoomInfo").Document(r);
+            Dictionary<string, object> maindt = new Dictionary<string, object>();
+            {
+                maindt.Add("Phone number",p);
+                
+            };
+            Dictionary<string, object> dt = new Dictionary<string, object>();
+            {
+                dt.Add("Name",n );
+                dt.Add("ID number", i);
+                dt.Add("Sex", "");
+                dt.Add("Date of birth", d);
+                dt.Add("ID vehical", "");
+            };
+            maindt.Add("Info", dt);
+            DOC.SetAsync(maindt);
+        }
         void delete_Document(string s)
         {
             DocumentReference dr = db.Collection("ListAwaitBrowse").Document(s);
@@ -237,6 +272,11 @@ namespace Flat_Services_Application.lessor
         }
 
         private void lvRequest_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Requests_btn_Click(object sender, EventArgs e)
         {
 
         }
