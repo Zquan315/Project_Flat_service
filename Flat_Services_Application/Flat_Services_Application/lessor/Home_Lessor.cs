@@ -108,6 +108,7 @@ namespace Flat_Services_Application.tenant
 
         async void GetData()
         {
+            
             Query data = db.Collection("SelectRoom");
             QuerySnapshot snap = await data.GetSnapshotAsync();
 

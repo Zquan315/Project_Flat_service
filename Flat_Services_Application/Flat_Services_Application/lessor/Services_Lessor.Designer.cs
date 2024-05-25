@@ -37,9 +37,9 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Services_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.LogOut_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -58,15 +58,22 @@
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.BrowseBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Add_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.BrowseBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.room = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id_r = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name_ = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.res = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -896,135 +903,6 @@
             this.tabPage1.Text = "List";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.BrowseBtn);
-            this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(911, 421);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Request";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(13, 71);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(888, 335);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(13, 72);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(888, 343);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
-            // 
-            // BrowseBtn
-            // 
-            this.BrowseBtn.AllowAnimations = true;
-            this.BrowseBtn.AllowMouseEffects = true;
-            this.BrowseBtn.AllowToggling = false;
-            this.BrowseBtn.AnimationSpeed = 200;
-            this.BrowseBtn.AutoGenerateColors = false;
-            this.BrowseBtn.AutoRoundBorders = false;
-            this.BrowseBtn.AutoSizeLeftIcon = true;
-            this.BrowseBtn.AutoSizeRightIcon = true;
-            this.BrowseBtn.BackColor = System.Drawing.Color.Transparent;
-            this.BrowseBtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.BrowseBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BrowseBtn.BackgroundImage")));
-            this.BrowseBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BrowseBtn.ButtonText = "Browse";
-            this.BrowseBtn.ButtonTextMarginLeft = 0;
-            this.BrowseBtn.ColorContrastOnClick = 45;
-            this.BrowseBtn.ColorContrastOnHover = 45;
-            this.BrowseBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.BrowseBtn.CustomizableEdges = borderEdges11;
-            this.BrowseBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BrowseBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BrowseBtn.DisabledFillColor = System.Drawing.Color.Empty;
-            this.BrowseBtn.DisabledForecolor = System.Drawing.Color.Empty;
-            this.BrowseBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.BrowseBtn.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrowseBtn.ForeColor = System.Drawing.Color.White;
-            this.BrowseBtn.IconLeft = null;
-            this.BrowseBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BrowseBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.BrowseBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.BrowseBtn.IconMarginLeft = 11;
-            this.BrowseBtn.IconPadding = 10;
-            this.BrowseBtn.IconRight = null;
-            this.BrowseBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BrowseBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.BrowseBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.BrowseBtn.IconSize = 25;
-            this.BrowseBtn.IdleBorderColor = System.Drawing.Color.Empty;
-            this.BrowseBtn.IdleBorderRadius = 0;
-            this.BrowseBtn.IdleBorderThickness = 0;
-            this.BrowseBtn.IdleFillColor = System.Drawing.Color.Empty;
-            this.BrowseBtn.IdleIconLeftImage = null;
-            this.BrowseBtn.IdleIconRightImage = null;
-            this.BrowseBtn.IndicateFocus = false;
-            this.BrowseBtn.Location = new System.Drawing.Point(793, 27);
-            this.BrowseBtn.Name = "BrowseBtn";
-            this.BrowseBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.BrowseBtn.OnDisabledState.BorderRadius = 1;
-            this.BrowseBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BrowseBtn.OnDisabledState.BorderThickness = 1;
-            this.BrowseBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.BrowseBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.BrowseBtn.OnDisabledState.IconLeftImage = null;
-            this.BrowseBtn.OnDisabledState.IconRightImage = null;
-            this.BrowseBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.onHoverState.BorderRadius = 1;
-            this.BrowseBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BrowseBtn.onHoverState.BorderThickness = 1;
-            this.BrowseBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.BrowseBtn.onHoverState.IconLeftImage = null;
-            this.BrowseBtn.onHoverState.IconRightImage = null;
-            this.BrowseBtn.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.OnIdleState.BorderRadius = 1;
-            this.BrowseBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BrowseBtn.OnIdleState.BorderThickness = 1;
-            this.BrowseBtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.BrowseBtn.OnIdleState.IconLeftImage = null;
-            this.BrowseBtn.OnIdleState.IconRightImage = null;
-            this.BrowseBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.OnPressedState.BorderRadius = 1;
-            this.BrowseBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.BrowseBtn.OnPressedState.BorderThickness = 1;
-            this.BrowseBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.BrowseBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.BrowseBtn.OnPressedState.IconLeftImage = null;
-            this.BrowseBtn.OnPressedState.IconRightImage = null;
-            this.BrowseBtn.Size = new System.Drawing.Size(108, 39);
-            this.BrowseBtn.TabIndex = 14;
-            this.BrowseBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BrowseBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BrowseBtn.TextMarginLeft = 0;
-            this.BrowseBtn.TextPadding = new System.Windows.Forms.Padding(0);
-            this.BrowseBtn.UseDefaultRadiusAndThickness = true;
-            // 
             // bunifuButton1
             // 
             this.bunifuButton1.AllowAnimations = true;
@@ -1207,6 +1085,206 @@
             this.Add_btn.TextPadding = new System.Windows.Forms.Padding(0);
             this.Add_btn.UseDefaultRadiusAndThickness = true;
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.name,
+            this.price,
+            this.note});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 70);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(888, 335);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // id
+            // 
+            this.id.Text = "ID Service";
+            this.id.Width = 142;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.BrowseBtn);
+            this.tabPage2.Controls.Add(this.listView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(911, 421);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Request";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // BrowseBtn
+            // 
+            this.BrowseBtn.AllowAnimations = true;
+            this.BrowseBtn.AllowMouseEffects = true;
+            this.BrowseBtn.AllowToggling = false;
+            this.BrowseBtn.AnimationSpeed = 200;
+            this.BrowseBtn.AutoGenerateColors = false;
+            this.BrowseBtn.AutoRoundBorders = false;
+            this.BrowseBtn.AutoSizeLeftIcon = true;
+            this.BrowseBtn.AutoSizeRightIcon = true;
+            this.BrowseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BrowseBtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.BrowseBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BrowseBtn.BackgroundImage")));
+            this.BrowseBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BrowseBtn.ButtonText = "Browse";
+            this.BrowseBtn.ButtonTextMarginLeft = 0;
+            this.BrowseBtn.ColorContrastOnClick = 45;
+            this.BrowseBtn.ColorContrastOnHover = 45;
+            this.BrowseBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.BrowseBtn.CustomizableEdges = borderEdges11;
+            this.BrowseBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BrowseBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BrowseBtn.DisabledFillColor = System.Drawing.Color.Empty;
+            this.BrowseBtn.DisabledForecolor = System.Drawing.Color.Empty;
+            this.BrowseBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.BrowseBtn.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrowseBtn.ForeColor = System.Drawing.Color.White;
+            this.BrowseBtn.IconLeft = null;
+            this.BrowseBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BrowseBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.BrowseBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.BrowseBtn.IconMarginLeft = 11;
+            this.BrowseBtn.IconPadding = 10;
+            this.BrowseBtn.IconRight = null;
+            this.BrowseBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BrowseBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.BrowseBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.BrowseBtn.IconSize = 25;
+            this.BrowseBtn.IdleBorderColor = System.Drawing.Color.Empty;
+            this.BrowseBtn.IdleBorderRadius = 0;
+            this.BrowseBtn.IdleBorderThickness = 0;
+            this.BrowseBtn.IdleFillColor = System.Drawing.Color.Empty;
+            this.BrowseBtn.IdleIconLeftImage = null;
+            this.BrowseBtn.IdleIconRightImage = null;
+            this.BrowseBtn.IndicateFocus = false;
+            this.BrowseBtn.Location = new System.Drawing.Point(793, 27);
+            this.BrowseBtn.Name = "BrowseBtn";
+            this.BrowseBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.BrowseBtn.OnDisabledState.BorderRadius = 1;
+            this.BrowseBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BrowseBtn.OnDisabledState.BorderThickness = 1;
+            this.BrowseBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.BrowseBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.BrowseBtn.OnDisabledState.IconLeftImage = null;
+            this.BrowseBtn.OnDisabledState.IconRightImage = null;
+            this.BrowseBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.onHoverState.BorderRadius = 1;
+            this.BrowseBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BrowseBtn.onHoverState.BorderThickness = 1;
+            this.BrowseBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.BrowseBtn.onHoverState.IconLeftImage = null;
+            this.BrowseBtn.onHoverState.IconRightImage = null;
+            this.BrowseBtn.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.OnIdleState.BorderRadius = 1;
+            this.BrowseBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BrowseBtn.OnIdleState.BorderThickness = 1;
+            this.BrowseBtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.BrowseBtn.OnIdleState.IconLeftImage = null;
+            this.BrowseBtn.OnIdleState.IconRightImage = null;
+            this.BrowseBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.OnPressedState.BorderRadius = 1;
+            this.BrowseBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.BrowseBtn.OnPressedState.BorderThickness = 1;
+            this.BrowseBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.BrowseBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.BrowseBtn.OnPressedState.IconLeftImage = null;
+            this.BrowseBtn.OnPressedState.IconRightImage = null;
+            this.BrowseBtn.Size = new System.Drawing.Size(108, 39);
+            this.BrowseBtn.TabIndex = 14;
+            this.BrowseBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BrowseBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BrowseBtn.TextMarginLeft = 0;
+            this.BrowseBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.BrowseBtn.UseDefaultRadiusAndThickness = true;
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.room,
+            this.id_r,
+            this.name_,
+            this.res,
+            this.time,
+            this.status});
+            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.FullRowSelect = true;
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(13, 72);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(888, 343);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+            // 
+            // room
+            // 
+            this.room.Text = "Room";
+            this.room.Width = 104;
+            // 
+            // id_r
+            // 
+            this.id_r.Text = "ID Service";
+            this.id_r.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.id_r.Width = 123;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 201;
+            // 
+            // price
+            // 
+            this.price.Text = "Price";
+            this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.price.Width = 204;
+            // 
+            // name_
+            // 
+            this.name_.Text = "Name";
+            this.name_.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name_.Width = 134;
+            // 
+            // res
+            // 
+            this.res.Text = "Register Date";
+            this.res.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.res.Width = 182;
+            // 
+            // time
+            // 
+            this.time.Text = "Time to use";
+            this.time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.time.Width = 139;
+            // 
+            // status
+            // 
+            this.status.Text = "Status";
+            this.status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.status.Width = 185;
+            // 
+            // note
+            // 
+            this.note.Text = "Note";
+            this.note.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.note.Width = 321;
+            // 
             // Services_Lessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1256,12 +1334,19 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader room;
+        private System.Windows.Forms.ColumnHeader id_r;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Add_btn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton BrowseBtn;
+        private System.Windows.Forms.ColumnHeader name;
+        private System.Windows.Forms.ColumnHeader price;
+        private System.Windows.Forms.ColumnHeader name_;
+        private System.Windows.Forms.ColumnHeader res;
+        private System.Windows.Forms.ColumnHeader time;
+        private System.Windows.Forms.ColumnHeader status;
+        private System.Windows.Forms.ColumnHeader note;
     }
 }
