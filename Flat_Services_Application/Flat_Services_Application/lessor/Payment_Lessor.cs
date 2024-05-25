@@ -101,5 +101,10 @@ namespace Flat_Services_Application.lessor
         {
 
         }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

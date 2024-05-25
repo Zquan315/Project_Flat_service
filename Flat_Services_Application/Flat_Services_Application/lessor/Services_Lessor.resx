@@ -771,6 +771,15 @@
         +exPK4LQAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="BrowseBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGwAAAAnCAYAAADq+a1iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACMSURBVHhe7dExDcMwAABBw3H3GoD5QyiMAGiUPQD80g03
+        /fhjfvfvs/af8z2vxlvgXIbFGBZjWIxhMYbFGBZjWIxhMYbFGBZjWIxhMYbFGBZjWIxhMYbFGBZjWIxh
+        MYbFGBZjWIxhMYbFGBZjWIxhMYbFGBZjWIxhMYbFGBZjWIxhMWOufb0FzjPXvm4bm5y5VupxwAAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIABNHAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
