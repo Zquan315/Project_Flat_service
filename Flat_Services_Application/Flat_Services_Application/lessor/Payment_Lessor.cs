@@ -104,5 +104,10 @@ namespace Flat_Services_Application.lessor
         {
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
