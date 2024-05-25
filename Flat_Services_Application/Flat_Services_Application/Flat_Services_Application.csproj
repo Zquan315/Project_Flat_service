@@ -215,12 +215,6 @@
     <Compile Include="lessor\Add_Service_Lessor.Designer.cs">
       <DependentUpon>Add_Service_Lessor.cs</DependentUpon>
     </Compile>
-    <Compile Include="lessor\Charge_Lessor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lessor\Charge_Lessor.Designer.cs">
-      <DependentUpon>Charge_Lessor.cs</DependentUpon>
-    </Compile>
     <Compile Include="lessor\Chat_Lessor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,9 +342,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="lessor\Add_Service_Lessor.resx">
       <DependentUpon>Add_Service_Lessor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lessor\Charge_Lessor.resx">
-      <DependentUpon>Charge_Lessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lessor\Chat_Lessor.resx">
       <DependentUpon>Chat_Lessor.cs</DependentUpon>

@@ -127,6 +127,7 @@
             this.sex,
             this.date,
             this.id_vehical});
+            this.lvData.FullRowSelect = true;
             this.lvData.GridLines = true;
             this.lvData.HideSelection = false;
             this.lvData.Location = new System.Drawing.Point(6, 23);

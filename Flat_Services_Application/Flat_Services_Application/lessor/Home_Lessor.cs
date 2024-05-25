@@ -1,4 +1,7 @@
-﻿using Flat_Services_Application.lessor;
+﻿using Flat_Services_Application.Class;
+using Flat_Services_Application.lessor;
+using Google.Cloud.Firestore;
+using Google.Cloud.Firestore.V1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +16,7 @@ namespace Flat_Services_Application.tenant
 {
     public partial class Home_Lessor : Form
     {
+        FirestoreDb db;
         public Home_Lessor()
         {
             InitializeComponent();
@@ -88,10 +92,44 @@ namespace Flat_Services_Application.tenant
 
         private void Home_Lessor_Load(object sender, EventArgs e)
         {
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            GetData();
+        }
 
+        async void GetData()
+        {
+            Query data = db.Collection("SelectRoom");
+            QuerySnapshot snap = await data.GetSnapshotAsync();
+
+            foreach(DocumentSnapshot snapshot in snap.Documents) 
+            {
+                if (snapshot.Exists)
+                {
+                    room1 dt = snapshot.ConvertTo<room1>();
+                    if (dt.Status == 0)
+                        Status_DataGridView.Rows.Add(snapshot.Id, "Empty");
+                    else
+                        Status_DataGridView.Rows.Add(snapshot.Id, "Hired");
+                }
+            }
         }
 
         private void Home_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Status_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

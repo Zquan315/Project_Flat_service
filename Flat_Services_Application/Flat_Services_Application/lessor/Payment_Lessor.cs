@@ -79,9 +79,7 @@ namespace Flat_Services_Application.lessor
 
         private void Charge_btn_Click(object sender, EventArgs e)
         {
-            Charge_Lessor charge_Lessor = new Charge_Lessor(sdt);
-            charge_Lessor.StartPosition = FormStartPosition.CenterScreen;
-            charge_Lessor.Show();
+            
         }
 
         private void Services_btn_Click(object sender, EventArgs e)

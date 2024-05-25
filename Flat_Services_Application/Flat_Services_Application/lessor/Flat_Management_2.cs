@@ -88,7 +88,7 @@ namespace Flat_Services_Application.lessor
         private void btn101_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("101");
             flat_Info_Lessor.StartPosition=FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -96,7 +96,7 @@ namespace Flat_Services_Application.lessor
         private void btn102_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("102");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -104,7 +104,7 @@ namespace Flat_Services_Application.lessor
         private void btn103_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("103");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -112,7 +112,7 @@ namespace Flat_Services_Application.lessor
         private void btn104_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("104");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -120,7 +120,7 @@ namespace Flat_Services_Application.lessor
         private void btn105_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("105");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -128,7 +128,7 @@ namespace Flat_Services_Application.lessor
         private void btn201_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("201");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -136,7 +136,7 @@ namespace Flat_Services_Application.lessor
         private void btn202_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("202");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -144,7 +144,7 @@ namespace Flat_Services_Application.lessor
         private void btn203_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("203");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -152,7 +152,7 @@ namespace Flat_Services_Application.lessor
         private void btn204_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("204");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -160,7 +160,7 @@ namespace Flat_Services_Application.lessor
         private void btn205_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("205");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -168,7 +168,7 @@ namespace Flat_Services_Application.lessor
         private void btn301_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("301");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -176,7 +176,7 @@ namespace Flat_Services_Application.lessor
         private void btn302_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("302");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -184,7 +184,7 @@ namespace Flat_Services_Application.lessor
         private void btn303_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("303");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -192,7 +192,7 @@ namespace Flat_Services_Application.lessor
         private void btn304_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("304");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
@@ -200,7 +200,7 @@ namespace Flat_Services_Application.lessor
         private void btn305_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor();
+            Flat_Info_Lessor flat_Info_Lessor = new Flat_Info_Lessor("305");
             flat_Info_Lessor.StartPosition = FormStartPosition.CenterScreen;
             flat_Info_Lessor.Show();
         }
