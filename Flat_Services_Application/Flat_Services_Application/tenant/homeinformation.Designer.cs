@@ -39,9 +39,14 @@
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.id_vehical = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lbSex = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
+            this.lbphone = new System.Windows.Forms.Label();
             this.datetime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.lbID = new System.Windows.Forms.Label();
+            this.lbIDvehical = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txbVehical = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,11 +83,6 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbphone = new System.Windows.Forms.Label();
-            this.lbIDvehical = new System.Windows.Forms.Label();
-            this.lbID = new System.Windows.Forms.Label();
-            this.lbname = new System.Windows.Forms.Label();
-            this.lbSex = new System.Windows.Forms.Label();
             this.panelCenterInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -202,6 +202,37 @@
             this.panel5.Size = new System.Drawing.Size(908, 234);
             this.panel5.TabIndex = 5;
             // 
+            // lbSex
+            // 
+            this.lbSex.AutoSize = true;
+            this.lbSex.ForeColor = System.Drawing.Color.Red;
+            this.lbSex.Location = new System.Drawing.Point(51, 127);
+            this.lbSex.Name = "lbSex";
+            this.lbSex.Size = new System.Drawing.Size(12, 16);
+            this.lbSex.TabIndex = 23;
+            this.lbSex.Text = "*";
+            // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.ForeColor = System.Drawing.Color.Red;
+            this.lbname.Location = new System.Drawing.Point(71, 101);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(12, 16);
+            this.lbname.TabIndex = 22;
+            this.lbname.Text = "*";
+            // 
+            // lbphone
+            // 
+            this.lbphone.AutoSize = true;
+            this.lbphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbphone.ForeColor = System.Drawing.Color.Red;
+            this.lbphone.Location = new System.Drawing.Point(163, 40);
+            this.lbphone.Name = "lbphone";
+            this.lbphone.Size = new System.Drawing.Size(12, 15);
+            this.lbphone.TabIndex = 15;
+            this.lbphone.Text = "*";
+            // 
             // datetime
             // 
             this.datetime.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,6 +271,26 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(384, 234);
             this.panel8.TabIndex = 14;
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.ForeColor = System.Drawing.Color.Red;
+            this.lbID.Location = new System.Drawing.Point(235, 176);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(12, 16);
+            this.lbID.TabIndex = 21;
+            this.lbID.Text = "*";
+            // 
+            // lbIDvehical
+            // 
+            this.lbIDvehical.AutoSize = true;
+            this.lbIDvehical.ForeColor = System.Drawing.Color.Red;
+            this.lbIDvehical.Location = new System.Drawing.Point(275, 58);
+            this.lbIDvehical.Name = "lbIDvehical";
+            this.lbIDvehical.Size = new System.Drawing.Size(12, 16);
+            this.lbIDvehical.TabIndex = 16;
+            this.lbIDvehical.Text = "*";
             // 
             // label10
             // 
@@ -695,57 +746,6 @@
             this.panel6.TabIndex = 1;
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
-            // lbphone
-            // 
-            this.lbphone.AutoSize = true;
-            this.lbphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbphone.ForeColor = System.Drawing.Color.Red;
-            this.lbphone.Location = new System.Drawing.Point(163, 40);
-            this.lbphone.Name = "lbphone";
-            this.lbphone.Size = new System.Drawing.Size(12, 15);
-            this.lbphone.TabIndex = 15;
-            this.lbphone.Text = "*";
-            // 
-            // lbIDvehical
-            // 
-            this.lbIDvehical.AutoSize = true;
-            this.lbIDvehical.ForeColor = System.Drawing.Color.Red;
-            this.lbIDvehical.Location = new System.Drawing.Point(275, 58);
-            this.lbIDvehical.Name = "lbIDvehical";
-            this.lbIDvehical.Size = new System.Drawing.Size(12, 16);
-            this.lbIDvehical.TabIndex = 16;
-            this.lbIDvehical.Text = "*";
-            // 
-            // lbID
-            // 
-            this.lbID.AutoSize = true;
-            this.lbID.ForeColor = System.Drawing.Color.Red;
-            this.lbID.Location = new System.Drawing.Point(235, 176);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(12, 16);
-            this.lbID.TabIndex = 21;
-            this.lbID.Text = "*";
-            // 
-            // lbname
-            // 
-            this.lbname.AutoSize = true;
-            this.lbname.ForeColor = System.Drawing.Color.Red;
-            this.lbname.Location = new System.Drawing.Point(71, 101);
-            this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(12, 16);
-            this.lbname.TabIndex = 22;
-            this.lbname.Text = "*";
-            // 
-            // lbSex
-            // 
-            this.lbSex.AutoSize = true;
-            this.lbSex.ForeColor = System.Drawing.Color.Red;
-            this.lbSex.Location = new System.Drawing.Point(51, 127);
-            this.lbSex.Name = "lbSex";
-            this.lbSex.Size = new System.Drawing.Size(12, 16);
-            this.lbSex.TabIndex = 23;
-            this.lbSex.Text = "*";
             // 
             // homeinformation
             // 

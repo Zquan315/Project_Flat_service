@@ -1,9 +1,11 @@
 ﻿
 using FireSharp.Config;
 using FireSharp.Interfaces;
+using FireSharp.Response;
 using Flat_Services_Application.Class;
 using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
+using Google.Protobuf;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -233,7 +235,33 @@ private void homeBtn_Click(object sender, EventArgs e)
                 lbphone.ForeColor = Color.Red;
             }
             else
-                lbphone.Text = "" ;
+            {
+                lbphone.Text = "";
+                if(exits_phone(tbPhone.Text))
+                {
+                    foreach (ListViewItem item in lvData.Items)
+                    {
+                        if (item.Text == tbPhone.Text)
+                        {
+                            DateTime dateTime = DateTime.ParseExact(item.SubItems[4].Text, "MM/dd/yyyy", null);
+
+                            // Tạo chuỗi định dạng mới "dd-month-yy"
+                            
+                            tbName.Text = item.SubItems[1].Text;
+                            tbID.Text = item.SubItems[2].Text;
+                            datetime.Value = dateTime;
+                            tbID.Enabled =  tbPhone.Enabled = datetime.Enabled = false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    tbID.Text = tbName.Text = "";
+                    tbID.Enabled= tbPhone.Enabled = datetime.Enabled = true;
+                }
+            }
+                
         }
         public bool IsNumberPhone(string a)
         {
@@ -381,11 +409,110 @@ private void homeBtn_Click(object sender, EventArgs e)
             }
             return false;
         }
-        private void UpgradeBtn_Click(object sender, EventArgs e)
+        private async void UpgradeBtn_Click(object sender, EventArgs e)
+        {
+            if (!IsNumberPhone(tbPhone.Text) || tbPhone.Text == "")
+            {
+                lbphone.Text = "*";
+                lbphone.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbphone.Text = "";
+            if (tbName.Text == "")
+            {
+                lbname.Text = "*";
+                lbname.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbname.Text = "";
+            if (!rbMale.Checked && !rbFemale.Checked)
+            {
+                lbSex.Text = "*";
+                lbSex.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbname.Text = "";
+            if (!isIDvehical(txbVehical.Text))
+            {
+                lbIDvehical.Text = "*";
+                lbIDvehical.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbIDvehical.Text = "";
+            if (tbID.Text.Length != 12)
+            {
+                lbID.Text = "*";
+                lbID.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbID.Text = "";
+            if (!exits_phone(tbPhone.Text))
+            {
+                lbphone.Text = "This phone isn't exists";
+                lbphone.ForeColor = Color.Red;
+                return;
+            }
+            update_data();
+            //update user
+            FirebaseResponse responds = await client.GetAsync("Account Tenant/" + tbPhone.Text);
+            if (responds.Body != "null")
+            {
+                Data dt = responds.ResultAs<Data>();
+                var data = new Data()
+                {
+                    name = tbName.Text,
+                    email = dt.email,
+                    pass = dt.pass,
+                    phone = dt.phone,
+                    ID = dt.ID,
+                    date = dt.date,
+                    objects = dt.objects,
+                    status = dt.status,
+                    remember = dt.remember,
+                    room = dt.room,
+                };
+
+                FirebaseResponse ud = await client.UpdateAsync("Account Tenant/" + tbPhone.Text, data);
+                Data result = ud.ResultAs<Data>();
+            }
+
+            //
+            lbphone.Text = "Update account successfully";
+            lbphone.ForeColor = Color.Green;
+            await Task.Delay(3500);
+            reset();
+        }
+        async void update_data()
         {
 
-        }
+            DocumentReference DOC = db.Collection("RoomInfo").Document(tbroom.Text);
+            Dictionary<string, object> maindt = new Dictionary<string, object>();
+            DateTime selectedDate = datetime.Value;
+            string formattedDate = selectedDate.ToString("MM/dd/yyyy", CultureInfo.InvariantCulture);
 
+            ArrayList arr = new ArrayList();
+            arr.Add(tbName.Text);
+            arr.Add(tbID.Text);
+            if (rbFemale.Checked)
+                arr.Add("Female");
+            if (rbMale.Checked)
+                arr.Add("Male");
+            arr.Add(formattedDate);
+            arr.Add(txbVehical.Text.ToUpper());
+            maindt.Add(tbPhone.Text, arr);
+            await DOC.UpdateAsync(maindt);
+
+            
+
+
+            //
+            
+        }
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
 
