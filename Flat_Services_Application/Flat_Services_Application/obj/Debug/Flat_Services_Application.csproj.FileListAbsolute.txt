@@ -1185,3 +1185,12 @@ C:\Users\Thao\Downloads\c++\Flat_Services(backupp)\Project_Flat_service\Flat_Ser
 C:\Users\Thao\Downloads\c++\Flat_Services(backupp)\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Ser.BB17834D.Up2Date
 C:\Users\Thao\Downloads\c++\Flat_Services(backupp)\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Services_Application.exe
 C:\Users\Thao\Downloads\c++\Flat_Services(backupp)\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\obj\Debug\Flat_Services_Application.pdb
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.dll
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.WinForms.dll
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.Wpf.dll
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.pdb
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.xml
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.WinForms.pdb
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.WinForms.xml
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.Wpf.pdb
+Q:\Project_LapTrinhMang\Project_Flat_service\Flat_Services_Application\Flat_Services_Application\bin\Debug\LiveCharts.Wpf.xml

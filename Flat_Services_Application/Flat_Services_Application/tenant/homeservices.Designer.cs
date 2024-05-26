@@ -33,6 +33,10 @@
             this.panelCenter = new System.Windows.Forms.Panel();
             this.panelCenterServices = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.ID_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,6 +49,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.register = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -66,16 +76,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.register = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.ID_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelCenter.SuspendLayout();
             this.panelCenterServices.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,6 +128,38 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "List services for renting";
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID_rent,
+            this.name_rent,
+            this.price});
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(9, 36);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(904, 191);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // ID_rent
+            // 
+            this.ID_rent.Text = "ID service";
+            this.ID_rent.Width = 212;
+            // 
+            // name_rent
+            // 
+            this.name_rent.Text = "Name";
+            this.name_rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name_rent.Width = 340;
+            // 
+            // price
+            // 
+            this.price.Text = "Price";
+            this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.price.Width = 333;
             // 
             // groupBox2
             // 
@@ -272,6 +304,50 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "List Services";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.name,
+            this.time,
+            this.register,
+            this.status});
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(9, 26);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(334, 278);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // id
+            // 
+            this.id.Text = "ID service";
+            this.id.Width = 107;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.Width = 76;
+            // 
+            // time
+            // 
+            this.time.DisplayIndex = 3;
+            this.time.Text = "Time (hour)";
+            this.time.Width = 100;
+            // 
+            // register
+            // 
+            this.register.DisplayIndex = 2;
+            this.register.Text = "Register date";
+            this.register.Width = 126;
+            // 
+            // status
+            // 
+            this.status.Text = "Status";
+            this.status.Width = 140;
             // 
             // panel2
             // 
@@ -518,82 +594,6 @@
             this.panel5.TabIndex = 0;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id,
-            this.name,
-            this.time,
-            this.register,
-            this.status});
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(9, 26);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(334, 278);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // id
-            // 
-            this.id.Text = "ID service";
-            this.id.Width = 107;
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            this.name.Width = 76;
-            // 
-            // time
-            // 
-            this.time.DisplayIndex = 3;
-            this.time.Text = "Time (hour)";
-            this.time.Width = 100;
-            // 
-            // register
-            // 
-            this.register.DisplayIndex = 2;
-            this.register.Text = "Register date";
-            this.register.Width = 126;
-            // 
-            // status
-            // 
-            this.status.Text = "Status";
-            this.status.Width = 140;
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID_rent,
-            this.name_rent,
-            this.price});
-            this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(9, 36);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(904, 191);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // ID_rent
-            // 
-            this.ID_rent.Text = "ID service";
-            this.ID_rent.Width = 212;
-            // 
-            // name_rent
-            // 
-            this.name_rent.Text = "Name";
-            this.name_rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name_rent.Width = 340;
-            // 
-            // price
-            // 
-            this.price.Text = "Price";
-            this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.price.Width = 333;
             // 
             // homeservices
             // 

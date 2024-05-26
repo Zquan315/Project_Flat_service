@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homenavigation));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -55,31 +52,25 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panelCenterHome = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.memoData = new System.Windows.Forms.DataGridView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DelBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.panelCenterHome.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoData)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -129,7 +120,7 @@
             this.panel9.Location = new System.Drawing.Point(692, 6);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(322, 96);
+            this.panel9.Size = new System.Drawing.Size(322, 92);
             this.panel9.TabIndex = 8;
             // 
             // tbroom
@@ -368,116 +359,12 @@
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox1.Controls.Add(this.bunifuTextBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(655, 449);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(359, 99);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Report App";
-            // 
-            // bunifuTextBox1
-            // 
-            this.bunifuTextBox1.AcceptsReturn = false;
-            this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.AnimationSpeed = 200;
-            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox1.AutoSizeHeight = true;
-            this.bunifuTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
-            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.BorderRadius = 1;
-            this.bunifuTextBox1.BorderThickness = 1;
-            this.bunifuTextBox1.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.bunifuTextBox1.DefaultText = "";
-            this.bunifuTextBox1.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBox1.HideSelection = true;
-            this.bunifuTextBox1.IconLeft = null;
-            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = null;
-            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(8, 50);
-            this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox1.Modified = false;
-            this.bunifuTextBox1.Multiline = false;
-            this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
-            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.PlaceholderText = "Your Response";
-            this.bunifuTextBox1.ReadOnly = false;
-            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox1.SelectedText = "";
-            this.bunifuTextBox1.SelectionLength = 0;
-            this.bunifuTextBox1.SelectionStart = 0;
-            this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(343, 43);
-            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox1.TabIndex = 1;
-            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox1.TextMarginBottom = 0;
-            this.bunifuTextBox1.TextMarginLeft = 3;
-            this.bunifuTextBox1.TextMarginTop = 1;
-            this.bunifuTextBox1.TextPlaceholder = "Your Response";
-            this.bunifuTextBox1.UseSystemPasswordChar = false;
-            this.bunifuTextBox1.WordWrap = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 24);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 19);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Write your report about us:";
-            // 
             // panelCenterHome
             // 
             this.panelCenterHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.panelCenterHome.Controls.Add(this.pictureBox1);
             this.panelCenterHome.Controls.Add(this.groupBox6);
-            this.panelCenterHome.Controls.Add(this.groupBox5);
-            this.panelCenterHome.Controls.Add(this.groupBox4);
             this.panelCenterHome.Controls.Add(this.groupBox3);
-            this.panelCenterHome.Controls.Add(this.groupBox1);
             this.panelCenterHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCenterHome.Location = new System.Drawing.Point(240, 102);
             this.panelCenterHome.Margin = new System.Windows.Forms.Padding(2);
@@ -489,84 +376,30 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox6.Controls.Add(this.memoData);
+            this.groupBox6.Controls.Add(this.DelBtn);
+            this.groupBox6.Controls.Add(this.listView1);
             this.groupBox6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(295, 4);
+            this.groupBox6.Location = new System.Drawing.Point(658, 4);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(356, 442);
+            this.groupBox6.Size = new System.Drawing.Size(356, 528);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Memo";
-            // 
-            // memoData
-            // 
-            this.memoData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.memoData.Location = new System.Drawing.Point(5, 39);
-            this.memoData.Name = "memoData";
-            this.memoData.RowHeadersWidth = 51;
-            this.memoData.RowTemplate.Height = 24;
-            this.memoData.Size = new System.Drawing.Size(346, 398);
-            this.memoData.TabIndex = 0;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox5.BackgroundImage = global::Flat_Services_Application.Properties.Resources.Screenshot_2024_05_03_003525;
-            this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(655, 16);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(359, 430);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Download App:";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.groupBox4.Controls.Add(this.richTextBox1);
-            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(12, 4);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(279, 442);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Manual";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(10, 38);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(264, 399);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Costing Fee: Payment for room rental\nInformation: View details of the rented room" +
-    "\nServices: Enroll to rent a service\nChatting: Chating with the community in the " +
-    "apartment";
+            this.groupBox6.Text = "Notification";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(12, 449);
+            this.groupBox3.Location = new System.Drawing.Point(12, 450);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(639, 99);
+            this.groupBox3.Size = new System.Drawing.Size(621, 82);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contact Us:";
@@ -576,29 +409,139 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(4, 71);
+            this.label7.Location = new System.Drawing.Point(6, 35);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(350, 23);
             this.label7.TabIndex = 4;
             this.label7.Text = "Gmail: flatservicesapp@gmail.com";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(4, 36);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(509, 23);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Facebook: https://www.facebook.com/2uaan1ee/";
-            // 
             // directorySearcher1
             // 
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(621, 418);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // listView1
+            // 
+            this.listView1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(14, 101);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(334, 403);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Content";
+            this.columnHeader1.Width = 327;
+            // 
+            // DelBtn
+            // 
+            this.DelBtn.AllowAnimations = true;
+            this.DelBtn.AllowMouseEffects = true;
+            this.DelBtn.AllowToggling = false;
+            this.DelBtn.AnimationSpeed = 200;
+            this.DelBtn.AutoGenerateColors = false;
+            this.DelBtn.AutoRoundBorders = false;
+            this.DelBtn.AutoSizeLeftIcon = true;
+            this.DelBtn.AutoSizeRightIcon = true;
+            this.DelBtn.BackColor = System.Drawing.Color.Transparent;
+            this.DelBtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.DelBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DelBtn.BackgroundImage")));
+            this.DelBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.DelBtn.ButtonText = "Delete";
+            this.DelBtn.ButtonTextMarginLeft = 0;
+            this.DelBtn.ColorContrastOnClick = 45;
+            this.DelBtn.ColorContrastOnHover = 45;
+            this.DelBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.DelBtn.CustomizableEdges = borderEdges2;
+            this.DelBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.DelBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.DelBtn.DisabledFillColor = System.Drawing.Color.Empty;
+            this.DelBtn.DisabledForecolor = System.Drawing.Color.Empty;
+            this.DelBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.DelBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.DelBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.DelBtn.IconLeft = null;
+            this.DelBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DelBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.DelBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.DelBtn.IconMarginLeft = 11;
+            this.DelBtn.IconPadding = 10;
+            this.DelBtn.IconRight = null;
+            this.DelBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DelBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.DelBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.DelBtn.IconSize = 25;
+            this.DelBtn.IdleBorderColor = System.Drawing.Color.Empty;
+            this.DelBtn.IdleBorderRadius = 0;
+            this.DelBtn.IdleBorderThickness = 0;
+            this.DelBtn.IdleFillColor = System.Drawing.Color.Empty;
+            this.DelBtn.IdleIconLeftImage = null;
+            this.DelBtn.IdleIconRightImage = null;
+            this.DelBtn.IndicateFocus = false;
+            this.DelBtn.Location = new System.Drawing.Point(265, 38);
+            this.DelBtn.Name = "DelBtn";
+            this.DelBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.DelBtn.OnDisabledState.BorderRadius = 1;
+            this.DelBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.DelBtn.OnDisabledState.BorderThickness = 1;
+            this.DelBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.DelBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.DelBtn.OnDisabledState.IconLeftImage = null;
+            this.DelBtn.OnDisabledState.IconRightImage = null;
+            this.DelBtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.DelBtn.onHoverState.BorderRadius = 1;
+            this.DelBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.DelBtn.onHoverState.BorderThickness = 1;
+            this.DelBtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.DelBtn.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.DelBtn.onHoverState.IconLeftImage = null;
+            this.DelBtn.onHoverState.IconRightImage = null;
+            this.DelBtn.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.DelBtn.OnIdleState.BorderRadius = 1;
+            this.DelBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.DelBtn.OnIdleState.BorderThickness = 1;
+            this.DelBtn.OnIdleState.FillColor = System.Drawing.SystemColors.Control;
+            this.DelBtn.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.DelBtn.OnIdleState.IconLeftImage = null;
+            this.DelBtn.OnIdleState.IconRightImage = null;
+            this.DelBtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.DelBtn.OnPressedState.BorderRadius = 1;
+            this.DelBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.DelBtn.OnPressedState.BorderThickness = 1;
+            this.DelBtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.DelBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.DelBtn.OnPressedState.IconLeftImage = null;
+            this.DelBtn.OnPressedState.IconRightImage = null;
+            this.DelBtn.Size = new System.Drawing.Size(83, 39);
+            this.DelBtn.TabIndex = 1;
+            this.DelBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DelBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DelBtn.TextMarginLeft = 0;
+            this.DelBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.DelBtn.UseDefaultRadiusAndThickness = true;
             // 
             // homenavigation
             // 
@@ -623,14 +566,11 @@
             this.panel9.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panelCenterHome.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.memoData)).EndInit();
-            this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -653,13 +593,8 @@
         private System.Windows.Forms.Button infoBtn;
         private System.Windows.Forms.Button costsBtn;
         private System.Windows.Forms.Button homeBtn;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelCenterHome;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -669,8 +604,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox tbAccount;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
-        private System.Windows.Forms.DataGridView memoData;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton DelBtn;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
