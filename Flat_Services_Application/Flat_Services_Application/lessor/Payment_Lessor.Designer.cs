@@ -98,8 +98,9 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 1030);
+            this.panel3.Size = new System.Drawing.Size(240, 659);
             this.panel3.TabIndex = 11;
             // 
             // Services_btn
@@ -152,8 +153,7 @@
             this.Services_btn.IdleIconLeftImage = null;
             this.Services_btn.IdleIconRightImage = null;
             this.Services_btn.IndicateFocus = false;
-            this.Services_btn.Location = new System.Drawing.Point(0, 759);
-            this.Services_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Services_btn.Location = new System.Drawing.Point(0, 487);
             this.Services_btn.Name = "Services_btn";
             this.Services_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Services_btn.OnDisabledState.BorderRadius = 1;
@@ -187,7 +187,7 @@
             this.Services_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Services_btn.OnPressedState.IconLeftImage = null;
             this.Services_btn.OnPressedState.IconRightImage = null;
-            this.Services_btn.Size = new System.Drawing.Size(360, 120);
+            this.Services_btn.Size = new System.Drawing.Size(240, 77);
             this.Services_btn.TabIndex = 17;
             this.Services_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Services_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -246,8 +246,7 @@
             this.LogOut_btn.IdleIconLeftImage = null;
             this.LogOut_btn.IdleIconRightImage = null;
             this.LogOut_btn.IndicateFocus = false;
-            this.LogOut_btn.Location = new System.Drawing.Point(0, 882);
-            this.LogOut_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LogOut_btn.Location = new System.Drawing.Point(0, 564);
             this.LogOut_btn.Name = "LogOut_btn";
             this.LogOut_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.LogOut_btn.OnDisabledState.BorderRadius = 1;
@@ -281,7 +280,7 @@
             this.LogOut_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LogOut_btn.OnPressedState.IconLeftImage = null;
             this.LogOut_btn.OnPressedState.IconRightImage = null;
-            this.LogOut_btn.Size = new System.Drawing.Size(360, 148);
+            this.LogOut_btn.Size = new System.Drawing.Size(240, 95);
             this.LogOut_btn.TabIndex = 15;
             this.LogOut_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOut_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -340,8 +339,7 @@
             this.Chat_btn.IdleIconLeftImage = null;
             this.Chat_btn.IdleIconRightImage = null;
             this.Chat_btn.IndicateFocus = false;
-            this.Chat_btn.Location = new System.Drawing.Point(0, 639);
-            this.Chat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Chat_btn.Location = new System.Drawing.Point(0, 410);
             this.Chat_btn.Name = "Chat_btn";
             this.Chat_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Chat_btn.OnDisabledState.BorderRadius = 1;
@@ -375,7 +373,7 @@
             this.Chat_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Chat_btn.OnPressedState.IconLeftImage = null;
             this.Chat_btn.OnPressedState.IconRightImage = null;
-            this.Chat_btn.Size = new System.Drawing.Size(360, 120);
+            this.Chat_btn.Size = new System.Drawing.Size(240, 77);
             this.Chat_btn.TabIndex = 13;
             this.Chat_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Chat_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -434,8 +432,7 @@
             this.Requests_btn.IdleIconLeftImage = null;
             this.Requests_btn.IdleIconRightImage = null;
             this.Requests_btn.IndicateFocus = false;
-            this.Requests_btn.Location = new System.Drawing.Point(0, 519);
-            this.Requests_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Requests_btn.Location = new System.Drawing.Point(0, 333);
             this.Requests_btn.Name = "Requests_btn";
             this.Requests_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Requests_btn.OnDisabledState.BorderRadius = 1;
@@ -469,7 +466,7 @@
             this.Requests_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Requests_btn.OnPressedState.IconLeftImage = null;
             this.Requests_btn.OnPressedState.IconRightImage = null;
-            this.Requests_btn.Size = new System.Drawing.Size(360, 120);
+            this.Requests_btn.Size = new System.Drawing.Size(240, 77);
             this.Requests_btn.TabIndex = 10;
             this.Requests_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Requests_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -528,8 +525,7 @@
             this.Pay_btn.IdleIconLeftImage = null;
             this.Pay_btn.IdleIconRightImage = null;
             this.Pay_btn.IndicateFocus = false;
-            this.Pay_btn.Location = new System.Drawing.Point(0, 399);
-            this.Pay_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Pay_btn.Location = new System.Drawing.Point(0, 256);
             this.Pay_btn.Name = "Pay_btn";
             this.Pay_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Pay_btn.OnDisabledState.BorderRadius = 1;
@@ -563,7 +559,7 @@
             this.Pay_btn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Pay_btn.OnPressedState.IconLeftImage = null;
             this.Pay_btn.OnPressedState.IconRightImage = null;
-            this.Pay_btn.Size = new System.Drawing.Size(360, 120);
+            this.Pay_btn.Size = new System.Drawing.Size(240, 77);
             this.Pay_btn.TabIndex = 11;
             this.Pay_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Pay_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -622,8 +618,7 @@
             this.Flat_btn.IdleIconLeftImage = null;
             this.Flat_btn.IdleIconRightImage = null;
             this.Flat_btn.IndicateFocus = false;
-            this.Flat_btn.Location = new System.Drawing.Point(0, 279);
-            this.Flat_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Flat_btn.Location = new System.Drawing.Point(0, 179);
             this.Flat_btn.Name = "Flat_btn";
             this.Flat_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Flat_btn.OnDisabledState.BorderRadius = 1;
@@ -657,7 +652,7 @@
             this.Flat_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Flat_btn.OnPressedState.IconLeftImage = null;
             this.Flat_btn.OnPressedState.IconRightImage = null;
-            this.Flat_btn.Size = new System.Drawing.Size(360, 120);
+            this.Flat_btn.Size = new System.Drawing.Size(240, 77);
             this.Flat_btn.TabIndex = 12;
             this.Flat_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Flat_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -716,8 +711,7 @@
             this.Home_btn.IdleIconLeftImage = null;
             this.Home_btn.IdleIconRightImage = null;
             this.Home_btn.IndicateFocus = false;
-            this.Home_btn.Location = new System.Drawing.Point(0, 159);
-            this.Home_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Home_btn.Location = new System.Drawing.Point(0, 102);
             this.Home_btn.Name = "Home_btn";
             this.Home_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Home_btn.OnDisabledState.BorderRadius = 1;
@@ -751,7 +745,7 @@
             this.Home_btn.OnPressedState.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Home_btn.OnPressedState.IconLeftImage = null;
             this.Home_btn.OnPressedState.IconRightImage = null;
-            this.Home_btn.Size = new System.Drawing.Size(360, 120);
+            this.Home_btn.Size = new System.Drawing.Size(240, 77);
             this.Home_btn.TabIndex = 1;
             this.Home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Home_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -766,8 +760,9 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(360, 159);
+            this.panel5.Size = new System.Drawing.Size(240, 102);
             this.panel5.TabIndex = 0;
             // 
             // pictureBox1
@@ -776,9 +771,8 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 159);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -790,9 +784,10 @@
             this.panel4.Controls.Add(this.bunifuLabel1);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(360, 0);
+            this.panel4.Location = new System.Drawing.Point(240, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1414, 159);
+            this.panel4.Size = new System.Drawing.Size(943, 102);
             this.panel4.TabIndex = 12;
             // 
             // Setting_btn
@@ -818,12 +813,11 @@
             this.Setting_btn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Setting_btn.Image = ((System.Drawing.Image)(resources.GetObject("Setting_btn.Image")));
             this.Setting_btn.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.Setting_btn.Location = new System.Drawing.Point(1314, 25);
-            this.Setting_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Setting_btn.Location = new System.Drawing.Point(876, 16);
             this.Setting_btn.Name = "Setting_btn";
             this.Setting_btn.RoundBorders = true;
             this.Setting_btn.ShowBorders = true;
-            this.Setting_btn.Size = new System.Drawing.Size(82, 82);
+            this.Setting_btn.Size = new System.Drawing.Size(55, 55);
             this.Setting_btn.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
             this.Setting_btn.TabIndex = 10;
             this.Setting_btn.Click += new System.EventHandler(this.Setting_btn_Click);
@@ -836,11 +830,10 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(14, 42);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel1.Location = new System.Drawing.Point(9, 27);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(317, 70);
+            this.bunifuLabel1.Size = new System.Drawing.Size(202, 44);
             this.bunifuLabel1.TabIndex = 10;
             this.bunifuLabel1.Text = "PAYMENT";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -851,9 +844,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 42);
+            this.label1.Location = new System.Drawing.Point(4, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 70);
+            this.label1.Size = new System.Drawing.Size(0, 44);
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -877,48 +871,43 @@
             this.bunifuPanel5.Controls.Add(this.Charge_btn);
             this.bunifuPanel5.Controls.Add(this.Send_BillBtn);
             this.bunifuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel5.Location = new System.Drawing.Point(360, 159);
-            this.bunifuPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuPanel5.Location = new System.Drawing.Point(240, 102);
             this.bunifuPanel5.Name = "bunifuPanel5";
             this.bunifuPanel5.ShowBorders = true;
-            this.bunifuPanel5.Size = new System.Drawing.Size(1414, 242);
+            this.bunifuPanel5.Size = new System.Drawing.Size(943, 155);
             this.bunifuPanel5.TabIndex = 13;
             // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(42, 95);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(28, 61);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(339, 36);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(226, 23);
             this.bunifuCustomLabel4.TabIndex = 10;
             this.bunifuCustomLabel4.Text = "Amount of water";
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(42, 33);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(28, 21);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(339, 36);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(226, 23);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Amount of electricity";
             this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(390, 100);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(260, 64);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 31);
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(390, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(260, 22);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 31);
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 7;
             // 
             // bunifuButton3
@@ -970,8 +959,7 @@
             this.bunifuButton3.IdleIconLeftImage = null;
             this.bunifuButton3.IdleIconRightImage = null;
             this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(994, 159);
-            this.bunifuButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButton3.Location = new System.Drawing.Point(683, 102);
             this.bunifuButton3.Name = "bunifuButton3";
             this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.OnDisabledState.BorderRadius = 1;
@@ -1005,7 +993,7 @@
             this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton3.OnPressedState.IconLeftImage = null;
             this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(186, 50);
+            this.bunifuButton3.Size = new System.Drawing.Size(124, 32);
             this.bunifuButton3.TabIndex = 6;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1033,10 +1021,9 @@
             "303",
             "304",
             "305"});
-            this.comboBox1.Location = new System.Drawing.Point(766, 172);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(511, 110);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 33);
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 5;
             // 
             // bunifuDatePicker1
@@ -1058,30 +1045,27 @@
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker1.LeftTextMargin = 5;
-            this.bunifuDatePicker1.Location = new System.Drawing.Point(162, 159);
-            this.bunifuDatePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(108, 102);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
-            this.bunifuDatePicker1.Size = new System.Drawing.Size(376, 39);
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(252, 32);
             this.bunifuDatePicker1.TabIndex = 4;
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(579, 173);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(386, 111);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(150, 36);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(100, 23);
             this.bunifuCustomLabel3.TabIndex = 3;
             this.bunifuCustomLabel3.Text = "Room";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(42, 173);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(28, 111);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(111, 36);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(74, 23);
             this.bunifuCustomLabel2.TabIndex = 2;
             this.bunifuCustomLabel2.Text = "Date";
             // 
@@ -1134,8 +1118,7 @@
             this.Charge_btn.IdleIconLeftImage = null;
             this.Charge_btn.IdleIconRightImage = null;
             this.Charge_btn.IndicateFocus = false;
-            this.Charge_btn.Location = new System.Drawing.Point(766, 33);
-            this.Charge_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Charge_btn.Location = new System.Drawing.Point(555, 21);
             this.Charge_btn.Name = "Charge_btn";
             this.Charge_btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Charge_btn.OnDisabledState.BorderRadius = 1;
@@ -1169,7 +1152,7 @@
             this.Charge_btn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Charge_btn.OnPressedState.IconLeftImage = null;
             this.Charge_btn.OnPressedState.IconRightImage = null;
-            this.Charge_btn.Size = new System.Drawing.Size(225, 61);
+            this.Charge_btn.Size = new System.Drawing.Size(150, 39);
             this.Charge_btn.TabIndex = 1;
             this.Charge_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Charge_btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1227,8 +1210,7 @@
             this.Send_BillBtn.IdleIconLeftImage = null;
             this.Send_BillBtn.IdleIconRightImage = null;
             this.Send_BillBtn.IndicateFocus = false;
-            this.Send_BillBtn.Location = new System.Drawing.Point(1172, 34);
-            this.Send_BillBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Send_BillBtn.Location = new System.Drawing.Point(781, 21);
             this.Send_BillBtn.Name = "Send_BillBtn";
             this.Send_BillBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Send_BillBtn.OnDisabledState.BorderRadius = 1;
@@ -1262,7 +1244,7 @@
             this.Send_BillBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Send_BillBtn.OnPressedState.IconLeftImage = null;
             this.Send_BillBtn.OnPressedState.IconRightImage = null;
-            this.Send_BillBtn.Size = new System.Drawing.Size(225, 61);
+            this.Send_BillBtn.Size = new System.Drawing.Size(150, 39);
             this.Send_BillBtn.TabIndex = 0;
             this.Send_BillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Send_BillBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1287,10 +1269,9 @@
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(378, 427);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listView1.Location = new System.Drawing.Point(252, 273);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1376, 582);
+            this.listView1.Size = new System.Drawing.Size(919, 374);
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -1360,15 +1341,14 @@
             // 
             // Payment_Lessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1774, 1030);
+            this.ClientSize = new System.Drawing.Size(1183, 659);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.bunifuPanel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Payment_Lessor";
             this.Text = "Flat Service";

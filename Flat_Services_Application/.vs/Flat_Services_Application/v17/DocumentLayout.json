@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\",
+  "WorkspaceRootPath": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|d:\\projectall\\2uaan1ee\\quanle1\\project_flat_service\\flat_services_application\\flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|c:\\users\\thao\\downloads\\c\u002B\u002B\\flat_services(backupp)\\project_flat_service\\flat_services_application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|d:\\projectall\\2uaan1ee\\quanle1\\project_flat_service\\flat_services_application\\flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\payment_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|c:\\users\\thao\\downloads\\c\u002B\u002B\\flat_services(backupp)\\project_flat_service\\flat_services_application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|d:\\projectall\\2uaan1ee\\quanle1\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|c:\\users\\thao\\downloads\\c\u002B\u002B\\flat_services(backupp)\\project_flat_service\\flat_services_application\\flat_services_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|d:\\projectall\\2uaan1ee\\quanle1\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|d:\\projectall\\2uaan1ee\\quanle1\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,6 +34,10 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
@@ -42,24 +46,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "homecostsing.cs",
-              "DocumentMoniker": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
-              "ToolTip": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
-              "RelativeToolTip": "Flat_Services_Application\\tenant\\homecostsing.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAiwG0AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Program.cs",
+              "RelativeDocumentMoniker": "Flat_Services_Application\\Program.cs",
+              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Program.cs",
+              "RelativeToolTip": "Flat_Services_Application\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:24:52.463Z",
+              "WhenOpened": "2024-05-26T07:50:20.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Home_Lessor.cs",
+              "DocumentMoniker": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAuwJ8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T07:47:58.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home_Lessor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
+              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
+              "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T07:43:47.075Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "homecostsing.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
+              "DocumentMoniker": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
-              "ToolTip": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
+              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T03:04:00.488Z",
@@ -67,36 +96,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Payment_Lessor.cs",
-              "DocumentMoniker": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "ToolTip": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "RelativeToolTip": "Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAqwG0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:00:47.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Payment_Lessor.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Payment_Lessor.cs",
-              "ToolTip": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Payment_Lessor.cs [Design]",
-              "RelativeToolTip": "Flat_Services_Application\\lessor\\Payment_Lessor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T02:59:56.853Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "homechating.cs [Design]",
-              "DocumentMoniker": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
+              "DocumentMoniker": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
               "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homechating.cs",
-              "ToolTip": "D:\\ProjectAll\\2uaan1ee\\quanle1\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs [Design]",
+              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs [Design]",
               "RelativeToolTip": "Flat_Services_Application\\tenant\\homechating.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T02:59:30.032Z",

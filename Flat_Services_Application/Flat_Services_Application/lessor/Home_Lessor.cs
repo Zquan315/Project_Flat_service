@@ -2,6 +2,8 @@
 using Flat_Services_Application.lessor;
 using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
+using LiveCharts;
+using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -104,35 +106,57 @@ namespace Flat_Services_Application.tenant
                 return;
             }
             GetData();
+
+            pieChart1.LegendLocation = LegendLocation.Left;
         }
 
+        Func<ChartPoint, string> labelPoint = chartPoint => string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
         async void GetData()
         {
-            
+            SeriesCollection series = new SeriesCollection();
             Query data = db.Collection("SelectRoom");
             QuerySnapshot snap = await data.GetSnapshotAsync();
 
-            foreach(DocumentSnapshot snapshot in snap.Documents) 
+            int cnt1 = 0, cnt0 = 0;
+
+            foreach (DocumentSnapshot snapshot in snap.Documents) 
             {
                 if (snapshot.Exists)
                 {
                     room1 dt = snapshot.ConvertTo<room1>();
                     if (dt.Status == 0)
+                    {
                         Status_DataGridView.Rows.Add(snapshot.Id, "Empty");
+                        cnt0++;
+                    }
                     else
+                    {
                         Status_DataGridView.Rows.Add(snapshot.Id, "Hired");
+                        cnt1++;
+                    }
                 }
             }
-        }
 
-        private void Home_btn_Click(object sender, EventArgs e)
-        {
+            series.Add(new PieSeries()
+            {
+                Title = "Empty",
+                Values = new ChartValues<int> { cnt0 },
+                DataLabels = true,
+                LabelPoint = labelPoint,
+                //Fill = System.Windows.Media.Brushes.LightGreen,
+            });
 
-        }
+            series.Add(new PieSeries()
+            {
+                Title = "Hired",
+                Values = new ChartValues<int> { cnt1 },
+                DataLabels = true,
+                LabelPoint = labelPoint,
+                //Fill = System.Windows.Media.Brushes.Red,
+                PushOut = 15,
+            });
 
-        private void Status_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            pieChart1.Series = series;
         }
     }
 }

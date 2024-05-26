@@ -62,18 +62,18 @@
             this.Add_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.BrowseBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.listView2 = new System.Windows.Forms.ListView();
             this.room = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.id_r = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name_ = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.res = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -952,7 +952,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(792, 15);
+            this.bunifuButton1.Location = new System.Drawing.Point(797, 15);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -1098,7 +1098,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(6, 70);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(888, 335);
+            this.listView1.Size = new System.Drawing.Size(899, 345);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -1107,6 +1107,24 @@
             // 
             this.id.Text = "ID Service";
             this.id.Width = 142;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 201;
+            // 
+            // price
+            // 
+            this.price.Text = "Price";
+            this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.price.Width = 204;
+            // 
+            // note
+            // 
+            this.note.Text = "Note";
+            this.note.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.note.Width = 321;
             // 
             // tabPage2
             // 
@@ -1169,7 +1187,7 @@
             this.BrowseBtn.IdleIconLeftImage = null;
             this.BrowseBtn.IdleIconRightImage = null;
             this.BrowseBtn.IndicateFocus = false;
-            this.BrowseBtn.Location = new System.Drawing.Point(793, 27);
+            this.BrowseBtn.Location = new System.Drawing.Point(793, 15);
             this.BrowseBtn.Name = "BrowseBtn";
             this.BrowseBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BrowseBtn.OnDisabledState.BorderRadius = 1;
@@ -1224,9 +1242,9 @@
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(13, 72);
+            this.listView2.Location = new System.Drawing.Point(6, 72);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(888, 343);
+            this.listView2.Size = new System.Drawing.Size(895, 343);
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -1242,18 +1260,6 @@
             this.id_r.Text = "ID Service";
             this.id_r.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.id_r.Width = 123;
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name.Width = 201;
-            // 
-            // price
-            // 
-            this.price.Text = "Price";
-            this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.price.Width = 204;
             // 
             // name_
             // 
@@ -1278,12 +1284,6 @@
             this.status.Text = "Status";
             this.status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.status.Width = 185;
-            // 
-            // note
-            // 
-            this.note.Text = "Note";
-            this.note.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.note.Width = 321;
             // 
             // Services_Lessor
             // 
