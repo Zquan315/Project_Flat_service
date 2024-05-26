@@ -215,7 +215,7 @@
     </Compile>
     <Compile Include="Class\listRequest.cs" />
     <Compile Include="Class\room1.cs" />
-    <Compile Include="Class\RoomInfo.cs" />
+    <Compile Include="Class\Notification.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="ForgotPass.cs">
       <SubType>Form</SubType>

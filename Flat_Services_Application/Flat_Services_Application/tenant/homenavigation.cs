@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Flat_Services_Application.Class;
+using Google.Cloud.Firestore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Google.Rpc.Context.AttributeContext.Types;
 
 namespace Flat_Services_Application.tenant
 {
     public partial class homenavigation : Form
     {
+        FirestoreDb db;
         public homenavigation()
         {
             InitializeComponent();
@@ -115,9 +119,48 @@ namespace Flat_Services_Application.tenant
         {
             this.homeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)41))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.homeBtn.ForeColor = Color.White;
+            //ket noi firestore
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            get_Data();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        async void get_Data()
+        {
+            DocumentReference doc = db.Collection("Notification").Document(tbroom.Text);
+            DocumentSnapshot snap = await doc.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> not = snap.ToDictionary();
+
+                foreach (var field in not)
+                {
+                    if (field.Value is List<object> arrayData)
+                    {
+                        // Convert List<object> to List<string>
+                        List<string> arrayValues = arrayData.ConvertAll(x => x.ToString());
+
+                        // Check if the array has exactly 5 elements
+                        for(int i=0; i< arrayValues.Count; i++)
+                        {
+                            listView1.Items.Add(arrayValues[i]);
+                        }                          
+
+                    }
+                }
+
+            }
+        }
+            private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Setting differencesfee = new Setting(tbAccount.Text, tbroom.Text);

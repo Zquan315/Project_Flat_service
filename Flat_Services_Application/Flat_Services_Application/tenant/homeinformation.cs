@@ -5,10 +5,12 @@ using Flat_Services_Application.Class;
 using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -173,16 +175,6 @@ private void homeBtn_Click(object sender, EventArgs e)
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -224,7 +216,212 @@ private void homeBtn_Click(object sender, EventArgs e)
 
         private void txbVehical_TextChanged(object sender, EventArgs e)
         {
+            if (txbVehical.Text == "")
+            {
+                lbIDvehical.Text = "*";
+                lbIDvehical.ForeColor = Color.Red;
+            }
+            else
+                lbIDvehical.Text = "";
+        }
 
+        private void tbPhone_TextChanged(object sender, EventArgs e)
+        {
+            if(tbPhone.Text == "")
+            {
+                lbphone.Text = "*";
+                lbphone.ForeColor = Color.Red;
+            }
+            else
+                lbphone.Text = "" ;
+        }
+        public bool IsNumberPhone(string a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] == ' ' || (a[i] < '0' || a[i] > '9'))
+                    return false;
+            }
+            if (a.Length < 10 || a.Length > 11)
+                return false;
+            return true;
+        }
+        public bool isIDvehical(string s)
+        {
+            int num = 0;
+
+            // Kiểm tra độ dài của chuỗi phải là 9 hoặc 10 (bao gồm cả dấu '-')
+            if (s.Length != 9 && s.Length != 10) return false;
+
+            // Kiểm tra 2 ký tự đầu tiên phải là số
+            char a = s[0], b = s[1];
+            if (!int.TryParse(a.ToString(), out num) || !int.TryParse(b.ToString(), out num)) return false;
+
+            // Kiểm tra ký tự thứ 3 phải là chữ cái
+            char c = s[2];
+            if (!char.IsLetter(c)) return false;
+
+            // Kiểm tra ký tự thứ 4 phải là số hoac chu cai
+            char d = s[3];
+            if (!int.TryParse(d.ToString(), out num) && (!char.IsLetter(c))) return false;
+
+            // Kiểm tra ký tự thứ 5 phải là dấu '-'
+            if (s[4] != '-') return false;
+
+            // Kiểm tra các ký tự còn lại phải là số
+            for (int i = 5; i < s.Length; i++)
+            {
+                if (!int.TryParse(s[i].ToString(), out num)) return false;
+            }
+
+            // Kiểm tra độ dài phần số cuối cùng phải là 4 hoặc 5
+            string lastPart = s.Substring(5);
+            if (lastPart.Length != 4 && lastPart.Length != 5) return false;
+
+            return true;
+        }
+        public bool check2so(char c, char d)
+        {
+            int num = 0;
+            if (int.TryParse(c.ToString(), out num) || int.TryParse(d.ToString(), out num) || (c >= 'A' && c <= 'Z') || (d >= 'A' && d <= 'Z'))
+                return true;
+            return false;
+        }
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            if(!IsNumberPhone(tbPhone.Text) || tbPhone.Text == "")
+            {
+                lbphone.Text = "*";
+                lbphone.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbphone.Text = "";
+            if (tbName.Text == "")
+            {
+                lbname.Text = "*";
+                lbname.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbname.Text = "";
+            if (!rbMale.Checked && !rbFemale.Checked)
+            {
+                lbSex.Text = "*";
+                lbSex.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbname.Text = "";
+            if (!isIDvehical(txbVehical.Text))
+            {
+                lbIDvehical.Text = "*";
+                lbIDvehical.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbIDvehical.Text = "";
+            if (tbID.Text.Length != 12)
+            {
+                lbID.Text = "*";
+                lbID.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbID.Text = "";
+            // neu sdt do da o trong phong thi khong duoc them nua
+            if(exits_phone(tbPhone.Text))
+            {
+                lbphone.Text = "This phone is exists";
+                lbphone.ForeColor = Color.Red;
+                return;
+            }
+
+            // them thong tin ban vao phong
+            add_Data();
+            
+        }
+
+        async void add_Data()
+        {
+
+            DocumentReference DOC = db.Collection("RoomInfo").Document(tbroom.Text);
+            Dictionary<string, object> maindt = new Dictionary<string, object>();
+            DateTime selectedDate = datetime.Value;
+            string formattedDate = selectedDate.ToString("MM/dd/yyyy", CultureInfo.InvariantCulture);
+            
+            ArrayList arr = new ArrayList();
+            arr.Add(tbName.Text);
+            arr.Add(tbID.Text);
+            if(rbFemale.Checked) 
+                arr.Add("Female");
+            if (rbMale.Checked)
+                arr.Add("Male");
+            arr.Add(formattedDate);
+            arr.Add(txbVehical.Text.ToUpper());
+            maindt.Add(tbPhone.Text, arr);
+            await DOC.UpdateAsync(maindt);
+            lbphone.Text = "Add account successfully";
+            lbphone.ForeColor = Color.Green;
+            await Task.Delay(3000);
+            reset();
+        }
+
+        void reset()
+        {
+            tbPhone.Text = tbName.Text = txbVehical.Text = tbID.Text = "";
+            rbFemale.Checked = rbMale.Checked = false;
+        }
+        bool exits_phone(string s)
+        {
+            foreach (ListViewItem item in lvData.Items)
+            {
+                if (item.Text == s)
+                    return true;
+            }
+            return false;
+        }
+        private void UpgradeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            if (tbName.Text == "")
+            {
+                lbname.Text = "*";
+                lbname.ForeColor = Color.Red;
+            }
+            else
+                lbname.Text = "";
+        }
+
+        private void tbID_TextChanged(object sender, EventArgs e)
+        {
+            if (tbID.Text == "")
+            {
+                lbID.Text = "*";
+                lbID.ForeColor = Color.Red;
+            }
+            else
+                lbID.Text = "";
+        }
+
+        private void sex_change(object sender, EventArgs e)
+        {
+            lbSex.Text = "";
+
+        }
+
+        private void male_check(object sender, EventArgs e)
+        {
+            lbSex.Text = "";
         }
     }
 }

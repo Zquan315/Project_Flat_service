@@ -152,7 +152,12 @@ namespace Flat_Services_Application.lessor
 
         private async void btnBrowse_Click(object sender, EventArgs e)
         {
-            while(lvRequest.SelectedItems.Count > 0)
+            if (lvRequest.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("Please select account that you want to browse", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            while (lvRequest.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = lvRequest.SelectedItems[0];
                 string phone_num = selectedItem.SubItems[0].Text;  
@@ -229,6 +234,11 @@ namespace Flat_Services_Application.lessor
         }
         private async void btnNoBrowse_Click(object sender, EventArgs e)
         {
+            if(lvRequest.SelectedItems.Count<= 0)
+            {
+                MessageBox.Show("Please select account that you don't want to browse", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }    
             while (lvRequest.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = lvRequest.SelectedItems[0];

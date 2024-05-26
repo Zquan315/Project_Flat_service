@@ -78,6 +78,11 @@
             this.homeBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lbphone = new System.Windows.Forms.Label();
+            this.lbIDvehical = new System.Windows.Forms.Label();
+            this.lbID = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
+            this.lbSex = new System.Windows.Forms.Label();
             this.panelCenterInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -176,6 +181,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.panel5.Controls.Add(this.lbSex);
+            this.panel5.Controls.Add(this.lbname);
+            this.panel5.Controls.Add(this.lbphone);
             this.panel5.Controls.Add(this.datetime);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.panel8);
@@ -198,7 +206,7 @@
             // 
             this.datetime.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datetime.Location = new System.Drawing.Point(5, 170);
+            this.datetime.Location = new System.Drawing.Point(5, 186);
             this.datetime.Margin = new System.Windows.Forms.Padding(2);
             this.datetime.Name = "datetime";
             this.datetime.Size = new System.Drawing.Size(367, 24);
@@ -208,7 +216,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 140);
+            this.label3.Location = new System.Drawing.Point(2, 158);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 19);
@@ -219,6 +227,8 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.lbID);
+            this.panel8.Controls.Add(this.lbIDvehical);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.txbVehical);
             this.panel8.Controls.Add(this.label6);
@@ -239,9 +249,9 @@
             this.label10.Location = new System.Drawing.Point(3, 89);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 17);
+            this.label10.Size = new System.Drawing.Size(110, 17);
             this.label10.TabIndex = 20;
-            this.label10.Text = "Ex: 66PA16815";
+            this.label10.Text = "Ex: 66PA-16815";
             // 
             // txbVehical
             // 
@@ -287,6 +297,7 @@
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(224, 26);
             this.tbID.TabIndex = 12;
+            this.tbID.TextChanged += new System.EventHandler(this.tbID_TextChanged);
             // 
             // label7
             // 
@@ -324,6 +335,7 @@
             this.DeleteBtn.TabIndex = 2;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // AddBtn
             // 
@@ -337,7 +349,7 @@
             this.AddBtn.TabIndex = 0;
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
-            this.AddBtn.Click += new System.EventHandler(this.button1_Click);
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // UpgradeBtn
             // 
@@ -351,6 +363,7 @@
             this.UpgradeBtn.TabIndex = 1;
             this.UpgradeBtn.Text = "Update";
             this.UpgradeBtn.UseVisualStyleBackColor = false;
+            this.UpgradeBtn.Click += new System.EventHandler(this.UpgradeBtn_Click);
             // 
             // tbPhone
             // 
@@ -361,13 +374,13 @@
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(206, 26);
             this.tbPhone.TabIndex = 10;
-            this.tbPhone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.tbPhone.TextChanged += new System.EventHandler(this.tbPhone_TextChanged);
             // 
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
             this.rbFemale.Font = new System.Drawing.Font("Century", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFemale.Location = new System.Drawing.Point(166, 100);
+            this.rbFemale.Location = new System.Drawing.Point(166, 122);
             this.rbFemale.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(82, 21);
@@ -375,12 +388,13 @@
             this.rbFemale.TabStop = true;
             this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
+            this.rbFemale.CheckedChanged += new System.EventHandler(this.sex_change);
             // 
             // rbMale
             // 
             this.rbMale.AutoSize = true;
             this.rbMale.Font = new System.Drawing.Font("Century", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMale.Location = new System.Drawing.Point(74, 100);
+            this.rbMale.Location = new System.Drawing.Point(74, 122);
             this.rbMale.Margin = new System.Windows.Forms.Padding(2);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(65, 21);
@@ -388,12 +402,13 @@
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            this.rbMale.CheckedChanged += new System.EventHandler(this.male_check);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(2, 102);
+            this.label4.Location = new System.Drawing.Point(2, 124);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 19);
@@ -404,18 +419,19 @@
             // tbName
             // 
             this.tbName.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(74, 50);
+            this.tbName.Location = new System.Drawing.Point(74, 69);
             this.tbName.Margin = new System.Windows.Forms.Padding(2);
             this.tbName.Multiline = true;
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(299, 26);
             this.tbName.TabIndex = 1;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1, 56);
+            this.label2.Location = new System.Drawing.Point(1, 75);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 19);
@@ -680,6 +696,57 @@
             this.panel6.Click += new System.EventHandler(this.panel6_Click);
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
+            // lbphone
+            // 
+            this.lbphone.AutoSize = true;
+            this.lbphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbphone.ForeColor = System.Drawing.Color.Red;
+            this.lbphone.Location = new System.Drawing.Point(163, 40);
+            this.lbphone.Name = "lbphone";
+            this.lbphone.Size = new System.Drawing.Size(12, 15);
+            this.lbphone.TabIndex = 15;
+            this.lbphone.Text = "*";
+            // 
+            // lbIDvehical
+            // 
+            this.lbIDvehical.AutoSize = true;
+            this.lbIDvehical.ForeColor = System.Drawing.Color.Red;
+            this.lbIDvehical.Location = new System.Drawing.Point(275, 58);
+            this.lbIDvehical.Name = "lbIDvehical";
+            this.lbIDvehical.Size = new System.Drawing.Size(12, 16);
+            this.lbIDvehical.TabIndex = 16;
+            this.lbIDvehical.Text = "*";
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.ForeColor = System.Drawing.Color.Red;
+            this.lbID.Location = new System.Drawing.Point(235, 176);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(12, 16);
+            this.lbID.TabIndex = 21;
+            this.lbID.Text = "*";
+            // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.ForeColor = System.Drawing.Color.Red;
+            this.lbname.Location = new System.Drawing.Point(71, 101);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(12, 16);
+            this.lbname.TabIndex = 22;
+            this.lbname.Text = "*";
+            // 
+            // lbSex
+            // 
+            this.lbSex.AutoSize = true;
+            this.lbSex.ForeColor = System.Drawing.Color.Red;
+            this.lbSex.Location = new System.Drawing.Point(51, 127);
+            this.lbSex.Name = "lbSex";
+            this.lbSex.Size = new System.Drawing.Size(12, 16);
+            this.lbSex.TabIndex = 23;
+            this.lbSex.Text = "*";
+            // 
             // homeinformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -763,5 +830,10 @@
         private System.Windows.Forms.ColumnHeader sex;
         private System.Windows.Forms.ColumnHeader date;
         private System.Windows.Forms.ColumnHeader id_vehical;
+        private System.Windows.Forms.Label lbphone;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Label lbIDvehical;
+        private System.Windows.Forms.Label lbSex;
     }
 }

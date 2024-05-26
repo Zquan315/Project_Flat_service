@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homecostsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homenavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\lessor\\home_lessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homechating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|q:\\project_laptrinhmang\\project_flat_service\\flat_services_application\\flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1A1FDC0D-76B7-439B-AB02-E68BFBE0B989}|Flat_Services_Application\\Flat_Services_Application.csproj|solutionrelative:flat_services_application\\tenant\\homeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,86 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "homeservices.cs [Design]",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeservices.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeservices.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeservices.cs [Design]",
-              "RelativeToolTip": "Flat_Services_Application\\tenant\\homeservices.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "homeinformation.cs",
+              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
+              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
+              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
+              "RelativeToolTip": "Flat_Services_Application\\tenant\\homeinformation.cs",
+              "ViewState": "AQIAAFcBAAAAAAAAAAAqwG0BAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:57:33.887Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "homenavigation.cs [Design]",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homenavigation.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homenavigation.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homenavigation.cs [Design]",
-              "RelativeToolTip": "Flat_Services_Application\\tenant\\homenavigation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:47:40.739Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Program.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\Program.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\Program.cs",
-              "RelativeToolTip": "Flat_Services_Application\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T07:50:20.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home_Lessor.cs",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAuwJ8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T07:47:58.964Z",
+              "WhenOpened": "2024-05-26T10:05:23.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home_Lessor.cs [Design]",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\lessor\\Home_Lessor.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
-              "RelativeToolTip": "Flat_Services_Application\\lessor\\Home_Lessor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T07:43:47.075Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "homecostsing.cs [Design]",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homecostsing.cs",
-              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
-              "RelativeToolTip": "Flat_Services_Application\\tenant\\homecostsing.cs [Design]",
+              "Title": "homeinformation.cs [Design]",
+              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs",
+              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homeinformation.cs",
+              "ToolTip": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homeinformation.cs [Design]",
+              "RelativeToolTip": "Flat_Services_Application\\tenant\\homeinformation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:04:00.488Z",
+              "WhenOpened": "2024-05-26T10:05:21.245Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "homechating.cs [Design]",
-              "DocumentMoniker": "Q:\\Project_LapTrinhMang\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs",
-              "RelativeDocumentMoniker": "Flat_Services_Application\\tenant\\homechating.cs",
-              "ToolTip": "C:\\Users\\Thao\\Downloads\\c\u002B\u002B\\Flat_Services(backupp)\\Project_Flat_service\\Flat_Services_Application\\Flat_Services_Application\\tenant\\homechating.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T02:59:30.032Z"
             }
           ]
         }
