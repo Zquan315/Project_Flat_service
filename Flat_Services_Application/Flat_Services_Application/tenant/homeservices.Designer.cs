@@ -37,17 +37,20 @@
             this.ID_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name_rent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lbTime = new System.Windows.Forms.Label();
+            this.lbID = new System.Windows.Forms.Label();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.enrollBtn = new System.Windows.Forms.Button();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
+            this.tbTime = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbID = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -76,7 +79,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelCenter.SuspendLayout();
             this.panelCenterServices.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -165,6 +167,12 @@
             this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.price.Width = 150;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Note";
+            this.columnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader1.Width = 800;
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -182,83 +190,108 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.dateTimePicker1);
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.lbTime);
+            this.panel6.Controls.Add(this.lbID);
+            this.panel6.Controls.Add(this.DeleteBtn);
+            this.panel6.Controls.Add(this.UpdateBtn);
+            this.panel6.Controls.Add(this.enrollBtn);
+            this.panel6.Controls.Add(this.datetime);
+            this.panel6.Controls.Add(this.tbTime);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.tbID);
             this.panel6.Location = new System.Drawing.Point(4, 26);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(557, 264);
             this.panel6.TabIndex = 0;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // button3
+            // lbTime
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(428, 211);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 34);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.lbTime.AutoSize = true;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.Red;
+            this.lbTime.Location = new System.Drawing.Point(11, 186);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(12, 15);
+            this.lbTime.TabIndex = 17;
+            this.lbTime.Text = "*";
             // 
-            // button2
+            // lbID
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(243, 211);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 34);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.lbID.AutoSize = true;
+            this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbID.ForeColor = System.Drawing.Color.Red;
+            this.lbID.Location = new System.Drawing.Point(111, 47);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(12, 15);
+            this.lbID.TabIndex = 16;
+            this.lbID.Text = "*";
             // 
-            // button1
+            // DeleteBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(38, 211);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 34);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DeleteBtn.Location = new System.Drawing.Point(428, 211);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(101, 34);
+            this.DeleteBtn.TabIndex = 9;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // UpdateBtn
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 67);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(523, 28);
-            this.dateTimePicker1.TabIndex = 6;
+            this.UpdateBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.UpdateBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UpdateBtn.Location = new System.Drawing.Point(243, 211);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(101, 34);
+            this.UpdateBtn.TabIndex = 8;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // enrollBtn
             // 
-            this.textBox3.Location = new System.Drawing.Point(9, 135);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(520, 22);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.enrollBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.enrollBtn.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enrollBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.enrollBtn.Location = new System.Drawing.Point(38, 211);
+            this.enrollBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.enrollBtn.Name = "enrollBtn";
+            this.enrollBtn.Size = new System.Drawing.Size(101, 34);
+            this.enrollBtn.TabIndex = 7;
+            this.enrollBtn.Text = "Enroll";
+            this.enrollBtn.UseVisualStyleBackColor = false;
+            this.enrollBtn.Click += new System.EventHandler(this.enrollBtn_Click);
+            // 
+            // datetime
+            // 
+            this.datetime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datetime.Location = new System.Drawing.Point(6, 85);
+            this.datetime.Margin = new System.Windows.Forms.Padding(2);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(523, 28);
+            this.datetime.TabIndex = 6;
+            // 
+            // tbTime
+            // 
+            this.tbTime.Location = new System.Drawing.Point(9, 157);
+            this.tbTime.Margin = new System.Windows.Forms.Padding(2);
+            this.tbTime.Name = "tbTime";
+            this.tbTime.Size = new System.Drawing.Size(520, 28);
+            this.tbTime.TabIndex = 5;
+            this.tbTime.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 100);
+            this.label5.Location = new System.Drawing.Point(5, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 19);
@@ -268,7 +301,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 44);
+            this.label4.Location = new System.Drawing.Point(2, 55);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 19);
@@ -285,14 +318,14 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "ID_Service";
             // 
-            // textBox1
+            // tbID
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 14);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 22);
-            this.textBox1.TabIndex = 0;
+            this.tbID.Location = new System.Drawing.Point(114, 14);
+            this.tbID.Margin = new System.Windows.Forms.Padding(2);
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(415, 28);
+            this.tbID.TabIndex = 0;
+            this.tbID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox1
             // 
@@ -315,8 +348,8 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
             this.name,
-            this.time,
             this.register,
+            this.time,
             this.status});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
@@ -339,13 +372,11 @@
             // 
             // time
             // 
-            this.time.DisplayIndex = 3;
             this.time.Text = "Time (hour)";
             this.time.Width = 100;
             // 
             // register
             // 
-            this.register.DisplayIndex = 2;
             this.register.Text = "Register date";
             this.register.Width = 126;
             // 
@@ -600,12 +631,6 @@
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Note";
-            this.columnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader1.Width = 800;
-            // 
             // homeservices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -656,16 +681,16 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox tbTime;
+        private System.Windows.Forms.DateTimePicker datetime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.Button enrollBtn;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox tbroom;
@@ -684,5 +709,7 @@
         private System.Windows.Forms.ColumnHeader register;
         private System.Windows.Forms.ColumnHeader status;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Label lbTime;
     }
 }

@@ -1,11 +1,14 @@
 ﻿using Flat_Services_Application.Class;
 using Google.Cloud.Firestore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,12 +48,42 @@ namespace Flat_Services_Application.tenant
                 MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            //
-            load_data();
+            // load listview2
+            load_data2();
+
+            // load listview 1
+            load_data1();
         }
+        async void load_data1()
+        {
+            DocumentReference d = db.Collection("ListAwaitService").Document(tbroom.Text);
+            DocumentSnapshot snapsss = await d.GetSnapshotAsync();
+            if (snapsss.Exists)
+            {
+                Dictionary<string, object> awaitService = snapsss.ToDictionary();
 
+                foreach (var field in awaitService)
+                {
+                    if (field.Value is List<object> arrayData)
+                    {
+                        // Convert List<object> to List<string>
+                        List<string> arrayValues = arrayData.ConvertAll(x => x.ToString());
 
-        async void load_data()
+                        // Check if the array has exactly 5 elements
+                        ListViewItem data = new ListViewItem(field.Key);
+                        for (int i=0; i<arrayValues.Count; i++)
+                        {
+                           
+                            data.SubItems.Add(arrayValues[i]); 
+                            
+                            
+                        }
+                        listView1.Items.Add(data);
+                    }
+                }
+            }
+        }
+        async void load_data2()
         {
             Query doc = db.Collection("ListServiceForRent");
             QuerySnapshot snap = await doc.GetSnapshotAsync();
@@ -150,7 +183,13 @@ namespace Flat_Services_Application.tenant
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            if (tbTime.Text == "")
+            {
+                lbTime.Text = "*";
+                lbTime.ForeColor = Color.Red;
+            }
+            else
+                lbTime.Text = "";
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -161,6 +200,100 @@ namespace Flat_Services_Application.tenant
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private async void enrollBtn_Click(object sender, EventArgs e)
+        {
+            int num = 0;
+            if (tbID.Text == "" || !exits_service(tbID.Text.ToUpper()))
+            {
+
+                lbID.Text = "Service isn't exists";
+                lbID.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbID.Text = "";
+            if(tbTime.Text == "" || !int.TryParse(tbTime.Text.Trim(), out num) || Convert.ToInt32(tbTime.Text) > 24)
+            {
+                
+                lbTime.Text = "invalid";
+                lbTime.ForeColor = Color.Red;
+                return ;
+            }
+            else
+                lbTime.Text = "";
+
+            // dang ki service
+            add_data_listAwaitService();
+            lbID.Text = "Enroll successfully";
+            lbID.ForeColor = Color.Green;
+            await Task.Delay(3000);
+            reset();
+            //
+        }
+
+        async void add_data_listAwaitService()
+        {
+            DocumentReference DOC = db.Collection("ListAwaitService").Document(tbroom.Text);
+            DocumentSnapshot snapshot = await DOC.GetSnapshotAsync();
+            Dictionary<string, object> maindt = new Dictionary<string, object>();
+            
+            DateTime selectedDate = datetime.Value;
+            string formattedDate = selectedDate.ToString("MM/dd/yyyy", CultureInfo.InvariantCulture);
+            ArrayList arr = new ArrayList();
+            arr.Add(nameService(tbID.Text.ToUpper()));// them ten 
+            arr.Add(formattedDate);
+            arr.Add(tbTime.Text);
+            arr.Add("wait");
+            maindt.Add(tbID.Text.ToUpper(), arr);
+            if(snapshot != null) 
+                await DOC.UpdateAsync(maindt);
+            else
+                await DOC.SetAsync(maindt);
+        }
+        void reset()
+        {
+            tbID.Text = tbTime.Text = "";
+        }
+        string nameService(string s)
+        {
+            string a = "";
+            foreach (ListViewItem item in listView2.Items)
+            {
+                if(item.Text == s)
+                {
+                    a = item.SubItems[1].Text;
+                    break;
+                }
+            }
+            return a;
+
+        }
+        bool exits_service(string s)
+        {
+            foreach (ListViewItem item in listView2.Items)
+            {
+                if (item.Text == s)
+                    return true;
+            }
+            return false;
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(tbID.Text == "")
+            {
+                lbID.Text = "*";
+                lbID.ForeColor = Color.Red;
+            }
+            else
+                lbID.Text = "";
         }
     }
 }
