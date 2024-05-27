@@ -212,7 +212,10 @@ namespace Flat_Services_Application.lessor
 
         private void Flat_btn_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Flat_Management_2 flat_Management_2 = new Flat_Management_2(sdt);
+            flat_Management_2.StartPosition = FormStartPosition.CenterScreen;
+            flat_Management_2.Show();
         }
     }
 }

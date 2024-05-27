@@ -93,7 +93,10 @@ namespace Flat_Services_Application.lessor
 
         private void Chat_btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Chat_Lessor chat_Lessor = new Chat_Lessor(sdt);
+            chat_Lessor.StartPosition = FormStartPosition.CenterScreen;
+            chat_Lessor.Show();
         }
     }
 }

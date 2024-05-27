@@ -161,7 +161,10 @@ namespace Flat_Services_Application.tenant
 
         private void Home_btn_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Home_Lessor home_Lessor = new Home_Lessor(sdt);
+            home_Lessor.StartPosition = FormStartPosition.CenterScreen;
+            home_Lessor.Show();
         }
     }
 }

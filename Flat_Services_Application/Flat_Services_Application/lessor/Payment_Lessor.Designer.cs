@@ -910,7 +910,6 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(226, 23);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Amount of electricity";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // textBox2
             // 
@@ -1306,7 +1305,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Debit";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // listView1
             // 
@@ -1584,7 +1582,6 @@
             this.MaximizeBox = false;
             this.Name = "Payment_Lessor";
             this.Text = "Flat Service";
-            this.Load += new System.EventHandler(this.Payment_Lessor_Load);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

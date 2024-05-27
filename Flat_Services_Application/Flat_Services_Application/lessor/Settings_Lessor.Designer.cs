@@ -880,7 +880,6 @@
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(943, 557);
             this.bunifuPanel3.TabIndex = 17;
-            this.bunifuPanel3.Click += new System.EventHandler(this.bunifuPanel3_Click);
             // 
             // SaveBtn
             // 
@@ -972,6 +971,7 @@
             this.SaveBtn.TextMarginLeft = 0;
             this.SaveBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.SaveBtn.UseDefaultRadiusAndThickness = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // ChangeBtn
             // 
@@ -1341,7 +1341,6 @@
             this.Name_tb.TextPlaceholder = "Name";
             this.Name_tb.UseSystemPasswordChar = false;
             this.Name_tb.WordWrap = true;
-            this.Name_tb.TextChanged += new System.EventHandler(this.Name_tb_TextChanged);
             // 
             // ID_tb
             // 

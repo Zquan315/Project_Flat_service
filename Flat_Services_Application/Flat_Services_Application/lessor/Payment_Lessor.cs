@@ -90,29 +90,12 @@ namespace Flat_Services_Application.lessor
             services_Lessor.Show();
         }
 
-        private void Payment_Lessor_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Pay_btn_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Payment_Lessor payment_Lessor = new Payment_Lessor(sdt);
+            payment_Lessor.StartPosition = FormStartPosition.CenterScreen;
+            payment_Lessor.Show();
         }
     }
 }

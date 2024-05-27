@@ -284,7 +284,10 @@ namespace Flat_Services_Application.lessor
 
         private void Requests_btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Requests_Lessor requests_Lessor = new Requests_Lessor(sdt);
+            requests_Lessor.StartPosition = FormStartPosition.CenterParent;
+            requests_Lessor.Show();
         }
     }
 }

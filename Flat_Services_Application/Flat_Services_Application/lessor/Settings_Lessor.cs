@@ -102,11 +102,6 @@ namespace Flat_Services_Application.lessor
             services_Lessor.Show();
         }
 
-        private void bunifuPanel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private async void Settings_Lessor_Load(object sender, EventArgs e)
         {
             client = new FireSharp.FirebaseClient(config);
@@ -129,7 +124,10 @@ namespace Flat_Services_Application.lessor
 
         private void Setting_btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Settings_Lessor settings_Lessor = new Settings_Lessor(sdt);
+            settings_Lessor.StartPosition = FormStartPosition.CenterScreen;
+            settings_Lessor.Show();
         }
 
         private void ChangeBtn_Click(object sender, EventArgs e)
@@ -139,7 +137,7 @@ namespace Flat_Services_Application.lessor
             c.Show();
         }
 
-        private void Name_tb_TextChanged(object sender, EventArgs e)
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }

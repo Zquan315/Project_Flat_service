@@ -1,4 +1,6 @@
-﻿using Flat_Services_Application.tenant;
+﻿using Flat_Services_Application.Class;
+using Flat_Services_Application.tenant;
+using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ namespace Flat_Services_Application.lessor
 {
     public partial class Services_Lessor : Form
     {
+        FirestoreDb db;
         public Services_Lessor()
         {
             InitializeComponent();
@@ -96,17 +99,50 @@ namespace Flat_Services_Application.lessor
 
         private void Services_Lessor_Load(object sender, EventArgs e)
         {
+            //ket noi firestore
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // load listview1
+            load_data1();
+        }
 
+        async void load_data1()
+        {
+            Query doc = db.Collection("ListServiceForRent");
+            QuerySnapshot snap = await doc.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot sn in snap)
+            {
+                ListServiceForRent t = sn.ConvertTo<ListServiceForRent>();
+                if (sn.Exists)
+                {
+                    string id = sn.Id.ToString();
+                    ListViewItem data = new ListViewItem(id);
+                    data.SubItems.Add(t.Name);
+                    data.SubItems.Add(t.Price.ToString());
+                    data.SubItems.Add(t.Note);
+                    listView1.Items.Add(data);
+
+
+                }
+            }
         }
 
         private void Services_btn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Services_Lessor services_Lessor = new Services_Lessor(sdt);
+            services_Lessor.StartPosition=FormStartPosition.CenterScreen;
+            services_Lessor.Show();
         }
     }
 }
