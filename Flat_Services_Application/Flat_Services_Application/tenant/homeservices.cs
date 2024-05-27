@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Flat_Services_Application.Class;
+using Google.Cloud.Firestore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Google.Rpc.Context.AttributeContext.Types;
 
 namespace Flat_Services_Application.tenant
 {
     public partial class homeservices : Form
     {
+        FirestoreDb db;
         public homeservices()
         {
             InitializeComponent();
@@ -26,8 +30,47 @@ namespace Flat_Services_Application.tenant
         {
             this.servicesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)41))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.servicesBtn.ForeColor = Color.White;
+
+            
+
+            //ket noi firestore
+            try
+            {
+                string path = AppDomain.CurrentDomain.BaseDirectory + @"flatservice-a087e-firebase-adminsdk-e8i8j-118340432f.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                db = FirestoreDb.Create("flatservice-a087e");
+            }
+            catch
+            {
+                MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //
+            load_data();
         }
 
+
+        async void load_data()
+        {
+            Query doc = db.Collection("ListServiceForRent");
+            QuerySnapshot snap = await doc.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot sn in snap)
+            {
+                ListServiceForRent t = sn.ConvertTo<ListServiceForRent>();
+                if (sn.Exists)
+                {
+                    string id = sn.Id.ToString();                   
+                    ListViewItem data = new ListViewItem(id);
+                    data.SubItems.Add(t.Name);
+                    data.SubItems.Add(t.Price.ToString());
+                    data.SubItems.Add(t.Note);
+                    listView2.Items.Add(data);
+                    
+
+                }
+            }
+        }
         private void homeBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -111,6 +154,11 @@ namespace Flat_Services_Application.tenant
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

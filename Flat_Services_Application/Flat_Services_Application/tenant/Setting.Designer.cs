@@ -168,7 +168,7 @@
             this.servicesBtn.Name = "servicesBtn";
             this.servicesBtn.Size = new System.Drawing.Size(240, 77);
             this.servicesBtn.TabIndex = 4;
-            this.servicesBtn.Text = "Services";
+            this.servicesBtn.Text = "Service";
             this.servicesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.servicesBtn.UseVisualStyleBackColor = true;
             this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);

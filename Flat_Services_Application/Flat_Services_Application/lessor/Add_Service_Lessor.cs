@@ -35,5 +35,10 @@ namespace Flat_Services_Application.lessor
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

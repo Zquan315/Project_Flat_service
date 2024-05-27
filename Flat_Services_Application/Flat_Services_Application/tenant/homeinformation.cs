@@ -17,6 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Animation;
 using static Google.Rpc.Context.AttributeContext.Types;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -513,9 +514,36 @@ private void homeBtn_Click(object sender, EventArgs e)
             //
             
         }
-        private void DeleteBtn_Click(object sender, EventArgs e)
-        {
 
+        
+        private async void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if(lvData.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Please select at least one object", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            while(lvData.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = lvData.SelectedItems[0];
+                string phone_num = selectedItem.SubItems[0].Text;
+                FirebaseResponse responds = await client.GetAsync("Account Tenant/" + phone_num);
+                if (responds.Body == "null")
+                {
+                    DocumentReference docRef = db.Collection("RoomInfo").Document(tbroom.Text);
+
+
+                    Dictionary<string, object> updates = new Dictionary<string, object>
+                    {
+                        { phone_num, FieldValue.Delete }
+                    };
+
+                    await docRef.UpdateAsync(updates);
+                    lvData.Items.RemoveAt(lvData.SelectedItems[0].Index);
+                }
+                else
+                    lvData.Items.RemoveAt(lvData.SelectedItems[0].Index);
+            }    
         }
 
         private void tbName_TextChanged(object sender, EventArgs e)

@@ -212,7 +212,7 @@ namespace Flat_Services_Application.lessor
 
         private void Flat_btn_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

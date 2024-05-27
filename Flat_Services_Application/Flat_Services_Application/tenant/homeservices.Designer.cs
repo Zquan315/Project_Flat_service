@@ -76,6 +76,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelCenter.SuspendLayout();
             this.panelCenterServices.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -134,7 +135,9 @@
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID_rent,
             this.name_rent,
-            this.price});
+            this.price,
+            this.columnHeader1});
+            this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(9, 36);
@@ -143,6 +146,7 @@
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // ID_rent
             // 
@@ -153,13 +157,13 @@
             // 
             this.name_rent.Text = "Name";
             this.name_rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name_rent.Width = 340;
+            this.name_rent.Width = 196;
             // 
             // price
             // 
             this.price.Text = "Price";
             this.price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.price.Width = 333;
+            this.price.Width = 150;
             // 
             // groupBox2
             // 
@@ -449,9 +453,9 @@
             this.label2.Location = new System.Drawing.Point(2, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 44);
+            this.label2.Size = new System.Drawing.Size(151, 44);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Services";
+            this.label2.Text = "Service";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -596,6 +600,12 @@
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Note";
+            this.columnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader1.Width = 800;
+            // 
             // homeservices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -673,5 +683,6 @@
         private System.Windows.Forms.ColumnHeader time;
         private System.Windows.Forms.ColumnHeader register;
         private System.Windows.Forms.ColumnHeader status;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

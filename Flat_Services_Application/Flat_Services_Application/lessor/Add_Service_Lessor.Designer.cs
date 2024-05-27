@@ -47,7 +47,6 @@
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tbIDService = new System.Windows.Forms.TextBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.cbbType = new System.Windows.Forms.ComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tbPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tbName = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -55,6 +54,7 @@
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tbType = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -293,9 +293,9 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.tbType);
             this.bunifuPanel1.Controls.Add(this.tbIDService);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel6);
-            this.bunifuPanel1.Controls.Add(this.cbbType);
             this.bunifuPanel1.Controls.Add(this.richTextBox1);
             this.bunifuPanel1.Controls.Add(this.tbPrice);
             this.bunifuPanel1.Controls.Add(this.tbName);
@@ -332,18 +332,6 @@
             this.bunifuLabel6.Text = "ID of service";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // cbbType
-            // 
-            this.cbbType.FormattingEnabled = true;
-            this.cbbType.Items.AddRange(new object[] {
-            "Electricity",
-            "Water",
-            "Other"});
-            this.cbbType.Location = new System.Drawing.Point(755, 41);
-            this.cbbType.Name = "cbbType";
-            this.cbbType.Size = new System.Drawing.Size(181, 24);
-            this.cbbType.TabIndex = 7;
             // 
             // richTextBox1
             // 
@@ -566,6 +554,16 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // tbType
+            // 
+            this.tbType.Enabled = false;
+            this.tbType.Location = new System.Drawing.Point(755, 41);
+            this.tbType.Name = "tbType";
+            this.tbType.Size = new System.Drawing.Size(171, 22);
+            this.tbType.TabIndex = 11;
+            this.tbType.Text = "Service for renting";
+            this.tbType.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Add_Service_Lessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -593,7 +591,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Back_btn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SaveBtn;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.ComboBox cbbType;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Bunifu.UI.WinForms.BunifuTextBox tbPrice;
         private Bunifu.UI.WinForms.BunifuTextBox tbName;
@@ -603,5 +600,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private System.Windows.Forms.TextBox tbIDService;
+        private System.Windows.Forms.TextBox tbType;
     }
 }

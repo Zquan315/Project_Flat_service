@@ -158,5 +158,10 @@ namespace Flat_Services_Application.tenant
 
             pieChart1.Series = series;
         }
+
+        private void Home_btn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

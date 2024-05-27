@@ -125,6 +125,7 @@
             // 
             // lvData
             // 
+            this.lvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.phone,
             this.name,
@@ -675,7 +676,7 @@
             this.servicesBtn.Name = "servicesBtn";
             this.servicesBtn.Size = new System.Drawing.Size(240, 77);
             this.servicesBtn.TabIndex = 4;
-            this.servicesBtn.Text = "Services";
+            this.servicesBtn.Text = "Service";
             this.servicesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.servicesBtn.UseVisualStyleBackColor = true;
             this.servicesBtn.Click += new System.EventHandler(this.servicesBtn_Click);

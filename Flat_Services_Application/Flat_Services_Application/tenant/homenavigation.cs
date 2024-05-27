@@ -187,5 +187,24 @@ namespace Flat_Services_Application.tenant
         {
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void DelBtn_Click(object sender, EventArgs e)
+        {
+            DocumentReference docRef = db.Collection("Notification").Document(tbroom.Text);
+
+
+            Dictionary<string, object> updates = new Dictionary<string, object>
+                    {
+                        { "notification", new List<object>() }
+                    };
+
+            await docRef.UpdateAsync(updates);
+            listView1.Items.Clear();
+        }
     }
 }
