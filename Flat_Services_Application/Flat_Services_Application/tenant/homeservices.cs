@@ -214,7 +214,16 @@ namespace Flat_Services_Application.tenant
             }
             else
                 lbID.Text = "";
-            if(tbTime.Text == "" || !int.TryParse(tbTime.Text.Trim(), out num) || Convert.ToInt32(tbTime.Text) > 24)
+            if (tbID.Text == "" || exits_enroll(tbID.Text.ToUpper()))
+            {
+
+                lbID.Text = "Service is enrolled";
+                lbID.ForeColor = Color.Red;
+                return;
+            }
+            else
+                lbID.Text = "";
+            if (tbTime.Text == "" || !int.TryParse(tbTime.Text.Trim(), out num) || Convert.ToInt32(tbTime.Text) > 24)
             {
                 
                 lbTime.Text = "invalid";
@@ -280,6 +289,15 @@ namespace Flat_Services_Application.tenant
             return false;
         }
 
+        bool exits_enroll(string s)
+        {
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text == s && item.SubItems[4].ToString() == "wait")
+                    return true;
+            }
+            return false;
+        }
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 

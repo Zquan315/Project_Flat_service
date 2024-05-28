@@ -55,8 +55,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.register = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -353,7 +353,7 @@
             this.status});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(9, 26);
+            this.listView1.Location = new System.Drawing.Point(5, 26);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(334, 278);
             this.listView1.TabIndex = 0;
@@ -370,15 +370,15 @@
             this.name.Text = "Name";
             this.name.Width = 76;
             // 
-            // time
-            // 
-            this.time.Text = "Time (hour)";
-            this.time.Width = 100;
-            // 
             // register
             // 
             this.register.Text = "Register date";
             this.register.Width = 126;
+            // 
+            // time
+            // 
+            this.time.Text = "Time (hour)";
+            this.time.Width = 100;
             // 
             // status
             // 
