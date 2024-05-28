@@ -1,4 +1,5 @@
-﻿using Flat_Services_Application.Class;
+﻿using Bunifu.UI.WinForms;
+using Flat_Services_Application.Class;
 using Flat_Services_Application.tenant;
 using Google.Cloud.Firestore;
 using System;
@@ -109,10 +110,15 @@ namespace Flat_Services_Application.lessor
             catch
             {
                 MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                return; 
             }
             // load listview1
             load_data1();
+
+            //load listView2
+            int[] room = { 101, 102, 103, 104, 105, 201, 202, 203, 204, 205, 301, 302, 303, 304, 305 };
+            load_data2(room);
+            
         }
 
         async void load_data1()
@@ -135,6 +141,42 @@ namespace Flat_Services_Application.lessor
 
                 }
             }
+        }
+
+        async void load_data2(int [] room)
+        {
+            foreach(int roomId in room)
+            {
+                DocumentReference doc = db.Collection("ListAwaitService").Document(roomId.ToString());
+                DocumentSnapshot snap = await doc.GetSnapshotAsync();
+                if (snap.Exists)
+                {
+                    Dictionary<string, object> roomInfo = snap.ToDictionary();
+
+                    foreach (var field in roomInfo)
+                    {
+                        if (field.Value is List<object> arrayData)
+                        {
+                            // Convert List<object> to List<string>
+                            List<string> arrayValues = arrayData.ConvertAll(x => x.ToString());
+
+                            ListViewItem data = new ListViewItem(roomId.ToString());
+                            data.SubItems.Add(field.Key);
+                            for (int i=0;i<arrayValues.Count;i++)
+                            {
+                                data.SubItems.Add(arrayValues[i]); 
+                                
+                            }
+
+                            if (data.SubItems[5].ToString() == "wait")
+                                listView2.Items.Add(data);   
+                                
+                            
+                        }
+                    }
+                }
+            }
+            
         }
 
         private void Services_btn_Click(object sender, EventArgs e)
