@@ -1,16 +1,23 @@
 ﻿using Bunifu.UI.WinForms;
+using FireSharp.Response;
 using Flat_Services_Application.Class;
 using Flat_Services_Application.tenant;
 using Google.Cloud.Firestore;
+using Google.Type;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using TheArtOfDev.HtmlRenderer.Adapters;
+using static Google.Rpc.Context.AttributeContext.Types;
 
 namespace Flat_Services_Application.lessor
 {
@@ -94,7 +101,7 @@ namespace Flat_Services_Application.lessor
         {
             this.Hide();
             Settings_Lessor settings_Lessor = new Settings_Lessor(sdt);
-            settings_Lessor.StartPosition=FormStartPosition.CenterScreen;
+            settings_Lessor.StartPosition = FormStartPosition.CenterScreen;
             settings_Lessor.Show();
         }
 
@@ -110,7 +117,7 @@ namespace Flat_Services_Application.lessor
             catch
             {
                 MessageBox.Show("Cann't connect to firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; 
+                return;
             }
             // load listview1
             load_data1();
@@ -118,7 +125,7 @@ namespace Flat_Services_Application.lessor
             //load listView2
             int[] room = { 101, 102, 103, 104, 105, 201, 202, 203, 204, 205, 301, 302, 303, 304, 305 };
             load_data2(room);
-            
+
         }
 
         async void load_data1()
@@ -143,9 +150,9 @@ namespace Flat_Services_Application.lessor
             }
         }
 
-        async void load_data2(int [] room)
+        async void load_data2(int[] room)
         {
-            foreach(int roomId in room)
+            foreach (int roomId in room)
             {
                 DocumentReference doc = db.Collection("ListAwaitService").Document(roomId.ToString());
                 DocumentSnapshot snap = await doc.GetSnapshotAsync();
@@ -160,31 +167,82 @@ namespace Flat_Services_Application.lessor
                             // Convert List<object> to List<string>
                             List<string> arrayValues = arrayData.ConvertAll(x => x.ToString());
 
-                            ListViewItem data = new ListViewItem(roomId.ToString());
-                            data.SubItems.Add(field.Key);
-                            for (int i=0;i<arrayValues.Count;i++)
+                            if (arrayValues[3].ToString() == "wait")
                             {
-                                data.SubItems.Add(arrayValues[i]); 
-                                
+                                ListViewItem data = new ListViewItem(roomId.ToString());
+
+                                data.SubItems.Add(field.Key);
+                                for (int i = 0; i < arrayValues.Count; i++)
+                                {
+                                    data.SubItems.Add(arrayValues[i]);
+                                }
+
+                                listView2.Items.Add(data);
                             }
 
-                            if (data.SubItems[5].ToString() == "wait")
-                                listView2.Items.Add(data);   
-                                
-                            
                         }
                     }
                 }
             }
-            
+
         }
 
         private void Services_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Services_Lessor services_Lessor = new Services_Lessor(sdt);
-            services_Lessor.StartPosition=FormStartPosition.CenterScreen;
+            services_Lessor.StartPosition = FormStartPosition.CenterScreen;
             services_Lessor.Show();
+        }
+
+        private void BrowseBtn_Click(object sender, EventArgs e)
+        {
+            int count = listView2.SelectedItems.Count;
+            if (count <= 0)
+            {
+                MessageBox.Show("Please select room that you want to browse", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            while (count > 0)
+            {
+                ListViewItem selectedItem = listView2.SelectedItems[0];
+                string room = selectedItem.SubItems[0].Text;
+                string id = selectedItem.SubItems[1].Text;
+                string name = selectedItem.SubItems[2].Text;
+                string date = selectedItem.SubItems[3].Text;
+                string time = selectedItem.SubItems[4].Text;
+                //string status = selectedItem.SubItems[5].Text;
+
+                // cap nhat status
+                update_status(room, id, name, date, time);
+                //sen notification
+                send_notification(room, name, date);
+            }
+
+            async void update_status(string room, string id, string name, string date, string time)
+            {
+                DocumentReference DOC = db.Collection("ListAwaitService").Document(room);
+                Dictionary<string, object> maindt = new Dictionary<string, object>();
+
+                ArrayList arr = new ArrayList();
+                arr.Add(name);
+                arr.Add(date);
+                arr.Add(time);
+                arr.Add("browsed");
+                maindt.Add(id, arr);
+                await DOC.UpdateAsync(maindt);
+            }
+
+            async void send_notification(string room, string name, string date)
+            {
+                DocumentReference dr = db.Collection("Notification").Document(room);
+                await dr.UpdateAsync("notification", FieldValue.ArrayUnion("Room " + room + " is browsed to use " + name + " on " + date));
+
+                noti_label.Text = "Browsed successfully";
+                noti_label.ForeColor = System.Drawing.Color.Green;
+                await Task.Delay(3000);
+                noti_label.Text = "";
+            }
         }
     }
 }
