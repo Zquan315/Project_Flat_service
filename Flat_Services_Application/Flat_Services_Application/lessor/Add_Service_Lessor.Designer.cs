@@ -29,32 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Service_Lessor));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel4 = new System.Windows.Forms.Panel();
             this.SaveBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Back_btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lbPrice = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbID = new System.Windows.Forms.Label();
+            this.tbType = new System.Windows.Forms.TextBox();
             this.tbIDService = new System.Windows.Forms.TextBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tbNote = new System.Windows.Forms.RichTextBox();
             this.tbPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tbName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.tbType = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -92,11 +95,11 @@
             this.SaveBtn.ColorContrastOnClick = 45;
             this.SaveBtn.ColorContrastOnHover = 45;
             this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.SaveBtn.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.SaveBtn.CustomizableEdges = borderEdges5;
             this.SaveBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.SaveBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.SaveBtn.DisabledFillColor = System.Drawing.Color.Empty;
@@ -163,6 +166,7 @@
             this.SaveBtn.TextMarginLeft = 0;
             this.SaveBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.SaveBtn.UseDefaultRadiusAndThickness = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // Back_btn
             // 
@@ -183,11 +187,11 @@
             this.Back_btn.ColorContrastOnClick = 45;
             this.Back_btn.ColorContrastOnHover = 45;
             this.Back_btn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Back_btn.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.Back_btn.CustomizableEdges = borderEdges6;
             this.Back_btn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Back_btn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Back_btn.DisabledFillColor = System.Drawing.Color.Empty;
@@ -293,10 +297,13 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.lbPrice);
+            this.bunifuPanel1.Controls.Add(this.lbName);
+            this.bunifuPanel1.Controls.Add(this.lbID);
             this.bunifuPanel1.Controls.Add(this.tbType);
             this.bunifuPanel1.Controls.Add(this.tbIDService);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel6);
-            this.bunifuPanel1.Controls.Add(this.richTextBox1);
+            this.bunifuPanel1.Controls.Add(this.tbNote);
             this.bunifuPanel1.Controls.Add(this.tbPrice);
             this.bunifuPanel1.Controls.Add(this.tbName);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel5);
@@ -309,13 +316,53 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(1168, 531);
             this.bunifuPanel1.TabIndex = 12;
             // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.ForeColor = System.Drawing.Color.Red;
+            this.lbPrice.Location = new System.Drawing.Point(752, 177);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(12, 16);
+            this.lbPrice.TabIndex = 26;
+            this.lbPrice.Text = "*";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.ForeColor = System.Drawing.Color.Red;
+            this.lbName.Location = new System.Drawing.Point(217, 177);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(12, 16);
+            this.lbName.TabIndex = 25;
+            this.lbName.Text = "*";
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.ForeColor = System.Drawing.Color.Red;
+            this.lbID.Location = new System.Drawing.Point(217, 77);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(12, 16);
+            this.lbID.TabIndex = 24;
+            this.lbID.Text = "*";
+            // 
+            // tbType
+            // 
+            this.tbType.Enabled = false;
+            this.tbType.Location = new System.Drawing.Point(755, 41);
+            this.tbType.Name = "tbType";
+            this.tbType.Size = new System.Drawing.Size(171, 22);
+            this.tbType.TabIndex = 11;
+            this.tbType.Text = "Service for renting";
+            this.tbType.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // tbIDService
             // 
-            this.tbIDService.Enabled = false;
             this.tbIDService.Location = new System.Drawing.Point(220, 43);
             this.tbIDService.Name = "tbIDService";
             this.tbIDService.Size = new System.Drawing.Size(129, 22);
             this.tbIDService.TabIndex = 10;
+            this.tbIDService.TextChanged += new System.EventHandler(this.tbIDService_TextChanged);
             // 
             // bunifuLabel6
             // 
@@ -333,13 +380,13 @@
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // richTextBox1
+            // tbNote
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(205, 244);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(890, 223);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.tbNote.Location = new System.Drawing.Point(205, 244);
+            this.tbNote.Name = "tbNote";
+            this.tbNote.Size = new System.Drawing.Size(890, 223);
+            this.tbNote.TabIndex = 6;
+            this.tbNote.Text = "";
             // 
             // tbPrice
             // 
@@ -376,26 +423,26 @@
             this.tbPrice.Modified = false;
             this.tbPrice.Multiline = false;
             this.tbPrice.Name = "tbPrice";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbPrice.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tbPrice.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbPrice.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbPrice.OnIdleState = stateProperties4;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbPrice.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tbPrice.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbPrice.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbPrice.OnIdleState = stateProperties20;
             this.tbPrice.Padding = new System.Windows.Forms.Padding(3);
             this.tbPrice.PasswordChar = '\0';
             this.tbPrice.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -416,6 +463,7 @@
             this.tbPrice.TextPlaceholder = "Price";
             this.tbPrice.UseSystemPasswordChar = false;
             this.tbPrice.WordWrap = true;
+            this.tbPrice.TextChanged += new System.EventHandler(this.tbPrice_TextChanged);
             // 
             // tbName
             // 
@@ -452,26 +500,26 @@
             this.tbName.Modified = false;
             this.tbName.Multiline = false;
             this.tbName.Name = "tbName";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbName.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tbName.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbName.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbName.OnIdleState = stateProperties8;
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbName.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tbName.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbName.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbName.OnIdleState = stateProperties24;
             this.tbName.Padding = new System.Windows.Forms.Padding(3);
             this.tbName.PasswordChar = '\0';
             this.tbName.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -492,6 +540,7 @@
             this.tbName.TextPlaceholder = "Name";
             this.tbName.UseSystemPasswordChar = false;
             this.tbName.WordWrap = true;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // bunifuLabel5
             // 
@@ -554,16 +603,6 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // tbType
-            // 
-            this.tbType.Enabled = false;
-            this.tbType.Location = new System.Drawing.Point(755, 41);
-            this.tbType.Name = "tbType";
-            this.tbType.Size = new System.Drawing.Size(171, 22);
-            this.tbType.TabIndex = 11;
-            this.tbType.Text = "Service for renting";
-            this.tbType.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // Add_Service_Lessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -591,7 +630,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Back_btn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SaveBtn;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox tbNote;
         private Bunifu.UI.WinForms.BunifuTextBox tbPrice;
         private Bunifu.UI.WinForms.BunifuTextBox tbName;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
@@ -601,5 +640,8 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private System.Windows.Forms.TextBox tbIDService;
         private System.Windows.Forms.TextBox tbType;
+        private System.Windows.Forms.Label lbPrice;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbID;
     }
 }
