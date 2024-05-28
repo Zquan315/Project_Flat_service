@@ -134,7 +134,7 @@ namespace Flat_Services_Application
 
         private void btnReturn_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("You must log out!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("You must log out!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     this.Hide();
                     Login l = new Login();
