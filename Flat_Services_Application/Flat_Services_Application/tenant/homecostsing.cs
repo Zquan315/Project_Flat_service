@@ -34,18 +34,18 @@ namespace Flat_Services_Application.tenant
 
 
 
-            using (WebClient client = new WebClient())
-            {
-                var htmlData = client.DownloadData("https://api.vietqr.io/v2/banks");
-                var bankRawJson = Encoding.UTF8.GetString(htmlData);
-                var listBankData = JsonConvert.DeserializeObject<Bank>(bankRawJson);
+            //using (WebClient client = new WebClient())
+            //{
+            //    var htmlData = client.DownloadData("https://api.vietqr.io/v2/banks");
+            //    var bankRawJson = Encoding.UTF8.GetString(htmlData);
+            //    var listBankData = JsonConvert.DeserializeObject<Bank>(bankRawJson);
 
-                cb_nganhang.Properties.DataSource = listBankData.data;
-                cb_nganhang.Properties.DisplayMember = "custom_name";
-                cb_nganhang.Properties.ValueMember = "bin";
-                cb_nganhang.EditValue = listBankData.data.FirstOrDefault().bin;
-                cb_template.SelectedIndex = 0;
-            }
+            //    cb_nganhang.Properties.DataSource = listBankData.data;
+            //    cb_nganhang.Properties.DisplayMember = "custom_name";
+            //    cb_nganhang.Properties.ValueMember = "bin";
+            //    cb_nganhang.EditValue = listBankData.data.FirstOrDefault().bin;
+            //    cb_template.SelectedIndex = 0;
+            //}
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
@@ -161,31 +161,31 @@ namespace Flat_Services_Application.tenant
 
         private void qrCreateBtn_Click(object sender, EventArgs e)
         {
-            var apiRequest = new APIRequest();
-            apiRequest.acqId = Convert.ToInt32(cb_nganhang.EditValue.ToString());
-            apiRequest.accountNo = long.Parse(txtSTK.Text);
-            apiRequest.accountName = txtTenTaiKhoan.Text;
-            apiRequest.amount = Convert.ToInt32(txtSoTien.Text);
-            apiRequest.template = cb_template.Text;
-            var jsonRequest = JsonConvert.SerializeObject(apiRequest);
-            // use restsharp for request api
+            //var apiRequest = new APIRequest();
+            //apiRequest.acqId = Convert.ToInt32(cb_nganhang.EditValue.ToString());
+            //apiRequest.accountNo = long.Parse(txtSTK.Text);
+            //apiRequest.accountName = txtTenTaiKhoan.Text;
+            //apiRequest.amount = Convert.ToInt32(txtSoTien.Text);
+            //apiRequest.template = cb_template.Text;
+            //var jsonRequest = JsonConvert.SerializeObject(apiRequest);
+            //// use restsharp for request api
 
-            var client = new RestClient("https://api.vietqr.io/v2/generate");
-            var request = new RestRequest();
+            //var client = new RestClient("https://api.vietqr.io/v2/generate");
+            //var request = new RestRequest();
 
-            request.Method = Method.Post;
-            request.AddHeader("Accept", "application/json");
+            //request.Method = Method.Post;
+            //request.AddHeader("Accept", "application/json");
 
-            request.AddParameter("application/json", jsonRequest, ParameterType.RequestBody);
-            Task<RestResponse> response = client.ExecuteAsync(request);
-            /*var response = client.ExecuteAsync(request);*/
-            /*var response = client.Execute(request);*/
-            /*var content = response.Content;
-            var dataResult = JsonConvert.DeserializeObject<APIResponse>(content);*/
+            //request.AddParameter("application/json", jsonRequest, ParameterType.RequestBody);
+            //Task<RestResponse> response = client.ExecuteAsync(request);
+            ///*var response = client.ExecuteAsync(request);*/
+            ///*var response = client.Execute(request);*/
+            ///*var content = response.Content;
+            //var dataResult = JsonConvert.DeserializeObject<APIResponse>(content);*/
 
 
-            /*var image = Base64ToImage(dataResult.data.qrDataURL.Replace("data:image/png;base64,", ""));
-            pictureBox1.Image = image;*/
+            ///*var image = Base64ToImage(dataResult.data.qrDataURL.Replace("data:image/png;base64,", ""));
+            //pictureBox1.Image = image;*/
         }
     }
 }
